@@ -1650,8 +1650,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-geopackage" class="md-nav__link">
-    Use GeoPackage
+  <a href="#use-cog-cloud-optimized-geotiff" class="md-nav__link">
+    Use COG (Cloud Optimized GeoTIFF)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-examples-with-cog" class="md-nav__link">
+    Advanced examples with COG
   </a>
   
 </li>
@@ -2179,8 +2186,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-geopackage" class="md-nav__link">
-    Use GeoPackage
+  <a href="#use-cog-cloud-optimized-geotiff" class="md-nav__link">
+    Use COG (Cloud Optimized GeoTIFF)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-examples-with-cog" class="md-nav__link">
+    Advanced examples with COG
   </a>
   
 </li>
@@ -2290,13 +2304,28 @@ help you with the implementation.</p>
 <p>Raster data can become quite big quickly, when working with uncompressed
 tiff files it's often several Gb of data. Especially on mobile devices,
 this is inefficient.</p>
-<h2 id="use-geopackage">Use GeoPackage<a class="headerlink" href="#use-geopackage" title="Permanent link">&para;</a></h2>
-<p>We recommend to us the geopackage format to deal with raster data. The
-following commands will convert a file called <code>raster.tif</code> to a file
-<code>raster.gpkg</code> with pyramids. Make sure you adjust <code>EPSG:21781</code> to your
-desired CRS.</p>
-<div class="highlight"><pre><span></span><code>gdal_translate --config OGR_SQLITE_SYNCHRONOUS OFF -co  <span class="nv">APPEND_SUBDATASET</span><span class="o">=</span>YES -co <span class="nv">TILE_FORMAT</span><span class="o">=</span>WEBP -a_srs EPSG:21781 -of GPKG raster.tif raster.gpkg
-gdaladdo --config OGR_SQLITE_SYNCHRONOUS OFF -r AVERAGE raster.gpkg <span class="m">2</span> <span class="m">4</span> <span class="m">8</span> <span class="m">16</span> <span class="m">32</span> <span class="m">64</span> <span class="m">128</span> <span class="m">256</span>
+<h3 id="use-cog-cloud-optimized-geotiff">Use COG (Cloud Optimized GeoTIFF)<a class="headerlink" href="#use-cog-cloud-optimized-geotiff" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://www.cogeo.org/">Cloud Optimized Geotiff (COG)</a> format will offer best user experience for offline basemaps.
+Combined with JPEG compression, it will reduce the raster size.</p>
+<p>The following commands will convert a file called <code>raster.tif</code> to a COG file <code>raster_cog.tif</code> using JPEG compression.</p>
+<div class="highlight"><pre><span></span><code>gdal_translate raster.tif raster_cog.tif -of COG -co <span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span> -co <span class="nv">COMPRESS</span><span class="o">=</span>JPEG -co <span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span> -co <span class="nv">BIGTIFF</span><span class="o">=</span>YES
+</code></pre></div>
+<h3 id="advanced-examples-with-cog">Advanced examples with COG<a class="headerlink" href="#advanced-examples-with-cog" title="Permanent link">&para;</a></h3>
+<p>If you have several files to assemble, first, you need to create a VRT files with QGIS or trough following commands to index all TIF files inside a directory.  Make sure you adjust <code>EPSG:2056</code> to your desired CRS.</p>
+<div class="highlight"><pre><span></span><code>gdalbuildvrt raster_mosaic.vrt TIF_Directory/*.tif -addalpha -hidenodata -a_srs EPSG:2056
+</code></pre></div>
+<p>Then convert VRT file to COG.</p>
+<div class="highlight"><pre><span></span><code>gdal_translate raster_mosaic.vrt raster_cog.tif -of COG -co <span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span> -co <span class="nv">COMPRESS</span><span class="o">=</span>JPEG -co <span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span> -co <span class="nv">BIGTIFF</span><span class="o">=</span>YES
+</code></pre></div>
+<p>If the raster data is too low quality, adjust the compression level and set QUALITY=85.</p>
+<p>Some extra parameters can be set :</p>
+<ul>
+<li><code>a_srs</code> can be used also in gdal_translate command when CRS is not define in the source raster dataset.</li>
+<li><code>OVERVIEW_RESAMPLING</code>offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.</li>
+<li><code>NUM_THREADS</code> will help you to balance between use all your CPU ressources or only part. Set ALL_CPUS or define the number of thread you want to use.</li>
+</ul>
+<p>Combining all extra parameters, command line may look like this :</p>
+<div class="highlight"><pre><span></span><code>gdal_translate raster.tif raster_cog.tif -a_srs EPSG:2056 -of COG -co <span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span> -co <span class="nv">OVERVIEW_RESAMPLING</span><span class="o">=</span>BILINEAR -co <span class="nv">COMPRESS</span><span class="o">=</span>JPEG -co <span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span> -co <span class="nv">NUM_THREADS</span><span class="o">=</span><span class="m">6</span> -co <span class="nv">BIGTIFF</span><span class="o">=</span>YES
 </code></pre></div>
 
 
