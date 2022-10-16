@@ -29,7 +29,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.4+insiders-4.24.1">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.4+insiders-4.24.1">
     
     
       
@@ -2794,8 +2794,8 @@ posición en los atributos del objeto, consulte la
 un nuevo objeto espacial, puede hacerlo utilizando una expresión agregada:</p>
 <div class="highlight"><pre><span></span><code><span class="k">aggregate</span><span class="p">(</span><span class="w"> </span><span class="n">layer</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;regions&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">aggregate</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;max&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">expression</span><span class="p">:</span><span class="o">=</span><span class="ss">&quot;code&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">filter</span><span class="p">:</span><span class="o">=</span><span class="n">intersects</span><span class="p">(</span><span class="w"> </span><span class="err">$</span><span class="n">geometry</span><span class="p">,</span><span class="w"> </span><span class="n">geometry</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">parent</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
-<p>To transform the coordinates received from \@position_coordinate to the
-coordinate system of your project:</p>
+<p>Para transformar las coordenadas recibidas de \@position_coordinate al
+sistema de coordenadas de su proyecto:</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
 <span class="n">y</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
 </code></pre></div>

@@ -29,7 +29,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.4+insiders-4.24.1">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.4+insiders-4.24.1">
     
     
       
@@ -2377,19 +2377,19 @@
 
 
 <h1 id="documentacion-del-sistema-qfieldcloud">Documentación del sistema QFieldCloud<a class="headerlink" href="#documentacion-del-sistema-qfieldcloud" title="Permanent link">&para;</a></h1>
-<p>The aim of this document is to provide an overview of the QFieldCloud system to
-  understand the underlaying logic and technology.</p>
+<p>El objetivo de este documento es proporcionar una visión general del sistema QFieldCloud para
+entender la lógica y la tecnología subyacentes.</p>
 <h2 id="entidades-y-conceptos">Entidades y conceptos<a class="headerlink" href="#entidades-y-conceptos" title="Permanent link">&para;</a></h2>
 <h3 id="proyecto-qgis">Proyecto QGIS<a class="headerlink" href="#proyecto-qgis" title="Permanent link">&para;</a></h3>
-<p>A QGIS project is a <em>.qgs</em> or <em>.qgz</em> file. A Project is created on
-QGIS Desktop and uploaded to QFieldCloud using the QGIS's plugin
-QFieldSync. Before the uploading of the QGIS project, it is necessary
-for each layer of the QGIS project an "action" that determines how
-QFieldSync and QField should treat the layer. There are the two types
-of actions that can be setup - one for QFieldCloud and one for the
-traditional cable export.</p>
-<p>This information is saved within the QGS project as layer's
-<em>customProperty</em>, with the <em>QFieldSync/action</em> key.</p>
+<p>Un proyecto QGIS es un archivo <em>.qgs</em> o <em>.qgz</em>. Un proyecto se crea en
+QGIS Desktop y se sube a QFieldCloud usando el complemento de QGIS
+QFieldSync. Antes de subir el proyecto QGIS, es necesario
+para cada capa del proyecto QGIS una "acción" que determine cómo
+QFieldSync y QField deben tratar la capa. Hay dos tipos de acciones
+de acciones que se pueden configurar - una para QFieldCloud y otra para la
+exportación tradicional por cable.</p>
+<p>Esta información se guarda dentro del proyecto QGS como capa
+<em>customProperty</em>, con la clave <em>QFieldSync/action</em>.</p>
 <p>Las acciones disponibles son:</p>
 <table>
 <thead>
@@ -2421,8 +2421,8 @@ traditional cable export.</p>
 </tr>
 </tbody>
 </table>
-<p>This would be the behavior of QFieldSync with the different
-layer actions:</p>
+<p>Este sería el comportamiento de QFieldSync con las diferentes
+acciones de la capa:</p>
 <table>
 <thead>
 <tr>
@@ -2459,8 +2459,8 @@ layer actions:</p>
 </tr>
 </tbody>
 </table>
-<p>This is the behavior of QFieldCloud (<code>libqfieldsync</code>) with the
- layers:</p>
+<p>Este es el comportamiento de QFieldCloud (<code>libqfieldsync</code>) con las
+capas:</p>
 <table>
 <thead>
 <tr>
@@ -2549,19 +2549,18 @@ layer actions:</p>
 <li><em>REMOVE</em> simplemente eliminará la capa del proyecto.</li>
 <li><em>KEEP_EXISTENT</em> no se utilizará para las sincronizaciones de QFieldCloud.</li>
 </ul>
-<p>From QFieldSync it will be possible to update a project already
-loaded on QFieldCloud. In the event that the changes concern only
-styles, forms etc. but not the structure of the layers, the
-project on the server will simply be updated.
-If there are changes in the layers structure, the project will be
-reset on the server (delta files will be deleted) and for each
-client it will be necessary to download the updated version of the
-project before being able to push new changes.</p>
+<p>Desde QFieldSync será posible actualizar un proyecto ya
+cargado en QFieldCloud. En el caso de que los cambios se refieran sólo a
+estilos, formularios, etc. pero no a la estructura de las capas, el
+proyecto en el servidor simplemente se actualizará.
+Si hay cambios en la estructura de las capas, el proyecto se
+en el servidor (se borrarán los archivos delta) y para cada cliente será necesario
+cliente será necesario descargar la versión actualizada del
+proyecto antes de poder empujar los nuevos cambios. </p>
 <h3 id="proyecto-qfieldcloud">Proyecto QFieldCloud<a class="headerlink" href="#proyecto-qfieldcloud" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Is composed of one and only one QGIS project and the possible
-related files (e.g. geopackages, images, ...) included the offline
-or hybrid data package.
-</code></pre></div>
+<p>Se compone de un único proyecto QGIS y de los posibles
+archivos relacionados (por ejemplo, geopackages, imágenes, ...) incluidos el paquete de datos fuera de línea
+o paquete de datos híbrido.</p>
 <h2 id="casos-de-uso">Casos de uso<a class="headerlink" href="#casos-de-uso" title="Permanent link">&para;</a></h2>
 <h3 id="hibrido">Híbrido<a class="headerlink" href="#hibrido" title="Permanent link">&para;</a></h3>
 <p>Modo de edición híbrido con sincronización en el servidor</p>
