@@ -2575,25 +2575,25 @@
 <p>Cada trabajo consta de uno o más pasos y cada paso es responsable de una tarea autónoma en el proyecto. QFieldCloud admite tres flujos de trabajo predefinidos: <code>process_projectfile</code>, <code>package</code> y <code>delta_apply</code>.</p>
 <p>Mientras se ejecutan, los trabajos escriben mensajes de registro que están disponibles en la página de trabajos del proyecto para los trabajos que han alcanzado un estado final <code>FINISHED</code> o <code>FAILED</code>.</p>
 <p>Los trabajos tienen acceso a los <a href="../projects/#secrets">secretos del proyecto</a>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>All jobs can be triggered using the QFieldCloud API.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Any of the triggering conditions described on this page might change without notice.</p>
+<p>Todos los trabajos pueden ser desencadenados usando la API de QFieldCloud.</p>
+<div class="admonition advertencia">
+<p class="admonition-title">Advertencia</p>
+<p>Cualquiera de las condiciones de activación descritas en esta página puede cambiar sin previo aviso.</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>All jobs must finish within 10 minutes or they will result in a timeout error and will be terminated.</p>
+<div class="admonition advertencia">
+<p class="admonition-title">Advertencia</p>
 </div>
+<p>Todos los trabajos deben terminar antes de 10 minutos o darán lugar a un error de tiempo de espera y serán terminados.</p>
 <h2 id="tipos-de-trabajo">Tipos de trabajo<a class="headerlink" href="#tipos-de-trabajo" title="Permanent link">&para;</a></h2>
 <h3 id="trabajo-de-procesar-el-archivo-de-proyecto-process_projectfile">Trabajo de procesar el archivo de proyecto (<code>process_projectfile</code>)<a class="headerlink" href="#trabajo-de-procesar-el-archivo-de-proyecto-process_projectfile" title="Permanent link">&para;</a></h3>
-<p>The process project file job is used to extract details about the project configuration and project layers, such as project CRS, layer CRS, layer name, layer validity etc. QFieldCloud validates the uploaded QGIS project file (<code>.qgs</code>/<code>.qgz</code>), as well as the supporting GeoPackages, TIFFs and other data source files. It also validates remote connection to PostGIS, WFS, WMS and other online data sources. QFieldCloud will open the project file in a QGIS instance on the server to extract all the necessary information.</p>
+<p>La tarea de procesar el archivo de proyecto se utiliza para extraer detalles sobre la configuración del proyecto y las capas del proyecto, como el SRC del proyecto, el SRC de la capa, el nombre de la capa, la validez de la capa, etc. QFieldCloud valida el archivo de proyecto QGIS cargado (<code>.qgs</code>/<code>.qgz</code>), así como los GeoPackages de apoyo, TIFFs y otros archivos de origen de datos. También valida la conexión remota a PostGIS, WFS, WMS y otras fuentes de datos en línea. QFieldCloud abrirá el archivo de proyecto en una instancia de QGIS en el servidor para extraer toda la información necesaria.</p>
 <h4 id="activadores">Activadores<a class="headerlink" href="#activadores" title="Permanent link">&para;</a></h4>
-<p>This job is triggered every time a file is uploaded to QFieldCloud, unless at least one of the following condition are valid:</p>
+<p>Este trabajo se activa cada vez que se sube un archivo a QFieldCloud, a menos que al menos una de las siguientes condiciones sea válida:</p>
 <ul>
-<li>No QGIS project file (<code>.qgs</code>/<code>.qgz</code>) has been uploaded yet.</li>
+<li>Todavía no se ha cargado ningún archivo de proyecto QGIS (<code>.qgs</code>/<code>.qgz</code>).</li>
 <li>The uploaded file is within the <code>DCIM</code> directory. Those files are assumed to be irrelevant to project validity.</li>
 <li>There is already a <code>process_projectfile</code> job in <code>PENDING</code> status.</li>
 </ul>

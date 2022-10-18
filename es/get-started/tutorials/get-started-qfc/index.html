@@ -2580,23 +2580,23 @@ Aparecerá una nueva pantalla de inicio de sesión:</p>
 </figure>
 </p>
 <p>Ingrese sus credenciales creadas previamente durante el registro de la cuenta.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you use a password in QGIS for the first time, it will ask you to set a master password that manages all the other passwords used in QGIS. More information about the master password here: <a href="https://docs.qgis.org/3.4/en/docs/user_manual/auth_system/auth_overview.html#master-password">QGIS documentation</a></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Si utiliza una contraseña en QGIS por primera vez, le pedirá que establezca una contraseña maestra que gestione todas las demás contraseñas utilizadas en QGIS. Más información sobre la contraseña maestra aquí: <a href="https://docs.qgis.org/3.4/en/docs/user_manual/auth_system/auth_overview.html#master-password">Documentación de QGIS</a></p>
 </div>
 <p>Explora la pantalla resumen de proyectos: tu usuario actual subrayado y azul, un botón de desconexión abajo a la izquierda, un botón nube para crear nuevos proyectos y, a la derecha, un botón refrescar para recuperar la lista más reciente de proyectos. Los usuarios recién registrados verán una tabla vacía y en cuanto creen nuevos proyectos, la lista crecerá. La pantalla resumen de proyectos tiene este aspecto:</p>
 <p>
 <figure><a data-caption="Resumen de proyectos en QFieldSync" data-fancybox="gallery" href="../../../assets/images/project_overview_all_colors_tooltip.png"><img alt="Resumen de proyectos en QFieldSync" src="../../../assets/images/project_overview_all_colors_tooltip.png" title="Resumen de proyectos en QFieldSync" width="600px" /></a><figcaption>Resumen de proyectos en QFieldSync</figcaption>
 </figure>
 </p>
-<p>The icons indicate the cloud and local status of the different projects.</p>
+<p>Los iconos indican el estado en la nube y local de los diferentes proyectos.</p>
 <p>Estado local:</p>
-<p><img Width="20px" alt="Status" src="../../../assets/images/cloud_project_remote.svg" /> indicates that there is only a remote cloud project existing.
-<img Width="20px" alt="Status" src="../../../assets/images/cloud_project.svg" /> indicates that the cloud project is also locally stored.</p>
+<p><img Width="20px" alt="Estado" src="../../../assets/images/cloud_project_remote.svg" /> indica que sólo existe un proyecto remoto en la nube.
+<img Width="20px" alt="Estado" src="../../../assets/images/cloud_project.svg" /> indica que el proyecto en la nube también está almacenado localmente.</p>
 <p>Estado de la nube:</p>
-<p>Red: status failed —&gt; the project is invalid and is not understood by the cloud. The user needs to fix/upload their .qgs/.qgz project.
-Brown: status busy —&gt; we are working on your project, please be patient. You cannot do much with the project in the meanwhile.
-Green: status ok —&gt; the project is successfully undestood by the cloud. You can try to download on QField, but the success is not guaranteed.</p>
+<p>Rojo: estado fallido -&gt; el proyecto no es válido y no es entendido por la nube. El usuario necesita arreglar/subir su proyecto .qgs/.qgz.
+Marrón: estado ocupado -&gt; estamos trabajando en su proyecto, por favor sea paciente. No puede hacer mucho con el proyecto mientras tanto.
+Verde: estado ok -&gt; el proyecto ha sido entendido con éxito por la nube. Puede intentar descargarlo en QField, pero el éxito no está garantizado.</p>
 <p>El estado de cada proyecto se muestra con una información sobre herramientas.</p>
 <p>Haciendo doble clic en un proyecto de la lista, puede ver y editar las propiedades específicas del proyecto.</p>
 <p>
@@ -2611,7 +2611,7 @@ Se crea un proyecto nuevo compatible con QFieldCloud a partir del proyecto de QG
 </ul>
 <p>Para convertir el proyecto actual es necesario un directorio completamente vacío.</p>
 <ul>
-<li>"Create a new empty QFieldCloud project"
+<li>"Crear un nuevo proyecto QFieldCloud vacío"
 Se creará un nuevo proyecto de QFieldCloud en blanco. Tendrá que mover todos los archivos del proyecto dentro del directorio local seleccionado, con el archivo de proyecto como su raíz. Los archivos del proyecto solo se subirán cuando pulse el botón de sincronización. Asegúrese de que el directorio seleccionado solo contiene un archivo de proyecto de QGIS.</li>
 </ul>
 <p>
@@ -2631,9 +2631,9 @@ Se creará un nuevo proyecto de QFieldCloud en blanco. Tendrá que mover todos l
 <h3 id="configure-las-capas-de-su-proyecto-para-qfield">Configure las capas de su proyecto para QField<a class="headerlink" href="#configure-las-capas-de-su-proyecto-para-qfield" title="Permanent link">&para;</a></h3>
 <p>Configure las capas del proyecto haciendo clic en el quinto icono de la barra de herramientas de QFieldSync <img Width="20px" alt="" src="../../../assets/images/project_properties.svg" />. Aquí puedes configurar las acciones de las capas de QFieldCloud. La mayoría de las veces se necesita configurar una preferencia a las capas en línea o fuera de línea. Para un control más fino, en los ajustes avanzados puedes configurar la acción capa por capa. Obtenga más información sobre cómo configurar sus capas en la <a href="../get-started-qfs/">Guía de inicio de QFieldSync</a>.</p>
 <p>Se recomienda utilizar capas de GeoPackage para la edición colaborativa. Consulte la <a href="../advanced-setup-qfc/">guía de configuración avanzada</a> para obtener más información sobre el soporte de formatos vectoriales.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you use experimental data sources without a primary key field (e.g. Shapefiles, GeoJSON etc), you must have a lowercase <code>fid</code> field that will be used as a primary key that uniquely identifies each feature.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Si utiliza fuentes de datos experimentales sin un campo de clave primaria (por ejemplo, archivos shape, GeoJSON, etc.), debe tener un campo <code>fid</code> en minúsculas que se utilizará como clave primaria que identifica de forma exclusiva cada objeto espacial.</p>
 </div>
 <p>Cualquier formato de capa ráster y vectorial admitido por QField se puede usar como datos de solo lectura.</p>
 <p>

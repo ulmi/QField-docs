@@ -2800,10 +2800,10 @@ sistema de coordenadas de su proyecto:</p>
 <span class="n">y</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
 </code></pre></div>
 <p>::: {#snapping_results}
-If you want to use the snapping results after drawing a line, you can
-use the [\@snapping_results]{.title-ref} variable. The following code
-extracts the value of the attribute [id]{.title-ref} of the snapping
-match of the first point of a line.
+Si desea utilizar los resultados de ajuste después de dibujar una línea, puede
+utilizar la variable [@snapping_results]{.title-ref}. El siguiente código
+extrae el valor del atributo [id]{.title-ref} del ajuste
+del primer punto de una línea.
 :::</p>
 <div class="highlight"><pre><span></span><code><span class="n">with_variable</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="s1">&#39;first_snapped_point&#39;</span><span class="p">,</span><span class="w"></span>

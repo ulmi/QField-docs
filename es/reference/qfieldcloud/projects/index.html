@@ -2373,10 +2373,10 @@
 <p>Se puede crear un proyecto de dos maneras diferentes: utilizando la interfaz web de QFieldCloud o utilizando QFieldSync en QGIS.</p>
 <h2 id="archivos">Archivos<a class="headerlink" href="#archivos" title="Permanent link">&para;</a></h2>
 <p>Los archivos son el esqueleto sobre el que funciona el proyecto QFieldCloud. Para hacer un proyecto QFieldCloud vivo necesitas subir al menos un único archivo de proyecto QGIS en el formato de archivo <code>.qgs</code> o <code>.qgz</code>. Todos los archivos geoespaciales deben ser subidos con las mismas rutas relativas que en tu ordenador. Si se utiliza simbología externa SVG o rasterizada, también hay que subir estos archivos.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>QFieldCloud does not support projects stored in a GeoPackage (<code>.gpkg</code>) files.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
 </div>
+<p>QFieldCloud no admite proyectos almacenados en archivos GeoPackage (<code>.gpkg</code>).</p>
 <p>La estructura típica de un archivo QGIS podría ser algo así:
 <div class="highlight"><pre><span></span><code>project
 ├── data
@@ -2395,7 +2395,7 @@
 <h2 id="colaboradores">Colaboradores<a class="headerlink" href="#colaboradores" title="Permanent link">&para;</a></h2>
 <p>Un colaborador de proyecto es otro usuario de QFieldCloud invitado a contribuir a un proyecto. Un proyecto puede tener varios colaboradores. Los colaboradores con rol de <strong>propietario</strong> o <strong>admin</strong> pueden añadir más usuarios como colaboradores. Si el proyecto es propiedad de una organización, también puede añadir <strong>equipos</strong> como colaboradores. Más información sobre <a href="../permissions/">roles de colaborador</a>.</p>
 <h2 id="cambios">Cambios<a class="headerlink" href="#cambios" title="Permanent link">&para;</a></h2>
-<p>Changes made on vector layers and pushed to QFieldCloud from a QField device will appear here. Each change stores the changed attributes and geometries.</p>
+<p>Los cambios realizados en las capas vectoriales y enviados a QFieldCloud desde un dispositivo QField aparecerán aquí. Cada cambio almacena los atributos y geometrías modificados.</p>
 <p>Los cambios tienen uno de los tres métodos:</p>
 <ul>
 <li><code>create</code> - se ha creado una nueva función.</li>
@@ -2403,13 +2403,13 @@
 <li><code>patch</code> - se ha modificado un objeto espacial existente.</li>
 </ul>
 <p>Los objetos espaciales que han sido creados y posteriormente eliminados sin ser empujados a QFieldCloud nunca aparecerán en los cambios del proyecto.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Changes on online vector layers (PostGIS, WFS) that does not have "Offline editing" cloud layer action will not generate a change, but will directly modify the original data source.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Los cambios en las capas vectoriales en línea (PostGIS, WFS) que no tienen la acción de capa de nube "Edición fuera de línea" no generarán un cambio, sino que modificarán directamente la fuente de datos original.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Changes to vector layers done in QGIS will not appear here.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Los cambios en las capas vectoriales realizados en QGIS no aparecerán aquí.</p>
 </div>
 <h2 id="trabajos">Trabajos<a class="headerlink" href="#trabajos" title="Permanent link">&para;</a></h2>
 <p>Saber más de <a href="../jobs/">project jobs</a>.</p>
@@ -2418,7 +2418,7 @@
 <p>Hay dos tipos de secretos:</p>
 <ul>
 <li><strong>Variables de entorno</strong> - Las variables de entorno estarán disponibles para QGIS mientras se ejecuten los trabajos de su proyecto.</li>
-<li><strong>pgservice connection</strong> - A PostgreSQL/PostGIS connection as defined in the <code>.pg_service.conf</code> configuration file. If you use multiple service definitions, you should add multiple secrets for each of them.</li>
+<li><strong>pgservice connection</strong> - Una conexión PostgreSQL/PostGIS como la definida en el archivo de configuración <code>.pg_service.conf</code>. Si utiliza varias definiciones de servicio, deberá añadir varios secretos para cada una de ellas.</li>
 </ul>
 <h2 id="configuraciones">Configuraciones<a class="headerlink" href="#configuraciones" title="Permanent link">&para;</a></h2>
 <p>Los ajustes del proyecto sólo están disponibles para los propietarios del proyecto y los colaboradores con permisos elevados. Desde aquí un usuario puede acceder a algunos ajustes sensibles del proyecto o a acciones irrecuperables.</p>
