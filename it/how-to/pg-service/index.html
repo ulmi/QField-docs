@@ -1863,7 +1863,7 @@
         
   
   <span class="md-ellipsis">
-    The official QFieldCloud SDK and CLI
+    SDK e CLI ufficiali di QFieldCloud
     
   </span>
   
@@ -2196,25 +2196,25 @@
                 
                   
 
-  <a href="https://github.com/opengisch/qfield-docs/tree/master/documentation/how-to/pg-service.en.md" title="Modifica" class="md-content__button md-icon">
+  <a href="https://github.com/opengisch/qfield-docs/tree/master/documentation/how-to/pg-service.it.md" title="Modifica" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 <h1 id="postgresql-service">PostgreSQL service<a class="headerlink" href="#postgresql-service" title="Permanent link">&para;</a></h1>
-<p>A <code>pg_service.conf</code> file allows to use an named alias for a PostgreSQL server connection. Instead of storing hostname, port, database name and more into the QGIS Project file, these can be stored separately. It is even possible to store username and password in a <code>pg_service.conf</code> file, to avoid having this stored in clear text in the QGIS Project.</p>
-<p>Read more about PostgreSQL services in the <a href="https://docs.qgis.org/3.22/en/docs/user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file">QGIS documentation</a>.</p>
-<h1 id="qfield-direct-connection">QField - Direct Connection<a class="headerlink" href="#qfield-direct-connection" title="Permanent link">&para;</a></h1>
-<p>If you directly connect from QGIS to your database you can make use of a <code>pg_service.conf</code> file by placing it in the QField data folder. You can place your file either on the Internal Device Storage or on the SD Card Storage. You can check the path for the QField data folder in the bottom of the <code>About QField</code> screen in the app.</p>
-<p>Usually the path on Android devices looks something like this: <code>/Android/data/ch.opengis.qfield/files/QField</code>.</p>
+<p>Un file <code>pg_service.conf</code> permette di usasre un alias per una connessione a un server PostgreSQL. Invece di salvare hostname, porta, nome del database e altro nel progetto QGIS, questi dati possono essere salvati separatamente. È anche possibile salvare username e password nel file <code>pg_service.conf</code> per evitare di doverli salvare come testo in chiaro nel progetto QGIS.</p>
+<p>Scopri di più a proposito dei PostgreSQL services nella <a href="https://docs.qgis.org/3.22/en/docs/user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file">documentazione QGIS</a>.</p>
+<h1 id="qfield-connessione-diretta">QField - Connessione diretta<a class="headerlink" href="#qfield-connessione-diretta" title="Permanent link">&para;</a></h1>
+<p>Se ti connetti direttamente a un database da QGIS, puoi usare un file <code>pg_service.conf</code> mettendolo direttamente nella directory dei dati di QField. Puoi mettere il tuo file sia nella memoria interna del dispositivo sia nella scheda SD. Puoi verificare il percorso della directory dei dati di QField in fondo alla schermata <code>About QField</code> nell'app.</p>
+<p>Di solito il percorso su Android assomiglia a qualcosa del genere: <code>/Android/data/ch.opengis.qfield/files/QField</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Unlike on *NIX systems where the file is named <code>.pg_service.conf</code>, the file on Android is named <code>pg_service.conf</code> without a leading dot sign (<code>.</code>).</p>
+<p>A differenza dei sistemi *NIX dove il file si chiama <code>.pg_service.conf</code>, su android si chiama <code>pg_service.conf</code> senza il punto iniziale (<code>.</code>).</p>
 </div>
-<h1 id="qfieldcloud">QFieldCloud<a class="headerlink" href="#qfieldcloud" title="Permanent link">&para;</a></h1>
-<p>QFieldCloud support <code>pg_service.conf</code> configurations too. You need to configure your PostgreSQL layers with "Offline editing" cloud action and store your service settings on QFieldCloud Project's Secrets page.</p>
-<p>Read more <a href="../../reference/qfieldcloud/secrets/">how to configure PostgreSQL service</a> in the QFieldCloud documentation.</p>
+<h1 id="qfieldcluod">QFieldCluod<a class="headerlink" href="#qfieldcluod" title="Permanent link">&para;</a></h1>
+<p>Anche QFieldCloud supporta configurazioni <code>pg_service.conf</code>. Devi configurare i tuoi layer con azione "Offline editing" e salvare la configurazione del progetto nella pagina dei segreti del progetto su QFieldCloud.</p>
+<p>Ottieni maggiori informazioni su <a href="../../reference/qfieldcloud/secrets/">come configurare servizi PostgreSQL</a> nella documentazione di QFieldCloud.</p>
 
   
   
