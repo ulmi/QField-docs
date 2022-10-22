@@ -1250,7 +1250,7 @@
         
   
   <span class="md-ellipsis">
-    Navigation
+    Navegación
     
   </span>
   
@@ -2594,18 +2594,18 @@
 <p>Este trabajo se activa cada vez que se sube un archivo a QFieldCloud, a menos que al menos una de las siguientes condiciones sea válida:</p>
 <ul>
 <li>Todavía no se ha cargado ningún archivo de proyecto QGIS (<code>.qgs</code>/<code>.qgz</code>).</li>
-<li>The uploaded file is within the <code>DCIM</code> directory. Those files are assumed to be irrelevant to project validity.</li>
-<li>There is already a <code>process_projectfile</code> job in <code>PENDING</code> status.</li>
+<li>El archivo cargado está dentro del directorio <code>DCIM</code>. Se supone que esos archivos son irrelevantes para la validez del proyecto.</li>
+<li>Ya hay un trabajo <code>process_projectfile</code> en estado <code>PENDING</code>.</li>
 </ul>
 <h4 id="solucionar-problemas">Solucionar problemas<a class="headerlink" href="#solucionar-problemas" title="Permanent link">&para;</a></h4>
-<p>A <code>process_projectfile</code> job might result in <code>FAILED</code> status. Check the non-exhaustive list of causes below:</p>
+<p>Un trabajo <code>process_projectfile</code> puede resultar en el estado <code>FAILED</code>. Compruebe la lista no exhaustiva de causas que aparece a continuación:</p>
 <ul>
-<li>The uploaded QGIS project file (<code>.qgs</code>/<code>.qgz</code>) is unreadable, incomplete, broken or wrong. Try to reupload the QGIS project file.</li>
-<li>QGIS is crashing after opening the project file. Try to identify the layer that is causing the crash by removing one layer at time from the project and reuploading the QGIS project file.</li>
+<li>El archivo de proyecto QGIS cargado (<code>.qgs</code>/<code>.qgz</code>) es ilegible, está incompleto, roto o es incorrecto. Intente volver a cargar el archivo de proyecto QGIS.</li>
+<li>QGIS se bloquea después de abrir el archivo de proyecto. Intente identificar la capa que está causando el bloqueo eliminando una capa a la vez del proyecto y volviendo a cargar el archivo de proyecto de QGIS.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Even if a <code>process_projectfile</code> job results in a <code>SUCCESS</code> status, it does not mean the project is properly configured. The <code>SUCCESS</code> status just states the project has been successfully opened and all the needed information has been extracted.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Incluso si un trabajo de <code>process_projectfile</code> resulta en un estado <code>SUCCESS</code>, no significa que el proyecto esté configurado correctamente. El estado <code>SUCCESS</code> sólo indica que el proyecto se ha abierto con éxito y que se ha extraído toda la información necesaria.</p>
 </div>
 <h3 id="trabajo-de-paquete-package">Trabajo de paquete (<code>package</code>)<a class="headerlink" href="#trabajo-de-paquete-package" title="Permanent link">&para;</a></h3>
 <p>El trabajo <code>package</code> convierte un proyecto QGIS en un proyecto QField, de la misma manera que se hace en QGIS a través de QFieldSync. El trabajo <code>package</code> preparará todas las capas marcadas como "Edición fuera de línea" a un único GeoPackage.</p>

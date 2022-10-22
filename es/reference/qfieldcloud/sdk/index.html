@@ -1250,7 +1250,7 @@
         
   
   <span class="md-ellipsis">
-    Navigation
+    Navegación
     
   </span>
   
@@ -2673,9 +2673,9 @@
   <h1>El SDK y el ILCI oficiales de QFieldCloud</h1>
 
 <p><code>qfieldcloud-sdk</code> es el cliente oficial para conectarse a la <a href="../api/">API QFieldCloud</a> ya sea como un módulo de python o directamente desde la línea de comandos.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><code>qfieldcloud-sdk</code> requires Python &gt;=3.6</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p><code>qfieldcloud-sdk</code> requiere Python &gt;=3.6</p>
 </div>
 <h2 id="instalar">Instalar<a class="headerlink" href="#instalar" title="Permanent link">&para;</a></h2>
 <p><code>pip install qfieldcloud-sdk</code></p>
@@ -2700,21 +2700,21 @@
 <div class="highlight"><pre><span></span><code>qfieldcloud-cli <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
 </code></pre></div>
 <h3 id="ejemplos">Ejemplos<a class="headerlink" href="#ejemplos" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># logs in user &quot;user&quot; with password &quot;pass&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># inicia la sesión del usuario &quot;user&quot; con la contraseña &quot;pass&quot;</span>
 qfieldcloud-cli login user pass
 
-<span class="c1"># gets the projects of user &quot;user&quot; with password &quot;pass&quot; at &quot;https://localhost/api/v1/&quot;</span>
+<span class="c1"># obtiene los proyectos del usuario &quot;user&quot; con contraseña &quot;pass&quot; en &quot;https://localhost/api/v1/&quot;</span>
 qfieldcloud-cli -u user -p pass -U https://localhost/api/v1/ list-projects
 
-<span class="c1"># gets the projects of user authenticated with token `QFIELDCLOUD_TOKEN` at &quot;https://localhost/api/v1/&quot; as JSON</span>
+<span class="c1"># obtiene los proyectos del usuario autenticado con el token `QFIELDCLOUD_TOKEN` en &quot;https://localhost/api/v1/&quot; como JSON</span>
 <span class="nb">export</span> <span class="nv">QFIELDCLOUD_URL</span><span class="o">=</span>https://localhost/api/v1/
 <span class="nb">export</span> <span class="nv">QFIELDCLOUD_TOKEN</span><span class="o">=</span>017478ee2464440cb8d3e98080df5e5a
 qfieldcloud-cli --json list-projects
 </code></pre></div>
 <h3 id="filtros">Filtros<a class="headerlink" href="#filtros" title="Permanent link">&para;</a></h3>
-<p>Some commands allow you to define a filter on the results based on the filename with the <code>--filter</code> option (e.g. the <code>download-files</code>
-command).</p>
-<p>The filters support Unix shell-style wildcards. The special characters used in shell-style wildcards are:</p>
+<p>Algunos comandos permiten definir un filtro en los resultados basado en el nombre del archivo con la opción <code>--filter</code> (por ejemplo, el comando <code>download-files</code>
+).</p>
+<p>Los filtros admiten comodines de tipo shell de Unix. Los caracteres especiales utilizados en los comodines de estilo shell son:</p>
 <table>
 <thead>
 <tr>
@@ -2742,7 +2742,7 @@ command).</p>
 </tbody>
 </table>
 <p>coincide con cualquier carácter que no esté en la secuencia |</p>
-<p>For a literal match, wrap the meta-characters in brackets. For example, <code>'[?]'</code> matches the character <code>'?'</code>.</p>
+<p>Para una coincidencia literal, envuelva los metacaracteres entre paréntesis. Por ejemplo, <code>'[?]'</code> coincide con el carácter <code>'?'</code>.</p>
 <h4 id="ejemplos_1">Ejemplos<a class="headerlink" href="#ejemplos_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>qfieldcloud-cli --filter 'DCIM/*.jpg'</code></li>
