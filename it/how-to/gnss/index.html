@@ -33,7 +33,7 @@
     
     
       
-        <title>Positioning (GNSS) - QField Ecosystem Documentation</title>
+        <title>Posizionamento (GNSS) - QField Ecosystem Documentation</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#positioning-gnss" class="md-skip">
+        <a href="#posizionamento-gnss" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Positioning (GNSS)
+              Posizionamento (GNSS)
             
           </span>
         </div>
@@ -1239,7 +1239,7 @@
           
   
   <span class="md-ellipsis">
-    Positioning (GNSS)
+    Posizionamento (GNSS)
     
   </span>
   
@@ -1252,7 +1252,7 @@
         
   
   <span class="md-ellipsis">
-    Positioning (GNSS)
+    Posizionamento (GNSS)
     
   </span>
   
@@ -1276,9 +1276,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visualization" class="md-nav__link">
+  <a href="#visualizzazione" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualization
+      Visualizzazione
     </span>
   </a>
   
@@ -1295,9 +1295,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vertex-log" class="md-nav__link">
+  <a href="#log-dei-vertici" class="md-nav__link">
     <span class="md-ellipsis">
-      Vertex log
+      Log dei vertici
     </span>
   </a>
   
@@ -1487,7 +1487,7 @@
         
   
   <span class="md-ellipsis">
-    Authentication
+    Autenticazione
     
   </span>
   
@@ -2328,9 +2328,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visualization" class="md-nav__link">
+  <a href="#visualizzazione" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualization
+      Visualizzazione
     </span>
   </a>
   
@@ -2347,9 +2347,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vertex-log" class="md-nav__link">
+  <a href="#log-dei-vertici" class="md-nav__link">
     <span class="md-ellipsis">
-      Vertex log
+      Log dei vertici
     </span>
   </a>
   
@@ -2452,33 +2452,24 @@
   </a>
 
 
-<h1 id="positioning-gnss">Positioning (GNSS)<a class="headerlink" href="#positioning-gnss" title="Permanent link">&para;</a></h1>
-<p>QField can make use of the internal GNSS (Global Navigation Satellite
-System, like GPS, GLONASS, Galileo or Beidou). QField can also connect
-to external antennas through bluetooth and directly integrate their NMEA
-stream.</p>
-<p>GNSS devices are also capable of measuring the altitude next to the current 2D
-position on the earth surface.</p>
-<h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
-<p>When positioning is activated, your position will be shown in blue on the map.
-Your location is visible either as a blue dot if you are still or as an arrow indicating your movement direction
-if you are moving.</p>
-<p>The blue beam indicates the current orientation of your device if the device has
-a builtin magnetic compass.</p>
-<p>A circle around your current position indicates the precision as reported by the
-positioning device.</p>
+<h1 id="posizionamento-gnss">Posizionamento (GNSS)<a class="headerlink" href="#posizionamento-gnss" title="Permanent link">&para;</a></h1>
+<p>QField può utilizzare il GNSS (Global Navigation Satellite
+System, come GPS, GLONASS, Galileo o Beidou). QField può anche connettersi ad un'antenna esterna tramite bluetooth e integrare direttamente il suo flusso NMEA.</p>
+<p>I dispositivi GNSS possono anche misurare l'altitudine sulla superficie terrestre vicina alla posizione 2D attuale.</p>
+<h2 id="visualizzazione">Visualizzazione<a class="headerlink" href="#visualizzazione" title="Permanent link">&para;</a></h2>
+<p>Quando la localizzazione è attivata, la tua posizione è visibile in blu sulla mappa.
+La tua posizione è visibile come un punto blu se sei fermo oppure come una freccia indicante la tua direzione se ti stati spostando.</p>
+<p>Il fascio blu indica l'orientamento del tuo dispositivo se dispone di una bussola magnetica.</p>
+<p>Un cerchio attorno alla tua posizione attuale indica la precisione come riportata dal dispositivo di localizzazione.</p>
 <h2 id="configurazione">Configurazione<a class="headerlink" href="#configurazione" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<h3 id="vertex-log">Vertex log<a class="headerlink" href="#vertex-log" title="Permanent link">&para;</a></h3>
-<p>It is possible to setup a log layer of the collected vertices. This
-allows to keep track of meta data for each vertex like GNSS quality
-attributes and more. To set this up, a point layer can be added to the
-project and attributes configured to store this information.</p>
+<h3 id="log-dei-vertici">Log dei vertici<a class="headerlink" href="#log-dei-vertici" title="Permanent link">&para;</a></h3>
+<p>È possibile configurare un layer con i log dei vertici raccolti. Questo permette di tener traccia dei metadati di ogni vertice, come ad esempio gli attributi di qualità GNSS e altro. Per configurare questo, un layer di tipo punto va aggiunto al progetto e gli attributi configurati per registrare queste informazioni.</p>
 <p><img alt="" src="../../assets/images/vertex_log1.png" width="600px" /></p>
-<p>Then you should assign the role <em>digitizing logger</em> on a point layer.</p>
-<p>Go to <em>QFieldSync &gt; Project Properties</em></p>
+<p>Poi devi assegnare il ruolo <em>digitizing logger</em> a un layer di tipo punto.</p>
+<p>Vai nel menu <em>QFieldSync &gt; Proprietà del progetto</em></p>
 <p><img alt="" src="../../assets/images/vertex_log2.png" width="600px" /></p>
-<p>The layer fields must have default value with GNSS variables.</p>
+<p>I campi del layer devono avere un valore di default impostato con le variabili GNSS.</p>
 <h3 id="accuracy-requirement">Accuracy requirement<a class="headerlink" href="#accuracy-requirement" title="Permanent link">&para;</a></h3>
 <p>A minimum desired accuracy for measurements can be defined. The quality
 will be reported in three classes, bad (red), ok (yellow) and excellent

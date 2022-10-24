@@ -846,9 +846,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#package-for-qfield" class="md-nav__link">
+  <a href="#confezionamento-per-qfield" class="md-nav__link">
     <span class="md-ellipsis">
-      Package for QField
+      Confezionamento per QField
     </span>
   </a>
   
@@ -1354,7 +1354,7 @@
         
   
   <span class="md-ellipsis">
-    Positioning (GNSS)
+    Posizionamento (GNSS)
     
   </span>
   
@@ -1464,7 +1464,7 @@
         
   
   <span class="md-ellipsis">
-    Authentication
+    Autenticazione
     
   </span>
   
@@ -2365,9 +2365,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#package-for-qfield" class="md-nav__link">
+  <a href="#confezionamento-per-qfield" class="md-nav__link">
     <span class="md-ellipsis">
-      Package for QField
+      Confezionamento per QField
     </span>
   </a>
   
@@ -2403,133 +2403,95 @@
 
 
 <h1 id="plugin-qfieldsync">Plugin QFieldSync<a class="headerlink" href="#plugin-qfieldsync" title="Permanent link">&para;</a></h1>
-<p>The QFieldSync plugin helps preparing and packaging QGIS projects for
-QField.</p>
-<p>QFieldSync supports your project preparation with automating the
-following:</p>
+<p>Il plugin QFieldSync aiuta a preparare e confezionare i progetti QGIS per QField.</p>
+<p>QFieldSync supporta la preparazione del tuo progetto automatizzando i seguenti punti:</p>
 <ul>
-<li>Required steps for project setup (e.g.
+<li>Passi richiesti per la configurazione del progetto (es.
     <code>portable_project</code>)</li>
-<li>Creating basemaps from a single raster layer or from a style defined
+<li>Creare mappe di base da un sigolo raster layer o da uno stile definito
     in una vista mappa.</li>
-<li>Configuring the offline editing functionality and synchronizing
-    changes back.</li>
+<li>Configurare le funzionalità di editing offline e sincronizzazione
+    delle modifiche</li>
 </ul>
 <h2 id="procedura">Procedura<a class="headerlink" href="#procedura" title="Permanent link">&para;</a></h2>
 <p>Per avere una visione d'insieme del processo, riportiamo una lista dei passaggi principali:</p>
 <ol>
-<li>Create a QField package. This is a working copy in a separate
-    cartella.</li>
+<li>Creare un pacchetto QField. Si tratta di una copia di lavoro in una
+    directory separata.</li>
 <li>Copiare il pacchetto QField sul proprio dispositivo.</li>
 <li>Andare sul campo e raccogliere i dati.</li>
 <li>Copiare i dati raccolti sul campo all'interno del proprio computer.</li>
 <li>Sincronizzazione dei dati raccolti con il proprio database o file.</li>
 </ol>
 <h2 id="installazione">Installazione<a class="headerlink" href="#installazione" title="Permanent link">&para;</a></h2>
-<p>In QGIS, open the plugin library and search for <strong>qfield sync</strong>. Select
-the plugin in the list and click on <strong>Install</strong>.</p>
+<p>In QGIS, apri il gestore dei plugin e cerca <strong>qfield sync</strong>. Seleziona il plugin dalla lista e premi il pulsante <strong>Installa</strong>.</p>
 <p>
-<figure><a data-caption="QField Sync in QGIS plugin repository" data-fancybox="gallery" href="../../../assets/images/qfield-sync_install.png"><img alt="QField Sync in QGIS plugin repository" src="../../../assets/images/qfield-sync_install.png" title="QField Sync in QGIS plugin repository" width="600px" /></a><figcaption>QField Sync in QGIS plugin repository</figcaption>
+<figure><a data-caption="QField Sync nel QGIS plugin repository" data-fancybox="gallery" href="../../../assets/images/qfield-sync_install.png"><img alt="QField Sync nel QGIS plugin repository" src="../../../assets/images/qfield-sync_install.png" title="QField Sync nel QGIS plugin repository" width="600px" /></a><figcaption>QField Sync nel QGIS plugin repository</figcaption>
 </figure>
 </p>
 <h2 id="configurazione">Configurazione<a class="headerlink" href="#configurazione" title="Permanent link">&para;</a></h2>
-<p>The project configuration is saved in the master .qgs project file. This
-way it is possible to pre-configure a project once and use it
-repeatedly.</p>
+<p>La configurazione del progetto è salvata nel file del progetto .qgs. In questo modo è possibili preconfigurare un progetto una sola volta è utilizzarlo ripetutamente.</p>
 <p>
-<figure><a data-caption="Configure project" data-fancybox="gallery" href="../../../assets/images/qfield-sync_configmenu.png"><img alt="Configure project" src="../../../assets/images/qfield-sync_configmenu.png" title="Configure project" width="600px" /></a><figcaption>Configure project</figcaption>
+<figure><a data-caption="Configurazione del progetto" data-fancybox="gallery" href="../../../assets/images/qfield-sync_configmenu.png"><img alt="Configurazione del progetto" src="../../../assets/images/qfield-sync_configmenu.png" title="Configurazione del progetto" width="600px" /></a><figcaption>Configurazione del progetto</figcaption>
 </figure>
 </p>
 <h3 id="configurazione-dei-layer">Configurazione dei layer<a class="headerlink" href="#configurazione-dei-layer" title="Permanent link">&para;</a></h3>
 <p>
-<figure><a data-caption="Configure the project layers" data-fancybox="gallery" href="../../../assets/images/qfield-sync_config.png"><img alt="Configure the project layers" src="../../../assets/images/qfield-sync_config.png" title="Configure the project layers" width="600px" /></a><figcaption>Configure the project layers</figcaption>
+<figure><a data-caption="Configurazione dei layer del progetto" data-fancybox="gallery" href="../../../assets/images/qfield-sync_config.png"><img alt="Configurazione dei layer del progetto" src="../../../assets/images/qfield-sync_config.png" title="Configurazione dei layer del progetto" width="600px" /></a><figcaption>Configurazione dei layer del progetto</figcaption>
 </figure>
 </p>
-<p>In the project configuration dialog, an <em>action</em> can be defined for each
-layer individually. Depending on the layer type, different types of
-actions are available.</p>
+<p>Nel dialogo di configurazione del progetto, un <em>azione</em> può essere impostata per ogni layer separatamente. A dipendenza del tipo di layer, differenti tipi di azioni sono disponibili.</p>
 <dl>
 <dt>Copia</dt>
 <dd>
-<p>The layer will be copied to the package folder. This is only
-available for file-based layers.</p>
+<p>Il layer verrà copiato nella directory del pacchetto. Questo è diponibile solamente per layer basati su file.</p>
 </dd>
 <dt>Nessuna azione</dt>
 <dd>
-<p>The layer source will be left untouched. This is only available for
-non-file-based layers like WMS, WFS, Postgis...</p>
+<p>La sorgente dati del layer non verrà modificata. Questo è disponibile solamente per layer non basati su file come WMS, WFS, Postgis...</p>
 </dd>
 <dt>Editing offline</dt>
 <dd>
-<p>A working copy of the layer is copied into the package folder. Every
-change which is done in the packaged project during work is recorded
-in a changelog. When synchronizing the changes back later on, this
-log will be replayed and all changes also be applied to the main
-data base. There is no conflict handling in place.</p>
+<p>Una copia di lavoro del layer è copiata nella directory del pacchetto. Ogni modifica eseguita nel progetto impacchettato durante il lavoro è registrata in un log. Quando in seguito si sincronizzano le modifiche, questo log sarà ripercorso e tutte le modifiche saranno applicate al database pricipale. Non è presente una gestione di conflitti.</p>
 </dd>
 <dt>Rimuovi</dt>
 <dd>
-<p>The layer will be removed from the working copy. This is useful if a
-layer is used in the basemap and will not be available in the
-packaged project.</p>
+<p>Il layer verrà rimosso dalla copia di lavoro. Questo è utile se un layer è usato nella mappa di base e non sarà disponibile nel progetto impacchettato.</p>
 </dd>
 </dl>
 <h3 id="configurazione-della-mappa-di-base">Configurazione della mappa di base<a class="headerlink" href="#configurazione-della-mappa-di-base" title="Permanent link">&para;</a></h3>
-<p>A base map is a raster layer which is added as the bottommost layer to
-the packaged project file.</p>
-<p>If the base map option is enabled, a base map will be rendered, whenever
-the project is packaged. The area of interest - the extent which will be
-rendered -will be chosen at packaging time.</p>
+<p>Una mappa di base è un layer raster che è aggiunto come ultimo layer al file del progetto impacchettato.</p>
+<p>Se l'opzione mappa di base è abilitata, una mappa di base sarà renderizzata quando il progetto verrà confezionato. L'area interessata - l'extent che verrà renderizzato - sarà scelta al momento del confezionamento.</p>
 <p>Ci sono due possibili opzioni per la mappa di base:</p>
 <dl>
 <dt>Layer</dt>
 <dd>
-<p>A raster layer. This is useful to take an offline copy of an online
-layer like a WMS or to take a working copy of an unsupported format
-like an ECW or MrSID layer.</p>
+<p>Un layer raster. Questo è utile per avere una copia offline di un layer online come un WMS o per avere una copia di lavoro di un layer con un formato non supportato come ECW o MrSID.</p>
 </dd>
 <dt>Tema Mappa</dt>
 <dd>
-<p>A map theme. This is useful to create a base map based on a
-combination of several layers with styling. These layers can then be
-removed from the working package and do not need to be rendered on
-the device. This can save some disk space and battery on the device.</p>
+<p>Un tema mappa. Questo è utile per creare un "tema mappa" basato su una combinazione di differenti layer e stili. Questi layer possono poi venir rimossi dal pacchetto di lavoro e non necessitano di essere renderizzati sul dispositivo. Questo può risparmiare un po' di spazio e batteria sul dispositivo.</p>
 </dd>
 </dl>
-<p>The tile size defines the spatial resolution. It determines the number
-of map units per pixel. If the map canvas CRS has meters as units and
-tile size is set to 1, each raster pixel will have a spatial extent of
-1x1 m, if it is set to 1000, each raster pixel will have a spatial
-extent of 1 square kilometer.</p>
+<p>La dimensione delle "tile" definisce la risoluzione spaziale. Determina il numero di unità di mappa per pixel. Se il CRS del map canvas ha metri come unità e la dimensione delle tile è impostata a 1, ogni pixel raster avrà una dimensione spaziale di 1x1 m, se è impostata a 1000, ogni pixel raster avrà una dimensione spaziale di 1 chilometro quadrato.</p>
 <h3 id="configurazione-dellediting-offline">Configurazione dell'editing offline<a class="headerlink" href="#configurazione-dellediting-offline" title="Permanent link">&para;</a></h3>
-<p>If <em>only synchronize features in area of interest</em> is checked, only
-features which are within the extent of the map canvas as packaging time
-will be copied to the offline editing working copy.</p>
-<h2 id="package-for-qfield">Package for QField<a class="headerlink" href="#package-for-qfield" title="Permanent link">&para;</a></h2>
-<p>Once the project is configured, package it in a folder. This folder will
-contain the .qgs and the data used in it.</p>
+<p>Se <em>sincronizza solamente elementi nell'area interessara</em> è vistato, solamente gli elementi che sono all'interno dell'area del map canvas nel momento della generazione del pacchetto verranno copiati nella copia offline di lavoro.</p>
+<h2 id="confezionamento-per-qfield">Confezionamento per QField<a class="headerlink" href="#confezionamento-per-qfield" title="Permanent link">&para;</a></h2>
+<p>Una volta che il progetto è configurato, impacchettalo in una directory. Questa directory conterrà il file .qgs e i dati utilizzati.</p>
 <p>
-<figure><a data-caption="Package the project for QField" data-fancybox="gallery" href="../../../assets/images/qfield-sync_package1.png"><img alt="Package the project for QField" src="../../../assets/images/qfield-sync_package1.png" title="Package the project for QField" width="600px" /></a><figcaption>Package the project for QField</figcaption>
+<figure><a data-caption="Confeziona il progetto per QField" data-fancybox="gallery" href="../../../assets/images/qfield-sync_package1.png"><img alt="Confeziona il progetto per QField" src="../../../assets/images/qfield-sync_package1.png" title="Confeziona il progetto per QField" width="600px" /></a><figcaption>Confeziona il progetto per QField</figcaption>
 </figure>
 </p>
-<p>Copy the folder on your device. Open QField, open the project and start
-collecting data.</p>
-<p>Make also sure to save the QGIS project using the regular Save As of
-QGIS as you'll have to re-open it later when you want to synchronize
-the changes.</p>
+<p>Copia la directory sul tuo dispositivo. Apri QField, apri il progetto e inizia a raccogliere dati.</p>
+<p>Salva sempre il progetto QGIS usando il solito "Salva con nome" di QGIS perché dovrai riaprirlo in seguito quando vorrai sincronizzare le modifiche.</p>
 <h2 id="sincronizza-da-qfield">Sincronizza da QField<a class="headerlink" href="#sincronizza-da-qfield" title="Permanent link">&para;</a></h2>
-<p>When you want to synchronize what you have collected, re-open the
-project in QGIS (the one you saved with a regular Save As).</p>
-<p>Copy the project folder from your device to your computer and use the
-<strong>Synchronize from QField</strong> menu to synchronize your changes from the
-protable project to the main project.</p>
+<p>Quando vuoi sincronizzare i dati raccolti, riapri il progeto in QGIS (quello che hai salvato con "Salva con nome")</p>
+<p>Copia la directory del progetto dal tuo dispositivo al tuo computer e usa il menu <strong>Sincronizza da QField</strong> per sincronizzare le modifiche dal progetto portabile al progetto principale.</p>
 <p>
-<figure><a data-caption="Synchronize from QField" data-fancybox="gallery" href="../../../assets/images/qfield-sync_sync.png"><img alt="Synchronize from QField" src="../../../assets/images/qfield-sync_sync.png" title="Synchronize from QField" width="600px" /></a><figcaption>Synchronize from QField</figcaption>
+<figure><a data-caption="Sincronizza da QField" data-fancybox="gallery" href="../../../assets/images/qfield-sync_sync.png"><img alt="Sincronizza da QField" src="../../../assets/images/qfield-sync_sync.png" title="Sincronizza da QField" width="600px" /></a><figcaption>Sincronizza da QField</figcaption>
 </figure>
 </p>
-<p>Make sure that you synchronize your data back only once. That means, if
-you go out again to collect more data, you should create a new QField
-package before to avoid sync problems later on (like e.g. duplicates).</p>
+<p>Sincronizza i tuoi dati solamente una volta. Questo significa che se vai di nuovo sul terreno a raccogliere ulteriori dati, dovresti prima creare un nuovo pacchetto QField per evitare problemi di sincronizzazione in seguito (es. duplicati).</p>
 
   
   

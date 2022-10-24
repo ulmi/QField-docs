@@ -2579,14 +2579,13 @@
 <p class="admonition-title">Nota</p>
 </div>
 <p>Todos los trabajos pueden ser desencadenados usando la API de QFieldCloud.</p>
-<div class="admonition advertencia">
-<p class="admonition-title">Advertencia</p>
-<p>Cualquiera de las condiciones de activación descritas en esta página puede cambiar sin previo aviso.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>Any of the triggering conditions described on this page might change without notice.</li>
+<li>All jobs must finish within 10 minutes or they will result in a timeout error and will be terminated.</li>
+</ul>
 </div>
-<div class="admonition advertencia">
-<p class="admonition-title">Advertencia</p>
-</div>
-<p>Todos los trabajos deben terminar antes de 10 minutos o darán lugar a un error de tiempo de espera y serán terminados.</p>
 <h2 id="tipos-de-trabajo">Tipos de trabajo<a class="headerlink" href="#tipos-de-trabajo" title="Permanent link">&para;</a></h2>
 <h3 id="trabajo-de-procesar-el-archivo-de-proyecto-process_projectfile">Trabajo de procesar el archivo de proyecto (<code>process_projectfile</code>)<a class="headerlink" href="#trabajo-de-procesar-el-archivo-de-proyecto-process_projectfile" title="Permanent link">&para;</a></h3>
 <p>La tarea de procesar el archivo de proyecto se utiliza para extraer detalles sobre la configuración del proyecto y las capas del proyecto, como el SRC del proyecto, el SRC de la capa, el nombre de la capa, la validez de la capa, etc. QFieldCloud valida el archivo de proyecto QGIS cargado (<code>.qgs</code>/<code>.qgz</code>), así como los GeoPackages de apoyo, TIFFs y otros archivos de origen de datos. También valida la conexión remota a PostGIS, WFS, WMS y otras fuentes de datos en línea. QFieldCloud abrirá el archivo de proyecto en una instancia de QGIS en el servidor para extraer toda la información necesaria.</p>
