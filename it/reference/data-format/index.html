@@ -1664,9 +1664,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-examples-with-cog" class="md-nav__link">
+  <a href="#esempi-avanzati-con-cog" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced examples with COG
+      Esempi avanzati con COG
     </span>
   </a>
   
@@ -2268,9 +2268,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-examples-with-cog" class="md-nav__link">
+  <a href="#esempi-avanzati-con-cog" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced examples with COG
+      Esempi avanzati con COG
     </span>
   </a>
   
@@ -2379,22 +2379,22 @@ per condividere le tue scoperte. Se non funziona, per favore <a href="https://gi
 <h3 id="formato-raster">Formato Raster<a class="headerlink" href="#formato-raster" title="Permanent link">&para;</a></h3>
 <p>I dati raster possono diventare velocemente piuttosto grandi, quando si lavora con file tiff non compressi si tratta spesso di diversi Gb di dati. Specialmente su dispositivi mobili questo non è efficiente.</p>
 <h3 id="utilizza-cog-cloud-optimized-geotiff">Utilizza COG (Cloud Optimized GeoTIFF)<a class="headerlink" href="#utilizza-cog-cloud-optimized-geotiff" title="Permanent link">&para;</a></h3>
-<p>The <a href="https://www.cogeo.org/">Cloud Optimized Geotiff (COG)</a> format will offer best user experience for offline basemaps.
-Combined with JPEG compression, it will reduce the raster size.</p>
-<p>The following commands will convert a file called <code>raster.tif</code> to a COG file <code>raster_cog.tif</code> using JPEG compression.</p>
+<p>Il formato <a href="https://www.cogeo.org/">Cloud Optimized Geotiff (COG)</a> offre la migliore esperienza per l'utente per quanto riguarda le mappe di base offline.
+Combinato con la compressione JPEG riduce la dimensione dei raster.</p>
+<p>Il seguente comando converte un file chiamato <code>raster.tif</code> in un file COG <code>raster_cog.tif</code> usando compressione JPEG.</p>
 <div class="highlight"><pre><span></span><code>gdal_translate raster.tif raster_cog.tif -of COG -co <span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span> -co <span class="nv">COMPRESS</span><span class="o">=</span>JPEG -co <span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span> -co <span class="nv">BIGTIFF</span><span class="o">=</span>YES
 </code></pre></div>
-<h3 id="advanced-examples-with-cog">Advanced examples with COG<a class="headerlink" href="#advanced-examples-with-cog" title="Permanent link">&para;</a></h3>
-<p>If you have several files to assemble, first, you need to create a VRT files with QGIS or trough following commands to index all TIF files inside a directory.  Make sure you adjust <code>EPSG:2056</code> to your desired CRS.</p>
+<h3 id="esempi-avanzati-con-cog">Esempi avanzati con COG<a class="headerlink" href="#esempi-avanzati-con-cog" title="Permanent link">&para;</a></h3>
+<p>Se hai più file da combinare assieme, per prima cosa devi creare un file VRT con QGIS o tramite i seguenti comandi per indicizzare tutti i file TIF all'interno di una directory. Modifica <code>EPSG:2056</code> con il tuo CRS desiderato.</p>
 <div class="highlight"><pre><span></span><code>gdalbuildvrt raster_mosaic.vrt TIF_Directory/*.tif -addalpha -hidenodata -a_srs EPSG:2056
 </code></pre></div>
-<p>Then convert VRT file to COG.</p>
+<p>Quindi converti il file VRT in COG.</p>
 <div class="highlight"><pre><span></span><code>gdal_translate raster_mosaic.vrt raster_cog.tif -of COG -co <span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span> -co <span class="nv">COMPRESS</span><span class="o">=</span>JPEG -co <span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span> -co <span class="nv">BIGTIFF</span><span class="o">=</span>YES
 </code></pre></div>
-<p>If the raster data is too low quality, adjust the compression level and set QUALITY=85.</p>
-<p>Some extra parameters can be set :</p>
+<p>Se i dati raster sono di qualità troppo bassa, adatta il livello di compressione e imposta QUALITY=85.</p>
+<p>Alcuni parametri extra disponibili:</p>
 <ul>
-<li><code>a_srs</code> can be used also in gdal_translate command when CRS is not define in the source raster dataset.</li>
+<li><code>a_srs</code> può venir usato anche nel comando gdal_translate quando il CRS non è definito nel dataset raster.</li>
 <li><code>OVERVIEW_RESAMPLING</code>offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.</li>
 <li><code>NUM_THREADS</code> will help you to balance between use all your CPU ressources or only part. Set ALL_CPUS or define the number of thread you want to use.</li>
 </ul>
