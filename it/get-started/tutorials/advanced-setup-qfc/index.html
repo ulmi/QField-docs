@@ -726,19 +726,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lavorare-con-i-geopacchetti" class="md-nav__link">
+  <a href="#lavorare-con-i-geopackages" class="md-nav__link">
     <span class="md-ellipsis">
-      Lavorare con i GeoPacchetti
+      Lavorare con i GeoPackages
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lavorare con i GeoPacchetti">
+    <nav class="md-nav" aria-label="Lavorare con i GeoPackages">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#esempio-di-flusso-di-lavoro-geopacchetti" class="md-nav__link">
+  <a href="#esempio-di-flusso-di-lavoro-geopackage" class="md-nav__link">
     <span class="md-ellipsis">
-      Esempio di flusso di lavoro (GeoPacchetti)
+      Esempio di flusso di lavoro (GeoPackage)
     </span>
   </a>
   
@@ -2293,19 +2293,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lavorare-con-i-geopacchetti" class="md-nav__link">
+  <a href="#lavorare-con-i-geopackages" class="md-nav__link">
     <span class="md-ellipsis">
-      Lavorare con i GeoPacchetti
+      Lavorare con i GeoPackages
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lavorare con i GeoPacchetti">
+    <nav class="md-nav" aria-label="Lavorare con i GeoPackages">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#esempio-di-flusso-di-lavoro-geopacchetti" class="md-nav__link">
+  <a href="#esempio-di-flusso-di-lavoro-geopackage" class="md-nav__link">
     <span class="md-ellipsis">
-      Esempio di flusso di lavoro (GeoPacchetti)
+      Esempio di flusso di lavoro (GeoPackage)
     </span>
   </a>
   
@@ -2366,16 +2366,16 @@
 <p>Abbiamo un <a href="https://github.com/opengisch/qfieldcloud/discussions">forum di discussione</a> nel quale puoi sottoporre i tuoi dubbi, domande e idee. Non esitare a visitarlo.</p>
 </div>
 <h2 id="estensioni-vettoriali-supportate">Estensioni vettoriali supportate<a class="headerlink" href="#estensioni-vettoriali-supportate" title="Permanent link">&para;</a></h2>
-<p>Attualmente QFieldCloud supporta layer in formato GeoPacchetto e PostGIS per la modifica collaborativa. Dovrebbero funzionare anche altri formati supportati da QGIS ma non sono ufficialmente supportati.</p>
-<h2 id="lavorare-con-i-geopacchetti">Lavorare con i GeoPacchetti<a class="headerlink" href="#lavorare-con-i-geopacchetti" title="Permanent link">&para;</a></h2>
-<p>Usare i GeoPacchetti è solitamente la miglior soluzione per un setup semplice finalizzato a centralizzare i dati collezionati dai tuoi utenti QField in un unico file.</p>
+<p>Attualmente QFieldCloud supporta layer in formato GeoPackage e PostGIS per la modifica collaborativa. Dovrebbero funzionare anche altri formati supportati da QGIS ma non sono ufficialmente supportati.</p>
+<h2 id="lavorare-con-i-geopackages">Lavorare con i GeoPackages<a class="headerlink" href="#lavorare-con-i-geopackages" title="Permanent link">&para;</a></h2>
+<p>Usare i GeoPackages è solitamente la miglior soluzione per un setup semplice finalizzato a centralizzare i dati collezionati dai tuoi utenti QField in un unico file.</p>
 <p>Per stabilire relazioni fra i layer, si raccomanda di aggiungere il campo UUID in ciascuna tabella, ed utilizzarlo come chiave esterna in alternativa ai valori del campo <code>fid</code> dei GeoPacchetti, in quanto soggetti a cambiamenti, e per evitare conflitti nel caso due persone inseriscano nuovi elementi contemporaneamente.</p>
-<h3 id="esempio-di-flusso-di-lavoro-geopacchetti">Esempio di flusso di lavoro (GeoPacchetti)<a class="headerlink" href="#esempio-di-flusso-di-lavoro-geopacchetti" title="Permanent link">&para;</a></h3>
+<h3 id="esempio-di-flusso-di-lavoro-geopackage">Esempio di flusso di lavoro (GeoPackage)<a class="headerlink" href="#esempio-di-flusso-di-lavoro-geopackage" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Setup su QGIS desktop:<ol>
 <li>Creare un nuovo progetto.</li>
-<li>Creare un layer di tipo GeoPacchetto e salvarlo nella medesima cartella del progetto QGIS.</li>
-<li>Impostare il GeoPacchetto in "Modifica offline" all'interno del plugin QFieldSync.</li>
+<li>Creare un layer GeoPackage e salvarlo nella medesima cartella del progetto QGIS.</li>
+<li>Impostare il GeoPackage in "Modifica offline" all'interno del plugin QFieldSync.</li>
 <li>Caricare il progetto su QField cloud</li>
 </ol>
 </li>
@@ -2385,13 +2385,13 @@
 </ol>
 </li>
 <li>Scaricare i risultati su QGIS Desktop:<ol>
-<li>Da QFieldSync, scaricare i file aggiornati (il file GeoPacchetto dovrebbe essere cambiato).</li>
+<li>Da QFieldSync, scaricare i file aggiornati (il file GeoPackage dovrebbe essere cambiato).</li>
 </ol>
 </li>
 </ol>
 <div class="admonition attenzione">
 <p class="admonition-title">Attenzione</p>
-<p>Questo flusso di lavoro non supporta la modifica del GeoPacchetto sul desktop, poiché essendo una base di file, l'intero GeoPacchetto verrà sostituito. Ciò significa che i dati possono essere digitalizzati solo utilizzando QFieldCloud.</p>
+<p>Questo flusso di lavoro non supporta la modifica del GeoPackage sul desktop, poiché essendo una base di file, l'intero GeoPackage verrà sostituito. Ciò significa che i dati possono essere digitalizzati solo utilizzando QFieldCloud.</p>
 </div>
 <h2 id="postgis">PostGIS<a class="headerlink" href="#postgis" title="Permanent link">&para;</a></h2>
 <p>L'uso dei layer PostGIS è una buona scelta se si desidera che i dati dei propri utenti QField vengano aggiornati direttamente nel proprio database da QFieldCloud quando sincronizzano il proprio lavoro senza passaggi ulteriori.</p>
@@ -2402,7 +2402,7 @@
 <li>Creare un nuovo progetto.</li>
 <li>Aggiungere un layer PostGIS, assicurandosi di memorizzare le credenziali nel progetto.</li>
 <li>Assicurarsi che la connessione al database PostGIS sia pubblicamente accessibile (IP pubblico o nome di dominio, non funzionerà con 127.0.0.1 o localhost).</li>
-<li>Nelle impostazioni di progetto di QFieldSync, impostare il GeoPacchetto in <code>Modifica offline</code> se i propri utenti QField non disporranno di una connessione Internet affidabile sul campo oppure in <code>Accesso diretto al database</code>.</li>
+<li>Nelle impostazioni di progetto di QFieldSync, impostare il GeoPackage in <code>Modifica offline</code> se i propri utenti QField non disporranno di una connessione Internet affidabile sul campo oppure in <code>Accesso diretto al database</code>.</li>
 <li>Caricare il progetto su QField cloud</li>
 </ol>
 </li>
@@ -2420,7 +2420,7 @@
     Quando si utilizza <code>Accesso diretto al database</code>, QFieldCloud modificherà direttamente i dati sul database PostGIS. Questo funzionerà solo con una connessione Internet affidabile sul campo, ma ha il vantaggio che tutti i dati sono direttamente visibili a tutti gli utenti e consente di utilizzare qualsiasi configurazione specifica di PostGIS (trigger, campi generati, ecc.).</p>
 <div class="admonition nota">
 <p class="admonition-title">Nota</p>
-<p>Quando si utilizza la <code>Modifica offline</code>, QField lavorerà su una copia locale del database in un GeoPacchetto, che verrà sincronizzato da QFieldCloud con il database originale. Questa è la scelta migliore se la connessione sul campo non è affidabile. Le modifiche saranno visibili agli utenti dopo la sincronizzazione con QFieldCloud. Poiché viene creata una copia locale, le funzionalità avanzate di PostGIS non saranno disponibili su QField. Come per i normali GeoPacchetti, se si definiscono relazioni, si consiglia di utilizzare UUID anziché chiavi primarie intere per evitare conflitti se più utenti creano dati contemporaneamente.</p>
+<p>Quando si utilizza la <code>Modifica offline</code>, QField lavorerà su una copia locale del database in un GeoPackage, che verrà sincronizzato da QFieldCloud con il database originale. Questa è la scelta migliore se la connessione sul campo non è affidabile. Le modifiche saranno visibili agli utenti dopo la sincronizzazione con QFieldCloud. Poiché viene creata una copia locale, le funzionalità avanzate di PostGIS non saranno disponibili su QField. Come per i normali GeoPackages, se si definiscono relazioni, si consiglia di utilizzare UUID anziché chiavi primarie intere per evitare conflitti se più utenti creano dati contemporaneamente.</p>
 </div>
 
   
