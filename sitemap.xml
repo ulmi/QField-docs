@@ -287,6 +287,17 @@
          
     </url>
     <url>
+         <loc>https://docs.qfield.org/how-to/measuring-tool/</loc>
+         <lastmod>2022-11-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/measuring-tool/"/>
+         <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/measuring-tool/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://docs.qfield.org/fr/how-to/measuring-tool/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="https://docs.qfield.org/it/how-to/measuring-tool/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="https://docs.qfield.org/es/how-to/measuring-tool/"/>
+         
+    </url>
+    <url>
          <loc>https://docs.qfield.org/how-to/movable-project/</loc>
          <lastmod>2022-11-06</lastmod>
          <changefreq>daily</changefreq>

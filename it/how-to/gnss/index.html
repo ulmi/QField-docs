@@ -983,6 +983,8 @@
       
         
       
+        
+      
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -1032,7 +1034,7 @@
         
   
   <span class="md-ellipsis">
-    Project selection
+    Selezione del progetto
     
   </span>
   
@@ -1055,6 +1057,28 @@
   
   <span class="md-ellipsis">
     Interazione con la mappa
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../measuring-tool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring tool
     
   </span>
   
@@ -2512,72 +2536,72 @@ traccia della qualità dei singoli punti misurati.</p>
 <li><code>@position_coordinate</code> - Un punto con la coordinata in WGS84. Lon, Lat, Altitude come
         trasmessa dal sensore. È disponibile solamente quando il mirino
         è agganciato al sensore. - <code>x(@position_coordinate)</code> - IE</li>
-<li><code>@position_horizontal_accuracy</code> - The horizontal accuracy of the coordinate (in meters) as
-        reported by the sensor. It is only available when the crosshair
-        is snapped to the sensor. - IE</li>
-<li><code>@position_timestamp</code> - The timestamp of the position in UTC as reported by the sensor.
-        It is only available when the crosshair is snapped to the
-        sensor. - IE</li>
+<li><code>@position_horizontal_accuracy</code> - L'accuratezza verticale delle coordinate (in metri) come
+        riportato dal sensore. È disponibile solamente quando il mirino
+        è agganciato al sensore. - IE</li>
+<li><code>@position_timestamp</code> - Il timestamp della posizione in UTC come riportato dal sensore.
+        È disponibile solamente quando il mirino è agganciato al
+        sensore. - IE</li>
 <li><code>@position_direction</code> - La direzione del movimento in gradi dal vero nord, come riportato
         dal sensore. È disponibile solamente quando il mirino è
         agganciato al sensore. - IE</li>
-<li><code>@position_ground_speed</code> - velocità al suolo (in m/s) come riportato dal sensore. È disponibile solamente
+<li><code>@position_ground_speed</code> - Velocità al suolo (in m/s) come riportato dal sensore. È disponibile solamente
         quando il mirino è agganciato al sensore. - IE</li>
-<li><code>@position_magnetic_variation</code> - The angle between the horizontal component of the magnetic field
-        and true north, in degrees as reported by the sensor. Also known
-        as magnetic declination. A positive value indicates a clockwise
-        direction from true north and a negative value indicates a
-        counter-clockwise direction. It is only available when the
-        crosshair is snapped to the sensor. - IE</li>
+<li><code>@position_magnetic_variation</code> - L'angolo tra la componente orizzontale del campo magnetico
+        e il nord vero, in gradi come riportato dal sensore. Noto anche
+        come declinazione magnetica. Un valore positivo indica una direzione
+        in senso orario dal vero nord e in valore negatiovo indica una
+        direzione in senso antiorario. È disponibile solamente quando il
+        mirino viene agganciato al sensore. - IE</li>
 <li><code>@position_vertical_accuracy</code> - L'accuratezza verticale delle coordinate (in metri) come riportato
         dal sensore. È disponibile solamente quando il mirino è
         agganciato al sensore. - IE</li>
-<li><code>@position_3d_accuracy</code> - The 3 dimensional accuracy of the coordinate (in meters), 3D-RMS
-        as reported by the sensor. It is only available when the
-        crosshair is snapped to the sensor. - IE</li>
-<li><code>@position_vertical_speed</code> - The vertical speed (in m/s) as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - IE</li>
-<li><code>@position_averaged_count</code> - This variable holds the number of collected positions from
-        which an averaged position was calculated when digitizing in this mode. For non-averaged
-        positions, the value will be set to <code>0</code> (zero). - IE</li>
-<li><code>@position_pdop</code> - Position dilution of precision as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - E</li>
-<li><code>@position_hdop</code> - Horizontal dilution of precision as reported by the sensor. It
-        is only available when the crosshair is snapped to the sensor. - E</li>
-<li><code>@position_vdop</code> - Vertical dilution of precision as reported by the sensor. It is
-        only available when the crosshair is snapped to the sensor. - E</li>
-<li><code>@position_number_of_used_satellites</code> - Number of satellites as reported by the sensor. It is only
+<li><code>@position_3d_accuracy</code> - La precisione tridimensionale della coordinata (in metri), 3D-RMS
+        come riportato dal sensore. È disponibile solamente quando il 
+        mirino è agganciato al sensore. - IE</li>
+<li><code>@position_vertical_speed</code> - La velocità verticale (in m/s) come riportato dal sensore. È
+        disponibile solamente quando il mirino è agganciato al sensore. - IE</li>
+<li><code>@position_averaged_count</code> - Questa variabile contiene il numero di posizioni raccolte da
+        da cui è stata calcolata una posizione media durante la digitalizzazione in questa modalità. Per posizioni
+        non medie, il valore sarà impostato su <code>0</code> (zero). - IE</li>
+<li><code>@position_pdop</code> - Diluizione di precisione della posizione come riportato dal sensore. È
+        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
+<li><code>@position_hdop</code> - Diluizione orizzontale della precisione come riportato dal sensore. È
+        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
+<li><code>@position_vdop</code> - Diluizione verticale della precisione come riportato dal sensore. È
+        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
+<li><code>@position_number_of_used_satellites</code> - Numero di satelliti come riportato dal sensore. È disponibile solamente
         quando il mirino è agganciato al sensore. - IE</li>
-<li><code>@position_used_satellites</code> - A list of satellites in use (pri) as reported by the sensor. It
-        is only available when the crosshair is snapped to the sensor. - <code>array_length(@position_used_satellites)</code> - E</li>
-<li><code>@position_fix_status_description</code> - The GPS Fix Status "NoData", "NoFix", "Fix2D" or "Fix3D"
-        as reported by the sensor. It is only available when the
-        crosshair is snapped to the sensor. - E</li>
-<li><code>@position_fix_mode</code> - Fix mode (where "M" = Manual, forced to operate in 2D or 3D or
-        "A" = Automatic, 3D/2D) as reported by the sensor. It is only
-        available when the crosshair is snapped to the sensor. - E</li>
+<li><code>@position_used_satellites</code> - Una lista dei satelliti in uso (pri) come riportato dal sensore. È
+       disponibile solamente quando il mirino è agganciato al sensore. - <code>array_length(@position_used_satellites)</code> - E</li>
+<li><code>@position_fix_status_description</code> - Il Fix Status del GPS "NoData", "NoFix", "Fix2D" o "Fix3D"
+        come riportato dela sensore. È disponibile solamente quando il
+        mirino è agganciato al sensore. - E</li>
+<li><code>@position_fix_mode</code> - Modalità di fissaggio (dove "M" = Manuale, obbligato ad operare in 2D o 3D o
+        "A" = Automatico, 3D/2D) come riportato dal sensore. È disponibile
+        solamente quando il mirino è agganciato al sensore. - E</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>I: Internal position source E: External (NMEA) position source</p>
+<div class="admonition informazione">
+<p class="admonition-title">Informazione</p>
+<p>I: sorgente di posizione Interna E: sorgente di posizione Esterna (NMEA)</p>
 </div>
-<p>All <code>@position_*</code> variables have a corresponding <code>@gnss_*</code> variable.
-The gnss variables always report the gnss sensor values, even when the
-crosshair is not snapped.</p>
+<p>Tutte le variabili <code>@position_*</code> hanno una variabile <code>@gnss_*</code> corrispondente.
+Le variabili gnss riportano sempre i valori del sensore gnss, anche quando il
+il mirino non è agganciato.</p>
 <dl>
 <dt>Esempi:</dt>
 <dd>
 <ul>
-<li>when the crosshair is snapped to the sensor - <code>@gnss_horizontal_accuracy</code> &gt; The
-        horizontal accuracy of the coordinate (in meters) as
-        reported by the sensor. - <code>@position_horizontal_accuracy</code> &gt; The
-        horizontal accuracy of the coordinate (in meters) as
-        reported by the sensor. - <code>@position_source_name</code> --&gt; sensor name.</li>
-<li>when the crosshair is manually moved - <code>@gnss_horizontal_accuracy</code> &gt; The
-        horizontal accuracy of the coordinate (in meters) as
-        reported by the sensor. - <code>@position_horizontal_accuracy</code> &gt; The value
-        is <code>NULL</code>. - <code>@position_source_name</code> &gt; The value is
-        <code>manual</code>.</li>
+<li>quando il mirino è agganciato al sensore - <code>@gnss_horizontal_accuracy</code> &gt; L'
+        L'accuratezza orizzontale delle coordinate (in metri) come
+        riportato dal sensore. - <code>@position_horizontal_accuracy</code> &gt; L'
+        accuratezza orizzontale delle coordinate (in metri) come
+        riportato dal sensore. - <code>@position_source_name</code> --&gt; nome del sensore.</li>
+<li>quando il mirino è mosso manualmente - <code>@gnss_horizontal_accuracy</code> &gt; L'
+        accuratezza orizziontale delle coordinate (in metri) come
+        riportato dal sensore. - <code>@position_horizontal_accuracy</code> &gt; Il valore
+        è <code>NULL</code>. - <code>@position_source_name</code> &gt; Il valore è
+        <code>manuale</code>.</li>
 </ul>
 </dd>
 </dl>
