@@ -1214,18 +1214,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-handling" class="md-nav__link">
+  <a href="#gestione-chiavi" class="md-nav__link">
     <span class="md-ellipsis">
-      Key handling
+      Gestione chiavi
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#many-to-many-relations" class="md-nav__link">
+  <a href="#relazioni-molti-a-molti" class="md-nav__link">
     <span class="md-ellipsis">
-      Many-To-Many relations
+      Relazioni Molti-a-molti
     </span>
   </a>
   
@@ -1246,9 +1246,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-a-value-relation-widget" class="md-nav__link">
+  <a href="#configurare-un-widget-di-relazione-dei-valori" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure a Value Relation Widget
+      Configurare un Widget di Relazione dei Valori
     </span>
   </a>
   
@@ -1264,13 +1264,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#define-constraints" class="md-nav__link">
+  <a href="#definire-vincoli" class="md-nav__link">
     <span class="md-ellipsis">
-      Define Constraints
+      Definire Vincoli
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Define Constraints">
+    <nav class="md-nav" aria-label="Definire Vincoli">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1321,9 +1321,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-auto-complete-value" class="md-nav__link">
+  <a href="#configurare-valore-completamento-automatico" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Auto-complete Value
+      Configurare Valore Completamento Automatico
     </span>
   </a>
   
@@ -1502,7 +1502,7 @@
         
   
   <span class="md-ellipsis">
-    Tracking
+    Tracciamento
     
   </span>
   
@@ -2015,7 +2015,7 @@
         
   
   <span class="md-ellipsis">
-    Technical specs
+    Specifiche tecniche
     
   </span>
   
@@ -2455,18 +2455,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-handling" class="md-nav__link">
+  <a href="#gestione-chiavi" class="md-nav__link">
     <span class="md-ellipsis">
-      Key handling
+      Gestione chiavi
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#many-to-many-relations" class="md-nav__link">
+  <a href="#relazioni-molti-a-molti" class="md-nav__link">
     <span class="md-ellipsis">
-      Many-To-Many relations
+      Relazioni Molti-a-molti
     </span>
   </a>
   
@@ -2487,9 +2487,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-a-value-relation-widget" class="md-nav__link">
+  <a href="#configurare-un-widget-di-relazione-dei-valori" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure a Value Relation Widget
+      Configurare un Widget di Relazione dei Valori
     </span>
   </a>
   
@@ -2505,13 +2505,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#define-constraints" class="md-nav__link">
+  <a href="#definire-vincoli" class="md-nav__link">
     <span class="md-ellipsis">
-      Define Constraints
+      Definire Vincoli
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Define Constraints">
+    <nav class="md-nav" aria-label="Definire Vincoli">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2562,9 +2562,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-auto-complete-value" class="md-nav__link">
+  <a href="#configurare-valore-completamento-automatico" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Auto-complete Value
+      Configurare Valore Completamento Automatico
     </span>
   </a>
   
@@ -2686,30 +2686,26 @@
 </p>
 <p>The relation widget shows all the referencing child features in a list.
 It is possible to add, delete and open them.</p>
-<p>The visual identification of the list entries are done via the <em>Display Expression</em> of the child layer.</p>
-<h3 id="key-handling">Key handling<a class="headerlink" href="#key-handling" title="Permanent link">&para;</a></h3>
-<p>Since the parents primary keys are used as foreign keys on the
-referencing child features, these primary keys must be save to use even
-after the synchronization back to the original data. Therefore we
-recommend to use stable values such as UUIDs for primary keys.</p>
+<p>L'identificazione visiva delle voci della lista avviene tramite il <em>Mostra Espressione</em> del layer figlio.</p>
+<h3 id="gestione-chiavi">Gestione chiavi<a class="headerlink" href="#gestione-chiavi" title="Permanent link">&para;</a></h3>
+<p>Poiché le chiavi primarie dei layer padre sono utilizzate come chiavi esterne negli
+elementi dei layer figli di riferimento, queste chiavi primarie devono essere conservate per l'uso anche
+dopo la sincronizzazione con i dati originali. Pertanto,
+si consiglia di utilizzare valori stabili come UUIDs per le chiavi primarie.</p>
 <p>It is possible to already add children from a parent that is about to be
 added. This possibility will be blocked if there is no valid primary key
 on the parent or the constraints are violated. In case the adding of the
 parent feature is canceled after some children have been added already,
 the children are deleted as well.</p>
-<h3 id="many-to-many-relations">Many-To-Many relations<a class="headerlink" href="#many-to-many-relations" title="Permanent link">&para;</a></h3>
-<p>On many-to-many relationships, according to the cardinality setting in
-the <em>QGIS Vector Layer Properties</em>, on adding, deleting or opening an
-entry in the list effects directly the child layer (on direct
-cardinality) or the linking table (on many-to-one cardinality).</p>
-<p>The second case is usually used when there are additional relation
-information (e.g. percentage) in the linking table.</p>
+<h3 id="relazioni-molti-a-molti">Relazioni Molti-a-molti<a class="headerlink" href="#relazioni-molti-a-molti" title="Permanent link">&para;</a></h3>
+<p>Nelle relazioni molti-a-molti, secondo la configurazione della cardinalità nelle <em>Proprietà del Layer Vettoriale in QGIS</em>, l'aggiunta, l'eliminazione o l'apertura di una voce nella lista influisce direttamente sul layer figlio (nel caso di cardinalità diretta) o sulla tabella di collegamento (nel caso di cardinalità molti-a-uno).</p>
+<p>Il secondo caso è di solito usato quando ci sono informazioni di relazione
+aggiuntive (es. percentuale) nella tabella di collegamento.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/relation_widget_cardinality.png"><img alt="" src="../../assets/images/relation_widget_cardinality.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>In case of the many-to-one cardinality on many-to-many relations the
-<em>Display Expression</em> needs to be set on the linking table.</p>
+<p>In caso di cardinalità molti-a-uno su relazioni molti-a-molti il <em>Mostra Espressione</em> deve essere impostato sulla tabella di collegamento.</p>
 <h2 id="configurare-il-widget-allegatofoto">Configurare il Widget Allegato/Foto<a class="headerlink" href="#configurare-il-widget-allegatofoto" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
 <p>Il widget di tipo <em>Allegato</em> viene utilizzato con i campi che memorizzano il percorso
@@ -2738,7 +2734,7 @@ to be copied as well.</p>
 camera functionality and enable a hyperlink to open a document (pdf,
 doc, ...).</p>
 <p><img alt="" src="../../assets/images/hyperlink_option.png" /></p>
-<h2 id="configure-a-value-relation-widget">Configure a Value Relation Widget<a class="headerlink" href="#configure-a-value-relation-widget" title="Permanent link">&para;</a></h2>
+<h2 id="configurare-un-widget-di-relazione-dei-valori">Configurare un Widget di Relazione dei Valori<a class="headerlink" href="#configurare-un-widget-di-relazione-dei-valori" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
 <p>The widget <em>Value Relation</em> offers values from a related table in a
 combobox. You can select <em>layer</em>, <em>key column</em> and <em>value column</em>. Several
@@ -2763,7 +2759,7 @@ checkbox is checked, the list of diseases will be available to you.</p>
 </p>
 <p>Let's see what we got on the field:</p>
 <p><div class="video-container"><iframe src="https://player.vimeo.com/video/499565113" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
-<h2 id="define-constraints">Define Constraints<a class="headerlink" href="#define-constraints" title="Permanent link">&para;</a></h2>
+<h2 id="definire-vincoli">Definire Vincoli<a class="headerlink" href="#definire-vincoli" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
 <p>Attribute fields can have constraints attached. Constraints are
 expressions that needs to evaluate to <code>True</code> (or <code>1</code>) in order to be
@@ -2796,8 +2792,8 @@ can be based on the geometry or expression variables.</p>
 position in object attributes, refer to the deticated
 <a href="./gnss/">GNSS documentation</a>.</p>
 <p>For QFieldCloud users, two variables can be used in expressions including attribute form's default values:
-- <code>@cloud_username</code> which returns the  name of the currently logged in QFieldCloud user.
-- <code>@cloud_useremail</code> which returns the email address of the currently logged in QFieldCloud user.</p>
+- <code>@cloud_username</code> che restituisce il nome dell'utente QFieldCloud attualmente connesso.
+- <code>@cloud_useremail</code> che restituisce l'indirizzo email dell'utente QFieldCloud attualmente connesso.</p>
 <h3 id="casi-di-uso-comune_1">Casi di uso comune<a class="headerlink" href="#casi-di-uso-comune_1" title="Permanent link">&para;</a></h3>
 <p>Inserire le informazioni di posizionamento come variabile:</p>
 <div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">position_horizontal_accuracy</span><span class="w"></span>
@@ -2811,8 +2807,8 @@ position in object attributes, refer to the deticated
 <p>Configura le variabili globali sul dispositivo e inseriscili.</p>
 <div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">operator_name</span><span class="w"></span>
 </code></pre></div>
-<p>If you want to assign a region code based on the location where a new
-feature is inserted, you can do so by using an aggregate expression:</p>
+<p>Se si desidera assegnare un codice regionale in base alla posizione in cui viene
+inserita una nuova funzionalità, è possibile utilizzare un'espressione aggregata:</p>
 <div class="highlight"><pre><span></span><code><span class="k">aggregate</span><span class="p">(</span><span class="w"> </span><span class="n">layer</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;regions&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">aggregate</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;max&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">expression</span><span class="p">:</span><span class="o">=</span><span class="ss">&quot;code&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">filter</span><span class="p">:</span><span class="o">=</span><span class="n">intersects</span><span class="p">(</span><span class="w"> </span><span class="err">$</span><span class="n">geometry</span><span class="p">,</span><span class="w"> </span><span class="n">geometry</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">parent</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>To transform the coordinates received from \@position_coordinate to the
@@ -2838,10 +2834,10 @@ match of the first point of a line.
 <span class="w">  </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>)</p>
-<h2 id="configure-auto-complete-value">Configure Auto-complete Value<a class="headerlink" href="#configure-auto-complete-value" title="Permanent link">&para;</a></h2>
+<h2 id="configurare-valore-completamento-automatico">Configurare Valore Completamento Automatico<a class="headerlink" href="#configurare-valore-completamento-automatico" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<p>The "Use completer" checkbox must be checked to be able to use the
-auto-complete in the value relation.</p>
+<p>La casella di spunta "Usa completamento" deve essere selezionata per poter utilizzare il
+completamento automatico nella relazione dei valori.</p>
 <p>
 <figure><a data-caption="immagine" data-fancybox="gallery" href="../../assets/images/autocomplet_form.png"><img alt="immagine" src="../../assets/images/autocomplet_form.png" title="immagine" width="600px" /></a><figcaption>immagine</figcaption>
 </figure>

@@ -1281,19 +1281,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#topological-editing" class="md-nav__link">
+  <a href="#editing-topologico" class="md-nav__link">
     <span class="md-ellipsis">
-      Topological editing
+      Editing topologico
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Topological editing">
+    <nav class="md-nav" aria-label="Editing topologico">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#multi-editing-of-attributes" class="md-nav__link">
+  <a href="#modifica-multipla-degli-attributi" class="md-nav__link">
     <span class="md-ellipsis">
-      Multi-editing of attributes
+      Modifica multipla degli attributi
     </span>
   </a>
   
@@ -1550,7 +1550,7 @@
         
   
   <span class="md-ellipsis">
-    Tracking
+    Tracciamento
     
   </span>
   
@@ -2063,7 +2063,7 @@
         
   
   <span class="md-ellipsis">
-    Technical specs
+    Specifiche tecniche
     
   </span>
   
@@ -2592,19 +2592,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#topological-editing" class="md-nav__link">
+  <a href="#editing-topologico" class="md-nav__link">
     <span class="md-ellipsis">
-      Topological editing
+      Editing topologico
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Topological editing">
+    <nav class="md-nav" aria-label="Editing topologico">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#multi-editing-of-attributes" class="md-nav__link">
+  <a href="#modifica-multipla-degli-attributi" class="md-nav__link">
     <span class="md-ellipsis">
-      Multi-editing of attributes
+      Modifica multipla degli attributi
     </span>
   </a>
   
@@ -2714,19 +2714,18 @@ apparirà il pulsante <em>Salva</em>. Fare clic su di esso per terminare la geom
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/collect_features.webp"><img alt="" src="../../assets/images/collect_features.webp" title="" width="250px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>While digitizing, you can click the <em>(x) button</em> to cancel the current feature creation.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>QField insures that digitized geometries will not have duplicate vertices and respects
-the geometry precision settings from the currently selected layer.</p>
+<p>Durante la digitalizzazione, è possibile fare clic sul pulsante <em>(x)</em> per annullare la creazione dell'elemento corrente.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>QField assicura che le geometrie digitalizzate non avranno vertici duplicati e che siano rispettatate
+le impostazioni di precisione della geometria per il layer attualmente selezionato.</p>
 </div>
 <h3 id="form-degli-attributi">Form degli attributi<a class="headerlink" href="#form-degli-attributi" title="Permanent link">&para;</a></h3>
-<p>After digitizing a geometry, the attribute form will appear allowing you
-to edit attribute values for the newly-added feature.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can supress the attribute form upon feature addition via a configuration option
-for a given layer via its properties dialog in QGIS</p>
+<p>Dopo aver digitalizzato una geometria, verrà visualizzato il modulo attributo che ti consentirà di modificare i valori degli attributi per l'elemento appena aggiunto.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Puoi eliminare l'apertura del modulo attributi all'aggiunta di un elemento utilizzando l'opzione di configurazione
+di un dato layer tramite la sua finesta di dialogo delle proprietà in QGIS</p>
 </div>
 <h4 id="ricordare-i-valori-degli-attributi">Ricordare i valori degli attributi<a class="headerlink" href="#ricordare-i-valori-degli-attributi" title="Permanent link">&para;</a></h4>
 <p>Per una raccolta rapida di set di dati piuttosto omogenei, è fondamentale non
@@ -2771,16 +2770,16 @@ di linee e poligoni, così come per i summenzionati strumenti anello, dividi e r
 che appare quando QField è impostato sulla modalità di modifica e una penna stilo o
 un mouse sono posizionati sulla mappa mentre è viene selezionato un layer vettoriale di linee o poligoni.</p>
 <p><div class="video-container"><iframe src="https://player.vimeo.com/video/537673220" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
-<h2 id="topological-editing">Topological editing<a class="headerlink" href="#topological-editing" title="Permanent link">&para;</a></h2>
+<h2 id="editing-topologico">Editing topologico<a class="headerlink" href="#editing-topologico" title="Permanent link">&para;</a></h2>
 <p>If topological editing is activated on the project QGIS before exporting
 for QField, shared nodes of neighbouring geometries are modified
 together when moving / deleting vertices and additional vertices are
-added to segments when a new node is added from neightbouring
+added to segments when a new node is added from neighbouring
 geometries.</p>
 <p><div class="video-container"><iframe src="https://player.vimeo.com/video/499565314" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
-<h3 id="multi-editing-of-attributes">Multi-editing of attributes<a class="headerlink" href="#multi-editing-of-attributes" title="Permanent link">&para;</a></h3>
+<h3 id="modifica-multipla-degli-attributi">Modifica multipla degli attributi<a class="headerlink" href="#modifica-multipla-degli-attributi" title="Permanent link">&para;</a></h3>
 <p>QField allows you to select multiple features and edit their attributes all at once.
-In some cases, it can result in very efficient worflows. To do so, identify two (or more)
+In some cases, it can result in very efficient workflows. To do so, identify two (or more)
 features on the map, select them in the features list and merge them by selecting
 the <em>Edit feature</em> button in the list's title bar.</p>
 <p><div class="video-container"><iframe src="https://player.vimeo.com/video/499565955" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
@@ -2808,9 +2807,9 @@ esistenti.</p>
 <h3 id="tipi-di-aggancio">Tipi di aggancio<a class="headerlink" href="#tipi-di-aggancio" title="Permanent link">&para;</a></h3>
 <p>E' possibile agganciarsi ai nuovi punti.</p>
 <ul>
-<li>only to nodes of existing geometries</li>
-<li>only to segments of existing geometries</li>
-<li>to nodes and segments of existing geometries</li>
+<li>solo ai nodi delle geometrie esistenti</li>
+<li>solo ai segmenti delle geometrie esistenti</li>
+<li>a nodi e segmenti delle geometrie esistenti</li>
 </ul>
 <h3 id="aggancio-ai-layer">Aggancio ai layer<a class="headerlink" href="#aggancio-ai-layer" title="Permanent link">&para;</a></h3>
 <p>È anche possibile agganciare solo ad uno o a pochi layer.</p>
