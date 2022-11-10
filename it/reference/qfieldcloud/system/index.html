@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#qfieldcloud-system-documentation" class="md-skip">
+        <a href="#documentazione-di-sistema-qfieldcloud" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -1142,7 +1142,7 @@
         
   
   <span class="md-ellipsis">
-    Pictures
+    Immagini
     
   </span>
   
@@ -1186,7 +1186,7 @@
         
   
   <span class="md-ellipsis">
-    Standalone datasets
+    Set di dati indipendenti
     
   </span>
   
@@ -1703,7 +1703,7 @@
         
   
   <span class="md-ellipsis">
-    Basic concepts
+    Concetti di base
     
   </span>
   
@@ -1747,7 +1747,7 @@
         
   
   <span class="md-ellipsis">
-    Permissions
+    Permessi
     
   </span>
   
@@ -1922,9 +1922,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#qfieldcloud-project" class="md-nav__link">
+  <a href="#progetto-qfieldcloud" class="md-nav__link">
     <span class="md-ellipsis">
-      QFieldCloud Project
+      Progetto QFieldCloud
     </span>
   </a>
   
@@ -1955,9 +1955,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#offline-database" class="md-nav__link">
+  <a href="#database-offline" class="md-nav__link">
     <span class="md-ellipsis">
-      Offline database
+      Database offline
     </span>
   </a>
   
@@ -2115,7 +2115,7 @@
         
   
   <span class="md-ellipsis">
-    Geologic Mapping
+    Mappatura geologica
     
   </span>
   
@@ -2159,7 +2159,7 @@
         
   
   <span class="md-ellipsis">
-    Mapping breeding birds
+    Mappatura degli uccelli nidificanti
     
   </span>
   
@@ -2269,7 +2269,7 @@
         
   
   <span class="md-ellipsis">
-    Heritage Impact Assessment
+    Valutazione dell'impatto sul patrimonio
     
   </span>
   
@@ -2334,9 +2334,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#qfieldcloud-project" class="md-nav__link">
+  <a href="#progetto-qfieldcloud" class="md-nav__link">
     <span class="md-ellipsis">
-      QFieldCloud Project
+      Progetto QFieldCloud
     </span>
   </a>
   
@@ -2367,9 +2367,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#offline-database" class="md-nav__link">
+  <a href="#database-offline" class="md-nav__link">
     <span class="md-ellipsis">
-      Offline database
+      Database offline
     </span>
   </a>
   
@@ -2400,26 +2400,24 @@
   </a>
 
 
-<h1 id="qfieldcloud-system-documentation">QFieldCloud System Documentation<a class="headerlink" href="#qfieldcloud-system-documentation" title="Permanent link">&para;</a></h1>
+<h1 id="documentazione-di-sistema-qfieldcloud">Documentazione di sistema QFieldCloud<a class="headerlink" href="#documentazione-di-sistema-qfieldcloud" title="Permanent link">&para;</a></h1>
 <p>Lo scopo di questo documento è quello di fornire una panoramica del sistema QFieldCloud per
   comprendere la logica e la tecnologia sottostante.</p>
 <h2 id="entita-e-concetti">Entità e concetti<a class="headerlink" href="#entita-e-concetti" title="Permanent link">&para;</a></h2>
 <h3 id="progetto-qgis">Progetto QGIS<a class="headerlink" href="#progetto-qgis" title="Permanent link">&para;</a></h3>
-<p>A QGIS project is a <em>.qgs</em> or <em>.qgz</em> file. A Project is created on
-QGIS Desktop and uploaded to QFieldCloud using the QGIS's plugin
-QFieldSync. Before the uploading of the QGIS project, it is necessary
-for each layer of the QGIS project an "action" that determines how
-QFieldSync and QField should treat the layer. There are the two types
-of actions that can be setup - one for QFieldCloud and one for the
-traditional cable export.</p>
-<p>This information is saved within the QGS project as layer's
-<em>customProperty</em>, with the <em>QFieldSync/action</em> key.</p>
-<p>The available actions are:</p>
+<p>Un progetto QGIS è un file <em>.qgs</em> o <em>.qgz</em>. Un progetto viene creato su
+QGIS Desktop e caricato su QFieldCloud utilizzando il plugin di QGIS
+QFieldSync. Prima di caricare il progetto QGIS, è necessario che
+per ogni layer del progetto QGIS sia definita un'"azione" che determina il modo in cui
+QFieldSync e QField devono trattare il livello. Esistono due tipi di azioni che possono essere impostate: una per QFieldCloud e una per l'esportazione tradizionale via cavo.</p>
+<p>Queste informazioni vengono salvate all'interno del progetto QGS come
+<em>customProperty</em>, con la chiave <em>QFieldSync/action</em>.</p>
+<p>Le azioni disponibili sono:</p>
 <table>
 <thead>
 <tr>
-<th>Action internal name</th>
-<th>Name showed in the UI</th>
+<th>Nome interno dell'azione</th>
+<th>Nome visualizzato nell'interfaccia utente</th>
 </tr>
 </thead>
 <tbody>
@@ -2445,158 +2443,152 @@ traditional cable export.</p>
 </tr>
 </tbody>
 </table>
-<p>This would be the behavior of QFieldSync with the different
-layer actions:</p>
+<p>Questo sarebbe il comportamento di QFieldSync con le azioni dei diversi layer:</p>
 <table>
 <thead>
 <tr>
 <th>Azione</th>
-<th>File based layer</th>
-<th>Not file based layer</th>
+<th>Layer basato su file</th>
+<th>Layer non basato su file</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>OFFLINE</td>
-<td>Create a consolidated copy of the data</td>
-<td>Create a consolidated copy of the data</td>
+<td>Crea una copia consolidata dei dati</td>
+<td>Crea una copia consolidata dei dati</td>
 </tr>
 <tr>
 <td>NO_ACTION</td>
 <td>N/D</td>
-<td>No action on the layer</td>
+<td>Nessuna azione sul layer</td>
 </tr>
 <tr>
 <td>RIMUOVI</td>
-<td>Remove the layer from the project</td>
-<td>Remove the layer from the project</td>
+<td>Rimuovi il layer dal progetto</td>
+<td>Rimuovi il layer dal progetto</td>
 </tr>
 <tr>
 <td>COPIA</td>
-<td>Make source path relative and copy the file</td>
+<td>Rendi il percorso sorgente relativo e copia il file</td>
 <td>N/D</td>
 </tr>
 <tr>
 <td>KEEP_EXISTING</td>
-<td>Make source path relative and copy the file if it does not exist</td>
+<td>Rendi relativo il percorso sorgente e copia il file se non esiste</td>
 <td>N/D</td>
 </tr>
 </tbody>
 </table>
-<p>This is the behavior of QFieldCloud (<code>libqfieldsync</code>) with the
- layers:</p>
+<p>Questo è il comportamento di QFieldCloud (<code>libqfieldsync</code>) con i layer:</p>
 <table>
 <thead>
 <tr>
 <th>Azione</th>
-<th>File based layer</th>
-<th>Not file based</th>
+<th>Layer basato su file</th>
+<th>Non basato su file</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>OFFLINE</td>
-<td>Create consolidated copy of the data on pull, apply delta file on push to original data source</td>
-<td>Create consolidated copy of the data on pull, apply delta file on push to original data source</td>
+<td>Crea una copia consolidata dei dati al momento dell'estrazione, applica il file delta al momento del caricamento nella fonte di dati originale.</td>
+<td>Crea una copia consolidata dei dati al momento dell'estrazione, applica il file delta al momento del caricamento nella fonte di dati originale.</td>
 </tr>
 <tr>
 <td>NO_ACTION</td>
 <td>N/D</td>
-<td>No action on the layer</td>
+<td>Nessuna azione sul livello</td>
 </tr>
 <tr>
 <td>RIMUOVI</td>
-<td>Remove the layer from the project</td>
-<td>Remove the layer from the project</td>
+<td>Rimuovi il layer dal progetto</td>
+<td>Rimuovi il layer dal progetto</td>
 </tr>
 <tr>
 <td>COPIA</td>
-<td>Make source path relative and create copy of the data on pull, apply delta file on push to original data source</td>
+<td>Rendi relativo il percorso dell'origine e crea una copia dei dati al momento dell'estrazione, applica il file delta all'origine dei dati al momento del caricamento.</td>
 <td>N/D</td>
 </tr>
 <tr>
 <td>KEEP_EXISTING</td>
-<td>Make source path relative and create copy of the data on pull, apply delta file on push to original data source</td>
+<td>Rendi relativo il percorso dell'origine e crea una copia dei dati al momento dell'estrazione, applica il file delta all'origine dei dati al momento del caricamento.</td>
 <td>N/D</td>
 </tr>
 </tbody>
 </table>
-<p>This is the behavior of QField with the layers:</p>
+<p>Questo è il comportamento di QField con i layer:</p>
 <table>
 <thead>
 <tr>
 <th>Azione</th>
-<th>File based layer</th>
-<th>Not file based layer</th>
+<th>Layer basato su file</th>
+<th>Layer non basato su file</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>OFFLINE</td>
-<td>Create and push deltafile</td>
-<td>N/A (it's always file based at this point)</td>
+<td>Creare e caricare il deltafile</td>
+<td>N/A (a questo punto è sempre basato sui file)</td>
 </tr>
 <tr>
 <td>NO_ACTION</td>
 <td>N/D</td>
-<td>Edit the online (live) database</td>
+<td>Modifica il database online (live)</td>
 </tr>
 <tr>
 <td>RIMUOVI</td>
-<td>N/A (the layer is no longer there)</td>
-<td>N/A (the layer is no longer there)</td>
+<td>N/A (il layer non è più presente)</td>
+<td>N/A (il layer non è più presente)</td>
 </tr>
 <tr>
 <td>COPIA</td>
-<td>Create and push deltafile</td>
+<td>Creare e caricare il deltafile</td>
 <td>N/D</td>
 </tr>
 <tr>
 <td>KEEP_EXISTING</td>
-<td>Create and push deltafile</td>
+<td>Creare e caricare il deltafile</td>
 <td>N/D</td>
 </tr>
 </tbody>
 </table>
-<p>In summary, for with QFieldCloud:</p>
+<p>In sintesi, per QFieldCloud:</p>
 <ul>
-<li><em>NO_ACTION</em> is used for online layers that are located on a server
-  accessible via the Internet and that are modified directly by
+<li><em>NO_ACTION</em> è utilizzato per i layer online che si trovano su un server
+  accessibili via Internet e che vengono modificati direttamente da
   QField.</li>
-<li><em>HYBRID</em> means that a geopackage will be generated on the
-  server (or directly on the desktop for file-based layers) and
-  downloaded by clients. The client will generate deltafiles of the changes.</li>
-<li><em>OFFLINE</em> is used for example to work with local databases not
-  visible by QFieldCloud which are consolidated before being
-  loaded from the desktop to the server and are not synchronized
-  with the original data by QFieldCloud.</li>
-<li><em>REMOVE</em> will simply remove the layer from the project.</li>
-<li><em>KEEP_EXISTENT</em> will not be used for QFieldCloud syncronizations.</li>
+<li><em>HYBRID</em> significa che verrà generato un geopackage sul
+  server (o direttamente sul desktop per i livelli basati su file) e
+  scaricati dai client. Il client genererà i deltafile delle modifiche.</li>
+<li><em>OFFLINE</em> è utilizzato, ad esempio, per lavorare con i database locali non
+  visibili da QFieldCloud che vengono consolidati prima di essere
+  caricati dal desktop al server e non vengono sincronizzati
+  con i dati originali di QFieldCloud.</li>
+<li><em>REMOVE</em> rimuove semplicemente il layer dal progetto.</li>
+<li><em>KEEP_EXISTENT</em> non verrà utilizzato per le sincronizzazioni di QFieldCloud.</li>
 </ul>
-<p>From QFieldSync it will be possible to update a project already
-loaded on QFieldCloud. In the event that the changes concern only
-styles, forms etc. but not the structure of the layers, the
-project on the server will simply be updated.
-If there are changes in the layers structure, the project will be
-reset on the server (delta files will be deleted) and for each
-client it will be necessary to download the updated version of the
-project before being able to push new changes.</p>
-<h3 id="qfieldcloud-project">QFieldCloud Project<a class="headerlink" href="#qfieldcloud-project" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Is composed of one and only one QGIS project and the possible
-related files (e.g. geopackages, images, ...) included the offline
-or hybrid data package.
+<p>Da QFieldSync sarà possibile aggiornare un progetto già
+caricato su QFieldCloud. Nel caso in cui le modifiche riguardino solo
+stili, moduli ecc. ma non la struttura dei layer, il progetto sul server verrà semplicemente semplicemente aggiornato.
+Se ci sono cambiamenti nella struttura dei layer, il progetto verrà
+resettato sul server (i file delta verranno cancellati) e per ogni client sarà necessario scaricare la versione aggiornata del progetto
+progetto prima di poter apportare nuove modifiche.</p>
+<h3 id="progetto-qfieldcloud">Progetto QFieldCloud<a class="headerlink" href="#progetto-qfieldcloud" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>È composto da un solo progetto QGIS e dagli eventuali file correlati (ad esempio, geopackage, immagini, ecc.) inclusi nel pacchetto dati offline o ibrido.
 </code></pre></div>
 <h2 id="casi-duso">Casi d'uso<a class="headerlink" href="#casi-duso" title="Permanent link">&para;</a></h2>
 <h3 id="ibrido">Ibrido<a class="headerlink" href="#ibrido" title="Permanent link">&para;</a></h3>
-<p>Hybrid editing mode with synchronization on the server</p>
+<p>Modalità di modifica ibrida con sincronizzazione sul server</p>
 <p>
-<figure><a data-caption="Hybrid editing mode" data-fancybox="gallery" href="../../../assets/images/hybrid-schema.png"><img alt="Hybrid editing mode" src="../../../assets/images/hybrid-schema.png" title="Hybrid editing mode" width="600px" /></a><figcaption>Hybrid editing mode</figcaption>
+<figure><a data-caption="Modalità di modifica ibrida" data-fancybox="gallery" href="../../../assets/images/hybrid-schema.png"><img alt="Modalità di modifica ibrida" src="../../../assets/images/hybrid-schema.png" title="Modalità di modifica ibrida" width="600px" /></a><figcaption>Modalità di modifica ibrida</figcaption>
 </figure>
 </p>
-<h3 id="offline-database">Offline database<a class="headerlink" href="#offline-database" title="Permanent link">&para;</a></h3>
-<p>Offline editing mode with desktop synchronization</p>
+<h3 id="database-offline">Database offline<a class="headerlink" href="#database-offline" title="Permanent link">&para;</a></h3>
+<p>Modalità di editing offline con sincronizzazione del desktop</p>
 <p>
-<figure><a data-caption="Offline editing mode" data-fancybox="gallery" href="../../../assets/images/offline-schema.png"><img alt="Offline editing mode" src="../../../assets/images/offline-schema.png" title="Offline editing mode" width="600px" /></a><figcaption>Offline editing mode</figcaption>
+<figure><a data-caption="Modalità di modifica offline" data-fancybox="gallery" href="../../../assets/images/offline-schema.png"><img alt="Modalità di modifica offline" src="../../../assets/images/offline-schema.png" title="Modalità di modifica offline" width="600px" /></a><figcaption>Modalità di modifica offline</figcaption>
 </figure>
 </p>
 

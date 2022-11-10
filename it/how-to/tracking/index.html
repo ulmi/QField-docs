@@ -1144,7 +1144,7 @@
         
   
   <span class="md-ellipsis">
-    Pictures
+    Immagini
     
   </span>
   
@@ -1188,7 +1188,7 @@
         
   
   <span class="md-ellipsis">
-    Standalone datasets
+    Set di dati indipendenti
     
   </span>
   
@@ -1353,18 +1353,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tracking-underway" class="md-nav__link">
+  <a href="#tracciamento-in-corso" class="md-nav__link">
     <span class="md-ellipsis">
-      Tracking underway
+      Tracciamento in corso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#terminate-tracking" class="md-nav__link">
+  <a href="#terminare-il-tracciamento" class="md-nav__link">
     <span class="md-ellipsis">
-      Terminate tracking
+      Terminare il tracciamento
     </span>
   </a>
   
@@ -1770,7 +1770,7 @@
         
   
   <span class="md-ellipsis">
-    Basic concepts
+    Concetti di base
     
   </span>
   
@@ -1814,7 +1814,7 @@
         
   
   <span class="md-ellipsis">
-    Permissions
+    Permessi
     
   </span>
   
@@ -2074,7 +2074,7 @@
         
   
   <span class="md-ellipsis">
-    Geologic Mapping
+    Mappatura geologica
     
   </span>
   
@@ -2118,7 +2118,7 @@
         
   
   <span class="md-ellipsis">
-    Mapping breeding birds
+    Mappatura degli uccelli nidificanti
     
   </span>
   
@@ -2228,7 +2228,7 @@
         
   
   <span class="md-ellipsis">
-    Heritage Impact Assessment
+    Valutazione dell'impatto sul patrimonio
     
   </span>
   
@@ -2283,18 +2283,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tracking-underway" class="md-nav__link">
+  <a href="#tracciamento-in-corso" class="md-nav__link">
     <span class="md-ellipsis">
-      Tracking underway
+      Tracciamento in corso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#terminate-tracking" class="md-nav__link">
+  <a href="#terminare-il-tracciamento" class="md-nav__link">
     <span class="md-ellipsis">
-      Terminate tracking
+      Terminare il tracciamento
     </span>
   </a>
   
@@ -2338,38 +2338,36 @@ durante il tracciamento:
 </figure>
 </p>
 <p>Una volta terminata la configurazione della sessione di tracciamento, premi il tasto <em>Inizia tracciamento</em> per iniziare la registrazione. A questo punto, verrà visualizzato un modulo elemento, che consente di definire gli attributi del o degli elementi che verranno creati mentre QField traccia la tua posizione.</p>
-<p>For line and polygon layers, a single feature - its geometry formed of vertices
-from the recorded positions - will be create per tracking session.  For point
-layers, a feature will be created for each recorded position, with attribute
-values entered in the form remembered across features.</p>
+<p>Per i layer linea e poligono, verrà creata un singolo elemento - la sua geometria formata da vertici
+dalle posizioni registrate - verrà creata per ogni sessione di tracciamento.  Per i livelli di punti
+per ogni posizione registrata verrà creata un elemento, con i valori degli attributi inseriti nel modulo che verranno ricordati per tutte le caratteristiche.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>QField will skip the feature form step if the layer is configured to hide all attributes or if form has been set to hide on feature addition in the attribute form settings. This can streamline the process of starting tracking sessions.</p>
+<p>QField salterà il passaggio del modulo delle caratteristiche se il livello è configurato per nascondere tutti gli attributi o se il modulo è stato impostato per nascondere l'aggiunta di caratteristiche nelle impostazioni del modulo degli attributi. Questo può snellire il processo di avvio delle sessioni di tracciamento.</p>
 </div>
-<h2 id="tracking-underway">Tracking underway<a class="headerlink" href="#tracking-underway" title="Permanent link">&para;</a></h2>
-<p>Once a tracking session has been setup, a badge will appear in the side dashboard
-legend next to the layer(s) against which tracking is being recorded.</p>
+<h2 id="tracciamento-in-corso">Tracciamento in corso<a class="headerlink" href="#tracciamento-in-corso" title="Permanent link">&para;</a></h2>
+<p>Una volta impostata una sessione di tracciamento, nella legenda del cruscotto laterale apparirà un badge
+accanto ai livelli per i quali si sta registrando il tracciamento.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/tracking-badge.png"><img alt="" src="../../assets/images/tracking-badge.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>The features created by the tracking session are saved on every vertex recorded.
-A rubberband line overlayed onto the map is attached to each tracking session,
-allowing you to glance at what has been recorded.</p>
-<p>If the layer linked to a tracking session supports the M dimension, QField will store
-the time passed since the first vertex recorded in each vertex's M value.</p>
+<p>Gli elementi creati dalla sessione di tracciamento vengono salvati su ogni vertice registrato.
+A ogni sessione di tracciamento è associata una linea ad elastico sovrapposta alla mappa,
+permettendoti di dare un'occhiata a ciò che è stato registrato.</p>
+<p>Se il layer collegato a una sessione di tracciamento supporta la dimensione M, QField memorizzerà il tempo trascorso dal primo  vertice registrato nel valore M di ciascun vertice.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can simultanously record multiple trackings sessions across several layers.</p>
+<p>Puoi registrare simultaneamente più sessioni di tracciamento su più layer.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While the tracking session is active the layer is still editable, but the tracked feature can't be edited or deleted until the tracking session is stopped over the legend again.</p>
+<p>Mentre la sessione di tracciamento è attiva, il livello è ancora modificabile, ma l'elemento tracciato non può essere modificato o cancellato fino a quando la sessione di tracciamento non viene nuovamente interrotta sulla legenda.</p>
 </div>
-<h2 id="terminate-tracking">Terminate tracking<a class="headerlink" href="#terminate-tracking" title="Permanent link">&para;</a></h2>
-<p>To terminate tracking, simply open the side dashboard. From there, long-press
-on a legend layer linked to an active tracking session and select the
-<em>Stop tracking</em> button.</p>
+<h2 id="terminare-il-tracciamento">Terminare il tracciamento<a class="headerlink" href="#terminare-il-tracciamento" title="Permanent link">&para;</a></h2>
+<p>Per terminare il tracciamento, basta aprire la dashboard laterale. Da lì, premi a lungo
+su un layer nella legenda collegato a una sessione di tracciamento attiva e seleziona il pulsante
+<em>Interrompi il tracciamento</em>.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/tracking-stop.png"><img alt="" src="../../assets/images/tracking-stop.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
