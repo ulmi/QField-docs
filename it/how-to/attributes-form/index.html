@@ -1288,13 +1288,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#define-default-values" class="md-nav__link">
+  <a href="#definire-i-valori-predefiniti" class="md-nav__link">
     <span class="md-ellipsis">
-      Define Default Values
+      Definire i valori predefiniti
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Define Default Values">
+    <nav class="md-nav" aria-label="Definire i valori predefiniti">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1656,7 +1656,7 @@
         
   
   <span class="md-ellipsis">
-    Hiding legend nodes
+    Nascondere i nodi della legenda
     
   </span>
   
@@ -2231,7 +2231,7 @@
         
   
   <span class="md-ellipsis">
-    Ground Truth Data Collection
+    Raccolta dei dati Ground Truth
     
   </span>
   
@@ -2275,7 +2275,7 @@
         
   
   <span class="md-ellipsis">
-    Data collection of malaria transmitting mosquitoes
+    Raccolta dati sulle zanzare che trasmettono la malaria
     
   </span>
   
@@ -2297,7 +2297,7 @@
         
   
   <span class="md-ellipsis">
-    River State Survey
+    Indagine sullo stato dei fiumi
     
   </span>
   
@@ -2319,7 +2319,7 @@
         
   
   <span class="md-ellipsis">
-    Data collection of rural water supply systems
+    Raccolta dati sui sistemi di approvvigionamento idrico rurale
     
   </span>
   
@@ -2529,13 +2529,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#define-default-values" class="md-nav__link">
+  <a href="#definire-i-valori-predefiniti" class="md-nav__link">
     <span class="md-ellipsis">
-      Define Default Values
+      Definire i valori predefiniti
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Define Default Values">
+    <nav class="md-nav" aria-label="Definire i valori predefiniti">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2678,25 +2678,23 @@
 <p>Gruppi e tab creati nel designer "trascina e rilascia" sono supportati.</p>
 <h2 id="configura-un-widget-relazione">Configura un widget relazione<a class="headerlink" href="#configura-un-widget-relazione" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<p>For more information refer to the relations chapter of the official
-<a href="https://docs.qgis.org/3.22/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations">QGIS Documentation</a>.</p>
+<p>Per maggiori informazioni consulta il capitolo sulle relazioni della <a href="https://docs.qgis.org/3.22/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations">Documentazione QGIS</a>.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/relation_editor_widget_list.png"><img alt="" src="../../assets/images/relation_editor_widget_list.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>The relation widget shows all the referencing child features in a list.
-It is possible to add, delete and open them.</p>
+<p>Il widget delle relazioni mostra tutte gli elementi figlio di riferimento in un elenco.
+È possibile aggiungerli, eliminarli e aprirli.</p>
 <p>L'identificazione visiva delle voci della lista avviene tramite il <em>Mostra Espressione</em> del layer figlio.</p>
 <h3 id="gestione-chiavi">Gestione chiavi<a class="headerlink" href="#gestione-chiavi" title="Permanent link">&para;</a></h3>
 <p>Poiché le chiavi primarie dei layer padre sono utilizzate come chiavi esterne negli
 elementi dei layer figli di riferimento, queste chiavi primarie devono essere conservate per l'uso anche
 dopo la sincronizzazione con i dati originali. Pertanto,
 si consiglia di utilizzare valori stabili come UUIDs per le chiavi primarie.</p>
-<p>It is possible to already add children from a parent that is about to be
-added. This possibility will be blocked if there is no valid primary key
-on the parent or the constraints are violated. In case the adding of the
-parent feature is canceled after some children have been added already,
-the children are deleted as well.</p>
+<p>È possibile aggiungere già dei figli da un genitore che sta per essere aggiunto. Questa possibilità sarà bloccata se non esiste una chiave primaria valida
+sul genitore o i vincoli sono violati. Nel caso in cui l'aggiunta dell'elemento
+genitore viene annullata dopo che alcuni figli sono già stati aggiunti,
+anche i figli vengono eliminati.</p>
 <h3 id="relazioni-molti-a-molti">Relazioni Molti-a-molti<a class="headerlink" href="#relazioni-molti-a-molti" title="Permanent link">&para;</a></h3>
 <p>Nelle relazioni molti-a-molti, secondo la configurazione della cardinalità nelle <em>Proprietà del Layer Vettoriale in QGIS</em>, l'aggiunta, l'eliminazione o l'apertura di una voce nella lista influisce direttamente sul layer figlio (nel caso di cardinalità diretta) o sulla tabella di collegamento (nel caso di cardinalità molti-a-uno).</p>
 <p>Il secondo caso è di solito usato quando ci sono informazioni di relazione
@@ -2722,76 +2720,70 @@ ai file.</p>
 <p>Il percorso deve essere impostato su relativo. Immagini, pdf e documenti sono 
 quindi archiviati in una sottocartella del progetto, alla quale sta puntanto il link memorizzato nel
 campo di testo (textfield).</p>
-<p>In QField the picture is displayed. By clicking the camera symbol the
-camera is started to update the picture with a new photo.</p>
+<p>In QField viene visualizzata l'immagine. Facendo clic sul simbolo della fotocamera, la
+fotocamera viene avviata per aggiornare l'immagine con una nuova foto.</p>
 <p>
 <figure><a data-caption="immagini" data-fancybox="gallery" href="../../assets/images/qfield_picture.png"><img alt="immagini" src="../../assets/images/qfield_picture.png" title="immagini" width="600px" /></a><figcaption>immagini</figcaption>
 </figure>
 </p>
-<p>On synchronization the sub-directory with the pictures, pdf and docs has
-to be copied as well.</p>
-<p>The option <em>hyperlink</em> on the attachment widget will disable the
-camera functionality and enable a hyperlink to open a document (pdf,
+<p>Al momento della sincronizzazione deve essere copiata anche la sottodirectory con le immagini, i pdf e i documenti.</p>
+<p>L'opzione <em>hyperlink</em> sul widget degli allegati disabilita la funzionalità della fotocamera e abilita un collegamento ipertestuale per aprire un documento (pdf,
 doc, ...).</p>
 <p><img alt="" src="../../assets/images/hyperlink_option.png" /></p>
 <h2 id="configurare-un-widget-di-relazione-dei-valori">Configurare un Widget di Relazione dei Valori<a class="headerlink" href="#configurare-un-widget-di-relazione-dei-valori" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<p>The widget <em>Value Relation</em> offers values from a related table in a
-combobox. You can select <em>layer</em>, <em>key column</em> and <em>value column</em>. Several
-options are available to change the standard behaviors: <em>allow null value</em>, <em>order by value</em> and <em>allow multiple selections</em>. The widget will
-display a drop-down or multiple-select list of the referenced features.</p>
+<p>Il widget <em>Value Relation</em> offre i valori di una tabella correlata in una casella combinata. Puoi selezionare <em>layer</em>, <em>colonna chiave</em> e <em>colonna valore</em>. Sono disponibili diverse opzioni per modificare i comportamenti standard: <em>consenti valore nullo</em>, <em>ordina per valore</em> e <em>consenti selezioni multiple</em>. Il widget
+visualizzerà un menu a tendina o a selezione multipla degli elementi di riferimento.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/value_relation_widget.gif"><img alt="" src="../../assets/images/value_relation_widget.gif" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
 <h2 id="configurare-la-visibilita-condizionale">Configurare la Visibilità Condizionale<a class="headerlink" href="#configurare-la-visibilita-condizionale" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<p>Groups can be hidden based on an expression. This is useful when certain
-attributes are only required under certain conditions. As an example
-imagine mapping trees. Some of them might have a disease and you have a
-list of possible deseases. To not clutter the form with many fields,
-make a group and configure a visibility expression for a group
-"diseases". Add a field "desease" with a checkbox. Only when the
-checkbox is checked, the list of diseases will be available to you.</p>
+<p>I gruppi possono essere nascosti in base a un'espressione. Questo è utile quando alcuni
+attributi sono richiesti solo in determinate condizioni. Come esempio
+immagina di mappare degli alberi. Alcuni di essi potrebbero avere una malattia e tu hai un elenco di possibili malattie. Per non ingombrare il modulo con molti campi,
+crea un gruppo e configura un'espressione di visibilità per il gruppo
+"malattie". Aggiungi un campo "malattia" con una casella di controllo. Solo quando la
+casella è selezionata, l'elenco delle malattie sarà disponibile.</p>
 <p>
-<figure><a data-caption="Configuration of a group box that will only be shown if the checkbox &quot;measures_taken&quot; is checked." data-fancybox="gallery" href="../../assets/images/conditional_visibility_configuration.png"><img alt="Configuration of a group box that will only be shown if the checkbox &quot;measures_taken&quot; is checked." src="../../assets/images/conditional_visibility_configuration.png" title="Configuration of a group box that will only be shown if the checkbox &quot;measures_taken&quot; is checked." width="600px" /></a><figcaption>Configuration of a group box that will only be shown if the checkbox "measures_taken" is checked.</figcaption>
+<figure><a data-caption="Configurazione di una casella di gruppo che verrà mostrata solo se la casella di controllo &quot;measures_taken&quot; è selezionata" data-fancybox="gallery" href="../../assets/images/conditional_visibility_configuration.png"><img alt="Configurazione di una casella di gruppo che verrà mostrata solo se la casella di controllo &quot;measures_taken&quot; è selezionata" src="../../assets/images/conditional_visibility_configuration.png" title="Configurazione di una casella di gruppo che verrà mostrata solo se la casella di controllo &quot;measures_taken&quot; è selezionata" width="600px" /></a><figcaption>Configurazione di una casella di gruppo che verrà mostrata solo se la casella di controllo "measures_taken" è selezionata</figcaption>
 </figure>
 </p>
-<p>Let's see what we got on the field:</p>
+<p>Vediamo cosa abbiamo sul campo:</p>
 <p><div class="video-container"><iframe src="https://player.vimeo.com/video/499565113" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 <h2 id="definire-vincoli">Definire Vincoli<a class="headerlink" href="#definire-vincoli" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<p>Attribute fields can have constraints attached. Constraints are
-expressions that needs to evaluate to <code>True</code> (or <code>1</code>) in order to be
-able to save the form. Constraints are configured on a per-field basis
-and a description can be added that will be shown if a
-constraint is not satisfied.</p>
+<p>I campi attributo possono avere dei vincoli. I vincoli sono
+espressioni che devono essere valutate con <code>True</code> (o <code>1</code>) per poter
+poter salvare il modulo. I vincoli sono configurati per ogni campo
+e si può aggiungere una descrizione che verrà visualizzata se un 
+vincolo non è soddisfatto.</p>
 <p>
-<figure><a data-caption="Configuration of a constraint within a range" data-fancybox="gallery" href="../../assets/images/constraint_configuration.png"><img alt="Configuration of a constraint within a range" src="../../assets/images/constraint_configuration.png" title="Configuration of a constraint within a range" width="600px" /></a><figcaption>Configuration of a constraint within a range</figcaption>
+<figure><a data-caption="Configurazione di un vincolo all'interno di un intervallo" data-fancybox="gallery" href="../../assets/images/constraint_configuration.png"><img alt="Configurazione di un vincolo all'interno di un intervallo" src="../../assets/images/constraint_configuration.png" title="Configurazione di un vincolo all'interno di un intervallo" width="600px" /></a><figcaption>Configurazione di un vincolo all'interno di un intervallo</figcaption>
 </figure>
 </p>
 <h3 id="casi-di-uso-comune">Casi di uso comune<a class="headerlink" href="#casi-di-uso-comune" title="Permanent link">&para;</a></h3>
-<p>You cannot enter an elevation value higher than the highest mountain in
-this country.</p>
+<p>Non puoi inserire un valore di elevazione superiore alla montagna più alta di questo paese.</p>
 <div class="highlight"><pre><span></span><code><span class="ss">&quot;elevation&quot;</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5000</span><span class="w"></span>
 </code></pre></div>
 <p>è chiesto di inserire un idenfificatore.</p>
 <div class="highlight"><pre><span></span><code><span class="ss">&quot;identifier&quot;</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"></span>
 </code></pre></div>
-<h2 id="define-default-values">Define Default Values<a class="headerlink" href="#define-default-values" title="Permanent link">&para;</a></h2>
+<h2 id="definire-i-valori-predefiniti">Definire i valori predefiniti<a class="headerlink" href="#definire-i-valori-predefiniti" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<p>Fields can have default values configured. Default values are inserted
-into the attribute form when digitizing a new feature. They are visible and can be modified as long as the field is editable. They
-can be based on the geometry or expression variables.</p>
+<p>I campi possono essere configurati con valori predefiniti. I valori predefiniti vengono inseriti
+nel modulo dell'attributo quando si digitalizza un nuovo elemento. Sono visibili e possono essere modificati finché il campo è modificabile. I valori predefiniti
+possono essere basati sulla geometria o su variabili di espressione.</p>
 <p>
-<figure><a data-caption="Configuration of a formatted date as default value" data-fancybox="gallery" href="../../assets/images/default_value_configuration.png"><img alt="Configuration of a formatted date as default value" src="../../assets/images/default_value_configuration.png" title="Configuration of a formatted date as default value" width="600px" /></a><figcaption>Configuration of a formatted date as default value</figcaption>
+<figure><a data-caption="Configurazione di una data formattata come valore predefinito" data-fancybox="gallery" href="../../assets/images/default_value_configuration.png"><img alt="Configurazione di una data formattata come valore predefinito" src="../../assets/images/default_value_configuration.png" title="Configurazione di una data formattata come valore predefinito" width="600px" /></a><figcaption>Configurazione di una data formattata come valore predefinito</figcaption>
 </figure>
 </p>
 <h3 id="variabili-aggiuntive">Variabili aggiuntive<a class="headerlink" href="#variabili-aggiuntive" title="Permanent link">&para;</a></h3>
-<p>For more information regarding storing information related to your
-position in object attributes, refer to the deticated
-<a href="./gnss/">GNSS documentation</a>.</p>
-<p>For QFieldCloud users, two variables can be used in expressions including attribute form's default values:
+<p>Per maggiori informazioni sulla memorizzazione delle informazioni relative alla tua
+posizione negli attributi dell'oggetto, fai riferimento alla
+<a href="./gnss/">documentazione GNSS</a>.</p>
+<p>Per gli utenti di QFieldCloud, due variabili possono essere utilizzate nelle espressioni che includono i valori predefiniti degli attributi dei moduli:
 - <code>@cloud_username</code> che restituisce il nome dell'utente QFieldCloud attualmente connesso.
 - <code>@cloud_useremail</code> che restituisce l'indirizzo email dell'utente QFieldCloud attualmente connesso.</p>
 <h3 id="casi-di-uso-comune_1">Casi di uso comune<a class="headerlink" href="#casi-di-uso-comune_1" title="Permanent link">&para;</a></h3>
@@ -2811,16 +2803,15 @@ position in object attributes, refer to the deticated
 inserita una nuova funzionalità, è possibile utilizzare un'espressione aggregata:</p>
 <div class="highlight"><pre><span></span><code><span class="k">aggregate</span><span class="p">(</span><span class="w"> </span><span class="n">layer</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;regions&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">aggregate</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;max&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">expression</span><span class="p">:</span><span class="o">=</span><span class="ss">&quot;code&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">filter</span><span class="p">:</span><span class="o">=</span><span class="n">intersects</span><span class="p">(</span><span class="w"> </span><span class="err">$</span><span class="n">geometry</span><span class="p">,</span><span class="w"> </span><span class="n">geometry</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">parent</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
-<p>To transform the coordinates received from \@position_coordinate to the
-coordinate system of your project:</p>
+<p>Per trasformare le coordinate ricevute da \@position_coordinate nel sistema di coordinate del tuo progetto:</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
 <span class="n">y</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
 </code></pre></div>
 <p>::: {#snapping_results}
-If you want to use the snapping results after drawing a line, you can
-use the [\@snapping_results]{.title-ref} variable. The following code
-extracts the value of the attribute [id]{.title-ref} of the snapping
-match of the first point of a line.
+Se vuoi utilizzare i risultati dello snapping dopo aver tracciato una linea, puoi
+utilizzare la variabile [\@snapping_results]{.title-ref}. Il codice seguente
+estrae il valore dell'attributo [id]{.title-ref} della corrispondenza di snapping
+del primo punto di una linea.
 :::</p>
 <div class="highlight"><pre><span></span><code><span class="n">with_variable</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="s1">&#39;first_snapped_point&#39;</span><span class="p">,</span><span class="w"></span>
@@ -2842,7 +2833,7 @@ completamento automatico nella relazione dei valori.</p>
 <figure><a data-caption="immagine" data-fancybox="gallery" href="../../assets/images/autocomplet_form.png"><img alt="immagine" src="../../assets/images/autocomplet_form.png" title="immagine" width="600px" /></a><figcaption>immagine</figcaption>
 </figure>
 </p>
-<p>Here a video showing how it works on QField</p>
+<p>Ecco un video che mostra come funziona su QField</p>
 <p><div class="video-container"><iframe src="https://player.vimeo.com/video/604661919" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 
   

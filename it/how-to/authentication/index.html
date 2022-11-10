@@ -1419,9 +1419,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#export-the-authentication-from-qgis" class="md-nav__link">
+  <a href="#esporta-lautenticazione-da-qgis" class="md-nav__link">
     <span class="md-ellipsis">
-      Export the authentication from QGIS
+      Esporta l'autenticazione da QGIS
     </span>
   </a>
   
@@ -1512,7 +1512,7 @@
         
   
   <span class="md-ellipsis">
-    Hiding legend nodes
+    Nascondere i nodi della legenda
     
   </span>
   
@@ -2087,7 +2087,7 @@
         
   
   <span class="md-ellipsis">
-    Ground Truth Data Collection
+    Raccolta dei dati Ground Truth
     
   </span>
   
@@ -2131,7 +2131,7 @@
         
   
   <span class="md-ellipsis">
-    Data collection of malaria transmitting mosquitoes
+    Raccolta dati sulle zanzare che trasmettono la malaria
     
   </span>
   
@@ -2153,7 +2153,7 @@
         
   
   <span class="md-ellipsis">
-    River State Survey
+    Indagine sullo stato dei fiumi
     
   </span>
   
@@ -2175,7 +2175,7 @@
         
   
   <span class="md-ellipsis">
-    Data collection of rural water supply systems
+    Raccolta dati sui sistemi di approvvigionamento idrico rurale
     
   </span>
   
@@ -2274,9 +2274,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#export-the-authentication-from-qgis" class="md-nav__link">
+  <a href="#esporta-lautenticazione-da-qgis" class="md-nav__link">
     <span class="md-ellipsis">
-      Export the authentication from QGIS
+      Esporta l'autenticazione da QGIS
     </span>
   </a>
   
@@ -2303,71 +2303,57 @@
 
 
 <h1 id="autenticazione">Autenticazione<a class="headerlink" href="#autenticazione" title="Permanent link">&para;</a></h1>
-<p>QField supports connecting to OAuth2 protected web services. By using
-OAuth2, it is possible to protect layers and services with a wide
-variety of authentiaction schemes like for example two factor
-authentication.</p>
-<p>To successfully load OAuth2-protected layer(s) in QField, the QGIS
-project must be setup to use OAuth2.</p>
+<p>QField supporta la connessione ai servizi web protetti da OAuth2. Utilizzando
+OAuth2, è possibile proteggere layer e servizi con una vasta gamma di schemi di autenticazione come ad esempio l'autenticazione a due fattori.</p>
+<p>Per poter caricare con successo i layer protetti da OAuth2 in QField, il progetto QGIS
+deve essere impostato per utilizzare OAuth2.</p>
 <h2 id="preparare-lautenticazione-in-qgis">Preparare l'autenticazione in QGIS<a class="headerlink" href="#preparare-lautenticazione-in-qgis" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<p>To setup a WFS with OAuth2 in QGIS follow these steps in the QGIS
-project configuration.</p>
-<p>In the WFS layer configuration:</p>
+<p>Per configurare un WFS con OAuth2 in QGIS, segui questi passaggi nella configurazione del progetto QGIS.</p>
+<p>Nella configurazione del layer WFS:</p>
 <p>
 <figure><a data-caption="widgets" data-fancybox="gallery" href="../../assets/images/oauth2_setup_wfs.png"><img alt="widgets" src="../../assets/images/oauth2_setup_wfs.png" title="widgets" width="600px" /></a><figcaption>widgets</figcaption>
 </figure>
 </p>
-<p>Add a new authentication configuration. Parameters need to be adjusted
-to the oauth2 server setup:</p>
+<p>Aggiungi una nuova configurazione di autenticazione. I parametri devono essere adattati
+alla configurazione del server oauth2:</p>
 <p>
 <figure><a data-caption="widgets" data-fancybox="gallery" href="../../assets/images/oauth2_setup_auth.png"><img alt="widgets" src="../../assets/images/oauth2_setup_auth.png" title="widgets" width="600px" /></a><figcaption>widgets</figcaption>
 </figure>
 </p>
-<h2 id="export-the-authentication-from-qgis">Export the authentication from QGIS<a class="headerlink" href="#export-the-authentication-from-qgis" title="Permanent link">&para;</a></h2>
+<h2 id="esporta-lautenticazione-da-qgis">Esporta l'autenticazione da QGIS<a class="headerlink" href="#esporta-lautenticazione-da-qgis" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Exporting an auth configuration requires at least QGIS 3.20. It is
-possible to only use QGIS 3.20 to prepare the auth config and configure
-the QGIS project itself with an earlier version of QGIS.</p>
+<p>L'esportazione di una configurazione auth richiede almeno QGIS 3.20. È
+possibile utilizzare QGIS 3.20 solo per preparare la configurazione auth e configurare il progetto QGIS stesso con una versione precedente di QGIS.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>It is important that the Configuration ID of the exported configuration
-and the configuration stored in the QGIS project match.</p>
+<p>È importante che l'ID di configurazione della configurazione esportata
+e della configurazione memorizzata nel progetto QGIS corrispondano.</p>
 </div>
-<p>At this point, verify that you are able to properly connect to the
-service from QGIS. This authentication configuration must first be
-exported from QGIS itself.</p>
-<p>To do so, open the QGIS options dialog and focus on the
-authentication panel. There, you can select the <em>OAuth2 configuration</em>
-used by the project layer(s) by clicking on the appropriate row in the
-configurations table widget. Then, use the lower-right
-utilities button to select the <em>export selected authentication
-configurations to file</em> action.</p>
+<p>A questo punto, verifica che tu sia in grado di connetterti correttamente al servizio
+da QGIS. Questa configurazione di autenticazione deve essere
+esportata da QGIS stesso.</p>
+<p>Per farlo, apri la finestra di dialogo delle opzioni di QGIS e focalizzati sul pannello di autenticazione. Lì potrai selezionare la configurazione <em>OAuth2</em>
+utilizzata dai layer del progetto facendo clic sulla riga appropriata nella tabella delle configurazioni. Quindi, usa il pulsante in basso a destra per selezionare l'azione <em>esporta le configurazioni di autenticazione selezionate su file</em>.</p>
 <p>
 <figure><a data-caption="widgets" data-fancybox="gallery" href="../../assets/images/oauth2_export_config.png"><img alt="widgets" src="../../assets/images/oauth2_export_config.png" title="widgets" width="600px" /></a><figcaption>widgets</figcaption>
 </figure>
 </p>
-<p>When prompted for a password, leave it blank. You will be warned
-that she might be leaking sensitive information. In the case of
-OAuth2 configurations, it is safe to do so.</p>
-<p>Once you have exported the authentication configuration to an XML
-file, she copies that file onto the device(s) running QField. The
-file has to be copied to the devices <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/auth/</code> QField directory. The <code>/QField/auth/</code> path is created when first
-launching QField.</p>
+<p>Quando ti viene richiesta una password, lasciala vuota. Verrai avvisato
+che potrebbe portare alla perdita di informazioni sensibili. Nel caso di configurazioni OAuth2, è sicuro farlo.</p>
+<p>Una volta esportata la configurazione dell'autenticazione in un file XML,
+copia il file sul dispositivo che esegue QField. Il file
+deve essere copiato nella directory QField dei dispositivi <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/auth/</code>. Il percorso <code>/QField/auth/</code> viene creato al primo avvio di QField.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Since QField 2 the auth files needs to be stored in the app directory <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/auth</code> instead of the devices main directory <code>&lt;drive&gt;:/QField/auth</code>.</p>
+<p>Da QField 2 i file di autenticazione devono essere memorizzati nella directory dell'applicazione <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/auth</code> invece che nella directory principale del dispositivo <code>&lt;drive&gt;:/QField/auth</code>.</p>
 </div>
-<p>Once the authentication configuration XML file is copied, you can copy
-the project file containing OAuth2-protected layer(s) onto the device(s)
-and open the project in QField. You will be prompted for the
-user, password, and 2-step-verification authentication code within a
-browser panel that will pop up in QField itself.</p>
-<p>Once authenticated, content will be rendered without the need to
-re-enter user information for the duration of the session.</p>
+<p>Una volta copiato il file XML di configurazione dell'autenticazione, puoi copiare il file di progetto contenente i layer protetti da OAuth2 sui dispositivi e aprire il progetto in QField. Ti verranno richiesti i dati relativi all'utente, la password e il codice di autenticazione a due fattori in un pannello del browser che apparirà in QField stesso.</p>
+<p>Una volta autenticati, i contenuti verranno visualizzati senza la necessità di
+reinserire le informazioni dell'utente per tutta la durata della sessione.</p>
 
   
   

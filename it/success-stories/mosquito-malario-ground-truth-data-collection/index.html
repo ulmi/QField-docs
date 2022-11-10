@@ -33,7 +33,7 @@
     
     
       
-        <title>Data collection of malaria transmitting mosquitoes - QField Ecosystem Documentation</title>
+        <title>Raccolta dati sulle zanzare che trasmettono la malaria - QField Ecosystem Documentation</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#use-of-qfield-in-the-context-of-ground-truth-data-collection-work-of-malaria-transmitting-mosquitoes" class="md-skip">
+        <a href="#uso-di-qfield-nel-contesto-di-un-lavoro-di-raccolta-dati-sulle-zanzare-che-trasmettono-la-malaria" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data collection of malaria transmitting mosquitoes
+              Raccolta dati sulle zanzare che trasmettono la malaria
             
           </span>
         </div>
@@ -1450,7 +1450,7 @@
         
   
   <span class="md-ellipsis">
-    Hiding legend nodes
+    Nascondere i nodi della legenda
     
   </span>
   
@@ -2027,7 +2027,7 @@
         
   
   <span class="md-ellipsis">
-    Ground Truth Data Collection
+    Raccolta dei dati Ground Truth
     
   </span>
   
@@ -2080,7 +2080,7 @@
           
   
   <span class="md-ellipsis">
-    Data collection of malaria transmitting mosquitoes
+    Raccolta dati sulle zanzare che trasmettono la malaria
     
   </span>
   
@@ -2093,7 +2093,7 @@
         
   
   <span class="md-ellipsis">
-    Data collection of malaria transmitting mosquitoes
+    Raccolta dati sulle zanzare che trasmettono la malaria
     
   </span>
   
@@ -2162,7 +2162,7 @@
         
   
   <span class="md-ellipsis">
-    River State Survey
+    Indagine sullo stato dei fiumi
     
   </span>
   
@@ -2184,7 +2184,7 @@
         
   
   <span class="md-ellipsis">
-    Data collection of rural water supply systems
+    Raccolta dati sui sistemi di approvvigionamento idrico rurale
     
   </span>
   
@@ -2320,66 +2320,50 @@
   </a>
 
 
-<h1 id="use-of-qfield-in-the-context-of-ground-truth-data-collection-work-of-malaria-transmitting-mosquitoes">Use of Qfield in the context of ground-truth data collection work of malaria transmitting mosquitoes<a class="headerlink" href="#use-of-qfield-in-the-context-of-ground-truth-data-collection-work-of-malaria-transmitting-mosquitoes" title="Permanent link">&para;</a></h1>
-<p>By Paul Taconet, GIS Engineer, French Research Institute for Sustainable
+<h1 id="uso-di-qfield-nel-contesto-di-un-lavoro-di-raccolta-dati-sulle-zanzare-che-trasmettono-la-malaria">Uso di Qfield nel contesto di un lavoro di raccolta dati sulle zanzare che trasmettono la malaria<a class="headerlink" href="#uso-di-qfield-nel-contesto-di-un-lavoro-di-raccolta-dati-sulle-zanzare-che-trasmettono-la-malaria" title="Permanent link">&para;</a></h1>
+<p>Di Paul Taconet, GIS Engineer, French Research Institute for Sustainable
 Development (IRD) 11.12.2018</p>
 <h2 id="obiettivi-e-vincoli-di-campo">Obiettivi e vincoli di campo<a class="headerlink" href="#obiettivi-e-vincoli-di-campo" title="Permanent link">&para;</a></h2>
-<p>For a research work aiming at improving the knowledge on the environment
-of the mosquitoes that transmit malaria, the French Research Institute
-for Sustainable Development needed to generate a land cover map of two
-rural areas in Africa, one in Burkina Faso and one in Ivory Coast. Two
-satellites images (Spot 6 at 1.5 meters spatial resolutions) are used as
-input of a supervised object-based image classification for this work.
-The supervised method implies the collection of ground truth parcels,
-i.e. location and geo-referencing of a set of parcels of each land cover
-class on the ground, preferably spread all over the study areas. Both
-areas are 50 km2 wide and their nature (savannahs and rural areas, where
-roads are mainly narrow clay tracks) imply to move around in motorbike
-or by feet. In addition, one could quickly get lost in the rural
-labyrinth tracks in absence of a map. We hence needed light and very
-portable equipment, as well as a way to easily explore the area without
-getting lost.</p>
+<p>Per un lavoro di ricerca finalizzato a migliorare le conoscenze sull'ambiente
+delle zanzare che trasmettono la malaria, l'Istituto Francese di Ricerca per lo Sviluppo Sostenibile aveva bisogno di generare una mappa della copertura del suolo di due
+aree rurali in Africa, una in Burkina Faso e una in Costa d'Avorio. Due
+immagini satellitari (Spot 6 con risoluzione spaziale di 1,5 metri) sono utilizzate come input di una classificazione di immagini basata su oggetti supervisionati.
+Il metodo supervisionato implica la raccolta di parcelle a terra,
+vale a dire la localizzazione e la georeferenziazione di un insieme di parcelle di ogni classe di copertura del suolo, preferibilmente distribuite in tutte le aree di studio.
+Entrambe le aree hanno un'estensione di 50 km2 e la loro natura (savana e aree rurali, dove le strade sono per lo più stretti sentieri di argilla) implicano la possibilità di spostarsi in moto o a piedi. Inoltre, ci si può perdere rapidamente nei percorsi rurali in assenza di una mappa. Avevamo quindi bisogno di attrezzature leggere e trasportabili, oltre che di un modo per esplorare facilmente la zona senza perdersi.</p>
 <h2 id="preparazione-del-progetto">Preparazione del progetto<a class="headerlink" href="#preparazione-del-progetto" title="Permanent link">&para;</a></h2>
-<p>We created a QGIS project with the Spot image and a layer to collect the
-ground data. We first converted our Spot image to a Geopackage raster,
-and built pyramids so as to get quick rendering in QField. The whole
-image (50 km2 at 1.5 m spatial resolution with 3 bands) weighted
-approximately 800 MB, which enabled us to load it in our tablet without
-the need to add any extra memory.</p>
-<p>We created a vector layer to draw our ground truth parcels (i.e.
-polygons of land cover parcels). It contained a field to identify the
-land cover type, some fields to take pictures and a field for eventual
-additional notes.</p>
-<p>We then uploaded the project in QField in our tablet.</p>
+<p>Abbiamo creato un progetto QGIS con l'immagine Spot e un layer per raccogliere i dati a terra. Per prima cosa abbiamo convertito l'immagine Spot in un raster Geopackage,
+e abbiamo costruito delle piramidi per ottenere un rendering rapido in QField. L'intera
+immagine (50 km2 a risoluzione spaziale di 1,5 m con 3 bande) pesava
+circa 800 MB, il che ci ha permesso di caricarla nel nostro tablet senza
+necessità di aggiungere ulteriore memoria.</p>
+<p>Abbiamo creato un layer vettoriale per disegnare le parcelle (cioè i poligoni delle parcelle della copertura del suolo). Conteneva un campo per identificare il
+tipo di copertura del suolo, alcuni campi per scattare le foto e un campo per eventuali
+note aggiuntive.</p>
+<p>Abbiamo poi caricato il progetto in QField sul nostro tablet.</p>
 <h2 id="lavoro-sul-campo">Lavoro sul campo<a class="headerlink" href="#lavoro-sul-campo" title="Permanent link">&para;</a></h2>
-<p>On the field, we were able to move around easily in motorbike without
-getting lost, thanks to our location displayed on QField with the
-satellite image as background. When a parcel of interest was identified,
-we were able to draw its perimeter in QField and very easily fill-in the
-proper information on the attribute table (land cover type, pictures).
-When hesitating on the land cover type to attribute to a given parcel,
-we were able, in "live" (i.e. on the ground), to quickly look at
-previously retrieved parcels and compare them to the parcel of interest
-(with the pictures and the satellite image).</p>
-<p>We were able, without any extra effort at the end each field working
-day, to see the progress of the work: which pieces of our study area we
-had covered, which remained to explore, how many parcels we had got for
-each land cover class and how many remained to retrieve. This is very
-appreciable in such conditions, where work can be testing and nights can
-be shorts. Back in office, we did not have to realize fastidious and
-time-consuming work such as digitalizing the parcels from a traditional
-GPS point layer, linking the pictures to our land cover layer, etc.,
-which traditionally took days of work.</p>
+<p>Sul terreno, siamo stati in grado di muoverci facilmente in moto senza
+perderci, grazie alla nostra posizione visualizzata su QField con l'immagine satellitare come sfondo. Quando è stato identificato un appezzamento di interesse,
+abbiamo potuto disegnare il suo perimetro in QField e inserire con estrema facilità le
+informazioni appropriate nella tabella degli attributi (tipo di copertura del suolo, immagini).
+Quando eravamo indecisi sul tipo di copertura del suolo da attribuire a una determinata parcella,
+siamo stati in grado, in "diretta" (cioè sul campo), di consultare rapidamente
+parcelle recuperate in precedenza e confrontarle con la parcella di interesse
+(con le foto e l'immagine satellitare).</p>
+<p>Siamo stati in grado, senza alcuno sforzo aggiuntivo alla fine di ogni giornata di lavoro sul campo, di vedere lo stato di avanzamento dei lavori: quali parti dell'area di studio avevamo coperto, quali rimanevano da esplorare, quante parcelle avevamo ottenuto per ogni classe di copertura del suolo e quante ne restavano da recuperare. Questo è molto
+apprezzabile in queste condizioni, in cui il lavoro può essere impegnativo e le notti possono essere brevi. Tornati in ufficio, non abbiamo dovuto realizzare lavori fastidiosi e lunghi come la digitalizzazione degli appezzamenti da un tradizionale layer di punti
+GPS, collegare le immagini al nostro strato di copertura del suolo, ecc,
+che tradizionalmente richiedevano giorni di lavoro.</p>
 <p>
-<figure><a data-caption="3 land cover parcels that were digitalized on the ground" data-fancybox="gallery" href="../../assets/images/mosquito_1.jpg"><img alt="3 land cover parcels that were digitalized on the ground" src="../../assets/images/mosquito_1.jpg" title="3 land cover parcels that were digitalized on the ground" width="600px" /></a><figcaption>3 land cover parcels that were digitalized on the ground</figcaption>
+<figure><a data-caption="3 parcelle di copertura del suolo digitalizzate sul terreno" data-fancybox="gallery" href="../../assets/images/mosquito_1.jpg"><img alt="3 parcelle di copertura del suolo digitalizzate sul terreno" src="../../assets/images/mosquito_1.jpg" title="3 parcelle di copertura del suolo digitalizzate sul terreno" width="600px" /></a><figcaption>3 parcelle di copertura del suolo digitalizzate sul terreno</figcaption>
 </figure>
 </p>
 <p>
-<figure><a data-caption="Getting back to one parcel: which information was collected" data-fancybox="gallery" href="../../assets/images/mosquito_2.jpg"><img alt="Getting back to one parcel: which information was collected" src="../../assets/images/mosquito_2.jpg" title="Getting back to one parcel: which information was collected" width="600px" /></a><figcaption>Getting back to one parcel: which information was collected</figcaption>
+<figure><a data-caption="Tornando a una parcella: quali informazioni sono state raccolte" data-fancybox="gallery" href="../../assets/images/mosquito_2.jpg"><img alt="Tornando a una parcella: quali informazioni sono state raccolte" src="../../assets/images/mosquito_2.jpg" title="Tornando a una parcella: quali informazioni sono state raccolte" width="600px" /></a><figcaption>Tornando a una parcella: quali informazioni sono state raccolte</figcaption>
 </figure>
 </p>
 <p>
-<figure><a data-caption="Digitalizing a new parcel and filling the attribute table" data-fancybox="gallery" href="../../assets/images/mosquito_3.jpg"><img alt="Digitalizing a new parcel and filling the attribute table" src="../../assets/images/mosquito_3.jpg" title="Digitalizing a new parcel and filling the attribute table" width="600px" /></a><figcaption>Digitalizing a new parcel and filling the attribute table</figcaption>
+<figure><a data-caption="Digitalizzazione di una nuova parcella e compilazione della tabella degli attributi" data-fancybox="gallery" href="../../assets/images/mosquito_3.jpg"><img alt="Digitalizzazione di una nuova parcella e compilazione della tabella degli attributi" src="../../assets/images/mosquito_3.jpg" title="Digitalizzazione di una nuova parcella e compilazione della tabella degli attributi" width="600px" /></a><figcaption>Digitalizzazione di una nuova parcella e compilazione della tabella degli attributi</figcaption>
 </figure>
 </p>
 <p>
@@ -2432,13 +2416,13 @@ which traditionally took days of work.</p>
       
       
         
-        <a href="../river-state-survey/" class="md-footer__link md-footer__link--next" aria-label="Prossimo: River State Survey" rel="next">
+        <a href="../river-state-survey/" class="md-footer__link md-footer__link--next" aria-label="Prossimo: Indagine sullo stato dei fiumi" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Prossimo
               </span>
-              River State Survey
+              Indagine sullo stato dei fiumi
             </div>
           </div>
           <div class="md-footer__button md-icon">
