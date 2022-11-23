@@ -2285,18 +2285,18 @@
 
 
 <h1 id="shared-local-datasets">Shared local datasets<a class="headerlink" href="#shared-local-datasets" title="Permanent link">&para;</a></h1>
-<p>In a QField project it is possible to use a layer outside the project
-folder, like a basemap.</p>
-<p>It is useful if a basemap is used in all your project, no need to copy
-it everytime in the project folder.</p>
+<p>It is possible to use a layer which is stored outside the project folder.</p>
+<p>This is useful if a basemap is used in more than one project, for example a large orthophoto.
+In this case, you can share this dataset among different projects.</p>
 <h2 id="add-a-layer-outside-of-exported-project-folder">Add a layer outside of exported project folder<a class="headerlink" href="#add-a-layer-outside-of-exported-project-folder" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<p>In QGIS, open  <em>Options &gt; Data Sources &gt; Localized Data Paths</em>. There add the path to the folder where are the external data.</p>
+<p>In QGIS, open  <em>Options &gt; Data Sources &gt; Localized Data Paths</em>.
+In there, add the path to the external data.</p>
 <p>
 <figure><a data-caption="Data Sources" data-fancybox="gallery" href="../../assets/images/external_path.png"><img alt="Data Sources" src="../../assets/images/external_path.png" title="Data Sources" width="600px" /></a><figcaption>Data Sources</figcaption>
 </figure>
 </p>
-<p>To make it works in the device, add the layers in the folder <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/basemaps</code>.</p>
+<p>To use layers from localized data paths on your device, add the datasets to the folder <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/basemaps</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Since QField 2 the basemaps files needs to be stored in the app directory <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/basemaps</code> instead of the devices main directory <code>&lt;drive&gt;:/QField/basemaps</code>.</p>
