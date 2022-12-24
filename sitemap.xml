@@ -232,17 +232,6 @@
          
     </url>
     <url>
-         <loc>https://docs.qfield.org/how-to/itinerary/</loc>
-         <lastmod>2022-12-24</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/itinerary/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/itinerary/"/>
-         <xhtml:link rel="alternate" hreflang="fr" href="https://docs.qfield.org/fr/how-to/itinerary/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="https://docs.qfield.org/it/how-to/itinerary/"/>
-         <xhtml:link rel="alternate" hreflang="es" href="https://docs.qfield.org/es/how-to/itinerary/"/>
-         
-    </url>
-    <url>
          <loc>https://docs.qfield.org/how-to/live-default-value/</loc>
          <lastmod>2022-12-24</lastmod>
          <changefreq>daily</changefreq>
