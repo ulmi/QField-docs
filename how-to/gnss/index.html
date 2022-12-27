@@ -2515,7 +2515,7 @@ snapped to the position with an accuracy value which is bad (red).</p>
 Any measured altitude will be corrected by this value.</p>
 <h3 id="altitude-correction-vertical-grid-shift">Altitude correction / vertical grid shift<a class="headerlink" href="#altitude-correction-vertical-grid-shift" title="Permanent link">&para;</a></h3>
 <p>Altitude values can be corrected with vertical grid shift files to
-calculate orthometric height</p>
+calculate orthometric height.</p>
 <p>Vertical grid shift files have to be made available to QField by putting
 them into the QField app folder <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code>.</p>
 <div class="admonition note">
@@ -2526,6 +2526,11 @@ them into the QField app folder <code>&lt;drive&gt;:/Android/data/ch.opengis.qfi
 the <em>Positioning settings</em> under <em>Vertical grid shift in use</em>.</p>
 <p>If you are using altitude correction and an external bluetooth connected
 antenna consider turning <em>Use orthometric altitude from device</em> off.</p>
+<p>The formats currently supported are:
+ - GeoTIFF (.tif, .tiff)
+ - NOAA Vertical Datum (.gtx)
+ - NTv2 Datum Grid Shift (.gsb)
+ - Natural Resources Canada's Geoid (.byn)</p>
 <p>For example:
 For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download the file <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx from NSGI</a> and put it in the directory.</p>
 <h3 id="additional-variables">Additional variables<a class="headerlink" href="#additional-variables" title="Permanent link">&para;</a></h3>

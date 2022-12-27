@@ -2505,8 +2505,8 @@ agganciato alla posizione con un valore di accuratezza scarso (rosso).</p>
 <p>L'altezza del palo dell'antenna in uso può essere definita nelle impostazioni.
 Qualsiasi altitudine misurata sarà corretta da questo valore.</p>
 <h3 id="correzione-altitudine-spostamento-verticale-della-griglia">Correzione altitudine / spostamento verticale della griglia<a class="headerlink" href="#correzione-altitudine-spostamento-verticale-della-griglia" title="Permanent link">&para;</a></h3>
-<p>I valori di altitudine possono essere corretti con file di spostamento verticale della griglia per
-calcolare l'altezza ortometrica</p>
+<p>Altitude values can be corrected with vertical grid shift files to
+calculate orthometric height.</p>
 <p>I file di spostamento verticale della griglia devono essere resi disponibili a Qfield inserendoli
 nella cartella dell'app QField <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code>.</p>
 <div class="admonition nota">
@@ -2517,6 +2517,11 @@ nella cartella dell'app QField <code>&lt;drive&gt;:/Android/data/ch.opengis.qfie
 <em>Impostazioni di posizionamento</em> in <em>Spostamento verticale della griglia in uso</em>.</p>
 <p>Se stai utilizzando la correzione dell'altitudine ed un'antenna esterna collegata
 via Bluetooth, considera la possibilità di disattivare l'opzione <em>Utilizza l'altitudine ortometrica del dispositivo</em>.</p>
+<p>The formats currently supported are:
+ - GeoTIFF (.tif, .tiff)
+ - NOAA Vertical Datum (.gtx)
+ - NTv2 Datum Grid Shift (.gsb)
+ - Natural Resources Canada's Geoid (.byn)</p>
 <p>Per esempio:
 Per la trasformazione da ETRS89 (elissoide di referenza GPS) a NAP (Olanda), gli utenti possono scaricare il file <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx da NSGI</a> e metterlo nella directory.</p>
 <h3 id="variabili-aggiuntive">Variabili aggiuntive<a class="headerlink" href="#variabili-aggiuntive" title="Permanent link">&para;</a></h3>

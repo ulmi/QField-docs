@@ -2514,8 +2514,8 @@ ajustado a la posición con un valor de exactitud que sea malo (rojo).</p>
 <p>La altura del poste de la antena en uso puede definirse en los ajustes.
 Cualquier altitud medida será corregida por este valor.</p>
 <h3 id="altitude-correction-vertical-grid-shift">Altitude correction / vertical grid shift<a class="headerlink" href="#altitude-correction-vertical-grid-shift" title="Permanent link">&para;</a></h3>
-<p>Los valores de altitud pueden corregirse con archivos de desplazamiento vertical de la cuadrícula para
-calcular la altura ortométrica</p>
+<p>Altitude values can be corrected with vertical grid shift files to
+calculate orthometric height.</p>
 <p>Los archivos de desplazamiento de la cuadrícula vertical tienen que estar disponibles para QField poniendo
 en la carpeta de la aplicación QField <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code>.</p>
 <div class="admonition nota">
@@ -2526,6 +2526,11 @@ en la carpeta de la aplicación QField <code>&lt;drive&gt;:/Android/data/ch.open
 los <em>Ajustes de posicionamiento</em> en <em>Desplazamiento vertical de la cuadrícula en uso</em>.</p>
 <p>Si utiliza la corrección de altitud y una antena externa conectada por bluetooth
 considere la posibilidad de desactivar la opción <em>Utilizar la altitud ortométrica del dispositivo</em>.</p>
+<p>The formats currently supported are:
+ - GeoTIFF (.tif, .tiff)
+ - NOAA Vertical Datum (.gtx)
+ - NTv2 Datum Grid Shift (.gsb)
+ - Natural Resources Canada's Geoid (.byn)</p>
 <p>Por ejemplo:
 Para la transformación de ETRS89 (elipsoide de referencia GPS) a NAP (holandés) los usuarios pueden descargar el archivo <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx de NSGI</a> y ponerlo en el directorio.</p>
 <h3 id="variables-adicionales">Variables adicionales<a class="headerlink" href="#variables-adicionales" title="Permanent link">&para;</a></h3>
