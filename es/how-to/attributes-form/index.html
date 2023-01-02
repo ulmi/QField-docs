@@ -2780,10 +2780,10 @@ restricción no se cumple.</p>
 <h3 id="casos-de-uso-comun">Casos de uso común<a class="headerlink" href="#casos-de-uso-comun" title="Permanent link">&para;</a></h3>
 <p>No puede introducir un valor de elevación superior a la montaña más alta de
 este país.</p>
-<div class="highlight"><pre><span></span><code><span class="ss">&quot;elevation&quot;</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5000</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="ss">&quot;elevation&quot;</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5000</span>
 </code></pre></div>
 <p>Es requerido rellenar un identificador.</p>
-<div class="highlight"><pre><span></span><code><span class="ss">&quot;identificador&quot;</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="ss">&quot;identificador&quot;</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span>
 </code></pre></div>
 <h2 id="definir-valores-predeterminados">Definir Valores Predeterminados<a class="headerlink" href="#definir-valores-predeterminados" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparación del escritorio</p>
@@ -2803,25 +2803,25 @@ posición en los atributos del objeto, consulte la
 - <code>@cloud_useremail</code> que devuelve la dirección de correo electrónico del usuario actualmente conectado a QFieldCloud.</p>
 <h3 id="casos-de-uso-comun_1">Casos de uso común<a class="headerlink" href="#casos-de-uso-comun_1" title="Permanent link">&para;</a></h3>
 <p>Insertar información de posicionamiento como variable:</p>
-<div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">position_horizontal_accuracy</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">position_horizontal_accuracy</span>
 </code></pre></div>
 <p>Insertar la fecha y hora actuales:</p>
-<div class="highlight"><pre><span></span><code><span class="n">now</span><span class="p">()</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">now</span><span class="p">()</span>
 </code></pre></div>
 <p>Insertar la longitud de la línea digitalizada:</p>
-<div class="highlight"><pre><span></span><code><span class="k">length</span><span class="p">(</span><span class="err">$</span><span class="n">geometry</span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">length</span><span class="p">(</span><span class="err">$</span><span class="n">geometry</span><span class="p">)</span>
 </code></pre></div>
 <p>Configurar las variables globales en el dispositivo e insertarlas:</p>
-<div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">nombre_operador</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">nombre_operador</span>
 </code></pre></div>
 <p>Si desea asignar un código de región basado en la ubicación donde se inserta
 un nuevo objeto espacial, puede hacerlo utilizando una expresión agregada:</p>
-<div class="highlight"><pre><span></span><code><span class="k">aggregate</span><span class="p">(</span><span class="w"> </span><span class="n">layer</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;regions&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">aggregate</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;max&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">expression</span><span class="p">:</span><span class="o">=</span><span class="ss">&quot;code&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">filter</span><span class="p">:</span><span class="o">=</span><span class="n">intersects</span><span class="p">(</span><span class="w"> </span><span class="err">$</span><span class="n">geometry</span><span class="p">,</span><span class="w"> </span><span class="n">geometry</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">parent</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">aggregate</span><span class="p">(</span><span class="w"> </span><span class="n">layer</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;regions&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">aggregate</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;max&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">expression</span><span class="p">:</span><span class="o">=</span><span class="ss">&quot;code&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">filter</span><span class="p">:</span><span class="o">=</span><span class="n">intersects</span><span class="p">(</span><span class="w"> </span><span class="err">$</span><span class="n">geometry</span><span class="p">,</span><span class="w"> </span><span class="n">geometry</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">parent</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span>
 </code></pre></div>
 <p>Para transformar las coordenadas recibidas de \@position_coordinate al
 sistema de coordenadas de su proyecto:</p>
-<div class="highlight"><pre><span></span><code><span class="n">x</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
-<span class="n">y</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">x</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span>
+<span class="n">y</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span>
 </code></pre></div>
 <p>::: {#snapping_results}
 Si desea utilizar los resultados de ajuste después de dibujar una línea, puede
@@ -2829,16 +2829,16 @@ utilizar la variable [@snapping_results]{.title-ref}. El siguiente código
 extrae el valor del atributo [id]{.title-ref} del ajuste
 del primer punto de una línea.
 :::</p>
-<div class="highlight"><pre><span></span><code><span class="n">with_variable</span><span class="p">(</span><span class="w"></span>
-<span class="w">  </span><span class="s1">&#39;first_snapped_point&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="n">array_first</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">snapping_results</span><span class="w"> </span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">attribute</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">get_feature_by_id</span><span class="p">(</span><span class="w"></span>
-<span class="w">      </span><span class="o">@</span><span class="n">first_snapped_point</span><span class="p">[</span><span class="s1">&#39;layer&#39;</span><span class="p">],</span><span class="w"></span>
-<span class="w">      </span><span class="o">@</span><span class="n">first_snapped_point</span><span class="p">[</span><span class="s1">&#39;feature_id&#39;</span><span class="p">]</span><span class="w"></span>
-<span class="w">    </span><span class="p">),</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;id&#39;</span><span class="w"></span>
-<span class="w">  </span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">with_variable</span><span class="p">(</span>
+<span class="w">  </span><span class="s1">&#39;first_snapped_point&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">array_first</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">snapping_results</span><span class="w"> </span><span class="p">),</span>
+<span class="w">  </span><span class="n">attribute</span><span class="p">(</span>
+<span class="w">    </span><span class="n">get_feature_by_id</span><span class="p">(</span>
+<span class="w">      </span><span class="o">@</span><span class="n">first_snapped_point</span><span class="p">[</span><span class="s1">&#39;layer&#39;</span><span class="p">],</span>
+<span class="w">      </span><span class="o">@</span><span class="n">first_snapped_point</span><span class="p">[</span><span class="s1">&#39;feature_id&#39;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">),</span>
+<span class="w">    </span><span class="s1">&#39;id&#39;</span>
+<span class="w">  </span><span class="p">)</span>
 </code></pre></div>
 <p>)</p>
 <h2 id="configurar-el-valor-de-autocompletar">Configurar el valor de autocompletar<a class="headerlink" href="#configurar-el-valor-de-autocompletar" title="Permanent link">&para;</a></h2>

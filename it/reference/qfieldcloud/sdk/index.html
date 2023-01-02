@@ -2739,19 +2739,19 @@
 <h2 id="uso-della-cli">Uso della CLI<a class="headerlink" href="#uso-della-cli" title="Permanent link">&para;</a></h2>
 <p>Il tool CLI ufficiale di QFieldCloud</p>
 <h3 id="uso">Uso<a class="headerlink" href="#uso" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
 </code></pre></div>
 <h3 id="esempi">Esempi<a class="headerlink" href="#esempi" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># logs in user &quot;user&quot; with password &quot;pass&quot;</span>
-qfieldcloud-cli login user pass
+qfieldcloud-cli<span class="w"> </span>login<span class="w"> </span>user<span class="w"> </span>pass
 
 <span class="c1"># gets the projects of user &quot;user&quot; with password &quot;pass&quot; at &quot;https://localhost/api/v1/&quot;</span>
-qfieldcloud-cli -u user -p pass -U https://localhost/api/v1/ list-projects
+qfieldcloud-cli<span class="w"> </span>-u<span class="w"> </span>user<span class="w"> </span>-p<span class="w"> </span>pass<span class="w"> </span>-U<span class="w"> </span>https://localhost/api/v1/<span class="w"> </span>list-projects
 
 <span class="c1"># gets the projects of user authenticated with token `QFIELDCLOUD_TOKEN` at &quot;https://localhost/api/v1/&quot; as JSON</span>
-<span class="nb">export</span> <span class="nv">QFIELDCLOUD_URL</span><span class="o">=</span>https://localhost/api/v1/
-<span class="nb">export</span> <span class="nv">QFIELDCLOUD_TOKEN</span><span class="o">=</span>017478ee2464440cb8d3e98080df5e5a
-qfieldcloud-cli --json list-projects
+<span class="nb">export</span><span class="w"> </span><span class="nv">QFIELDCLOUD_URL</span><span class="o">=</span>https://localhost/api/v1/
+<span class="nb">export</span><span class="w"> </span><span class="nv">QFIELDCLOUD_TOKEN</span><span class="o">=</span>017478ee2464440cb8d3e98080df5e5a
+qfieldcloud-cli<span class="w"> </span>--json<span class="w"> </span>list-projects
 </code></pre></div>
 <h3 id="filtri">Filtri<a class="headerlink" href="#filtri" title="Permanent link">&para;</a></h3>
 <p>Alcuni comandi permettono di definire un filtro sui risultati basato sul nome del file con l'opzione <code>--filter</code> (es. il comando <code>download-files</code>).</p>
@@ -2789,16 +2789,16 @@ qfieldcloud-cli --json list-projects
 <li><code>qfieldcloud-cli --filter 'attachments/documentation-??.pdf'</code></li>
 </ul>
 <h3 id="panoramica-delle-opzioni-globali">Panoramica delle opzioni globali<a class="headerlink" href="#panoramica-delle-opzioni-globali" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>-U, --url TEXT                  URL to the QFieldCloud API endpoint. If not
-                                passed, gets the value from QFIELDCLOUD_URL
-                                environment variable. Default:
-                                https://app.qfield.cloud/api/v1/
--u, --username TEXT             Username or email.
--p, --password TEXT
--t, --token TEXT                Session token.
---json / --human                Output the result as newline formatted json. Default: False
---verify-ssl / --no-verify-ssl  Verify SSL. Default: True
---help                          Show this message and exit.
+<div class="highlight"><pre><span></span><code>-U,<span class="w"> </span>--url<span class="w"> </span>TEXT<span class="w">                  </span>URL<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>QFieldCloud<span class="w"> </span>API<span class="w"> </span>endpoint.<span class="w"> </span>If<span class="w"> </span>not
+<span class="w">                                </span>passed,<span class="w"> </span>gets<span class="w"> </span>the<span class="w"> </span>value<span class="w"> </span>from<span class="w"> </span>QFIELDCLOUD_URL
+<span class="w">                                </span>environment<span class="w"> </span>variable.<span class="w"> </span>Default:
+<span class="w">                                </span>https://app.qfield.cloud/api/v1/
+-u,<span class="w"> </span>--username<span class="w"> </span>TEXT<span class="w">             </span>Username<span class="w"> </span>or<span class="w"> </span>email.
+-p,<span class="w"> </span>--password<span class="w"> </span>TEXT
+-t,<span class="w"> </span>--token<span class="w"> </span>TEXT<span class="w">                </span>Session<span class="w"> </span>token.
+--json<span class="w"> </span>/<span class="w"> </span>--human<span class="w">                </span>Output<span class="w"> </span>the<span class="w"> </span>result<span class="w"> </span>as<span class="w"> </span>newline<span class="w"> </span>formatted<span class="w"> </span>json.<span class="w"> </span>Default:<span class="w"> </span>False
+--verify-ssl<span class="w"> </span>/<span class="w"> </span>--no-verify-ssl<span class="w">  </span>Verify<span class="w"> </span>SSL.<span class="w"> </span>Default:<span class="w"> </span>True
+--help<span class="w">                          </span>Show<span class="w"> </span>this<span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span>exit.
 </code></pre></div>
 <p>Variabili di ambiente possono essere usate invece di passare alcune delle opzioni globali più comuni.</p>
 <ul>
@@ -2809,124 +2809,124 @@ qfieldcloud-cli --json list-projects
 <li><code>QFIELDCLOUD_VERIFY_SSL</code> - Se impostato a <code>0</code> ha lo stesso effetto di passare <code>--no-verify-ssl</code>.</li>
 </ul>
 <h3 id="panoramica-dei-comandi">Panoramica dei comandi<a class="headerlink" href="#panoramica-dei-comandi" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>  login             Login to QFieldCloud.
-  <span class="nb">logout</span>            Logout and expire the token.
-  list-projects     List QFieldCloud projects.
-  list-files        List QFieldCloud project files.
-  create-project    Creates a new empty QFieldCloud project.
-  delete-project    Deletes a QFieldCloud project.
-  upload-files      Upload files to a QFieldCloud project.
-  download-files    Download QFieldCloud project files.
-  delete-files      Delete QFieldCloud project files.
-  list-jobs         List project jobs.
-  job-trigger       Triggers a new job.
-  job-status        Get job status.
-  package-latest    Check project packaging status.
-  package-download  Download packaged QFieldCloud project files.
+<div class="highlight"><pre><span></span><code><span class="w">  </span>login<span class="w">             </span>Login<span class="w"> </span>to<span class="w"> </span>QFieldCloud.
+<span class="w">  </span><span class="nb">logout</span><span class="w">            </span>Logout<span class="w"> </span>and<span class="w"> </span>expire<span class="w"> </span>the<span class="w"> </span>token.
+<span class="w">  </span>list-projects<span class="w">     </span>List<span class="w"> </span>QFieldCloud<span class="w"> </span>projects.
+<span class="w">  </span>list-files<span class="w">        </span>List<span class="w"> </span>QFieldCloud<span class="w"> </span>project<span class="w"> </span>files.
+<span class="w">  </span>create-project<span class="w">    </span>Creates<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>empty<span class="w"> </span>QFieldCloud<span class="w"> </span>project.
+<span class="w">  </span>delete-project<span class="w">    </span>Deletes<span class="w"> </span>a<span class="w"> </span>QFieldCloud<span class="w"> </span>project.
+<span class="w">  </span>upload-files<span class="w">      </span>Upload<span class="w"> </span>files<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>QFieldCloud<span class="w"> </span>project.
+<span class="w">  </span>download-files<span class="w">    </span>Download<span class="w"> </span>QFieldCloud<span class="w"> </span>project<span class="w"> </span>files.
+<span class="w">  </span>delete-files<span class="w">      </span>Delete<span class="w"> </span>QFieldCloud<span class="w"> </span>project<span class="w"> </span>files.
+<span class="w">  </span>list-jobs<span class="w">         </span>List<span class="w"> </span>project<span class="w"> </span>jobs.
+<span class="w">  </span>job-trigger<span class="w">       </span>Triggers<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>job.
+<span class="w">  </span>job-status<span class="w">        </span>Get<span class="w"> </span>job<span class="w"> </span>status.
+<span class="w">  </span>package-latest<span class="w">    </span>Check<span class="w"> </span>project<span class="w"> </span>packaging<span class="w"> </span>status.
+<span class="w">  </span>package-download<span class="w">  </span>Download<span class="w"> </span>packaged<span class="w"> </span>QFieldCloud<span class="w"> </span>project<span class="w"> </span>files.
 </code></pre></div>
 <h4 id="login">login<a class="headerlink" href="#login" title="Permanent link">&para;</a></h4>
 <p>Login in QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli login <span class="o">[</span>OPTIONS<span class="o">]</span> USERNAME PASSWORD
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>login<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>USERNAME<span class="w"> </span>PASSWORD
 </code></pre></div>
 <h4 id="logout">logout<a class="headerlink" href="#logout" title="Permanent link">&para;</a></h4>
 <p>Logout da QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli <span class="nb">logout</span>
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span><span class="nb">logout</span>
 </code></pre></div>
 <h4 id="list-projects">list-projects<a class="headerlink" href="#list-projects" title="Permanent link">&para;</a></h4>
 <p>Elenca i progetti QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli list-projects <span class="o">[</span>OPTIONS<span class="o">]</span>
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>list-projects<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 
 Options:
-  --include-public / --no-public  Includes the public project <span class="k">in</span> the list. Default: False
+<span class="w">  </span>--include-public<span class="w"> </span>/<span class="w"> </span>--no-public<span class="w">  </span>Includes<span class="w"> </span>the<span class="w"> </span>public<span class="w"> </span>project<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>list.<span class="w"> </span>Default:<span class="w"> </span>False
 </code></pre></div>
 <h4 id="list-files">list-files<a class="headerlink" href="#list-files" title="Permanent link">&para;</a></h4>
 <p>Elenca i file del progetto QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli list-files <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>list-files<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID
 </code></pre></div>
 <h4 id="create-project">create-project<a class="headerlink" href="#create-project" title="Permanent link">&para;</a></h4>
 <p>Crea un nuovo progetto QFieldCloud vuoto</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli create-project <span class="o">[</span>OPTIONS<span class="o">]</span> NAME
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>create-project<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>NAME
 
 Options:
-  --owner TEXT                Owner of the project. If omitted, the current
-                              user is the owner.
-  --description TEXT          Description of the project.
-  --is-public / --is-private  Mark the project as public.
+<span class="w">  </span>--owner<span class="w"> </span>TEXT<span class="w">                </span>Owner<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>project.<span class="w"> </span>If<span class="w"> </span>omitted,<span class="w"> </span>the<span class="w"> </span>current
+<span class="w">                              </span>user<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>owner.
+<span class="w">  </span>--description<span class="w"> </span>TEXT<span class="w">          </span>Description<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>project.
+<span class="w">  </span>--is-public<span class="w"> </span>/<span class="w"> </span>--is-private<span class="w">  </span>Mark<span class="w"> </span>the<span class="w"> </span>project<span class="w"> </span>as<span class="w"> </span>public.
 </code></pre></div>
 <h4 id="delete-project">delete-project<a class="headerlink" href="#delete-project" title="Permanent link">&para;</a></h4>
 <p>Cancella un progetto QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli delete-project <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>delete-project<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID
 </code></pre></div>
 <h4 id="upload-files">upload-files<a class="headerlink" href="#upload-files" title="Permanent link">&para;</a></h4>
 <p>Carica file in un progetto QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli upload-files <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID PROJECT_PATH
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>upload-files<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID<span class="w"> </span>PROJECT_PATH
 
 Options:
-  --filter TEXT                   Do not upload the whole project, but only
-                                  the files which match the glob.
-  --throw-on-error / --no-throw-on-error
-                                  If any project file upload fails stop
-                                  uploading the rest. Default: False
+<span class="w">  </span>--filter<span class="w"> </span>TEXT<span class="w">                   </span>Do<span class="w"> </span>not<span class="w"> </span>upload<span class="w"> </span>the<span class="w"> </span>whole<span class="w"> </span>project,<span class="w"> </span>but<span class="w"> </span>only
+<span class="w">                                  </span>the<span class="w"> </span>files<span class="w"> </span>which<span class="w"> </span>match<span class="w"> </span>the<span class="w"> </span>glob.
+<span class="w">  </span>--throw-on-error<span class="w"> </span>/<span class="w"> </span>--no-throw-on-error
+<span class="w">                                  </span>If<span class="w"> </span>any<span class="w"> </span>project<span class="w"> </span>file<span class="w"> </span>upload<span class="w"> </span>fails<span class="w"> </span>stop
+<span class="w">                                  </span>uploading<span class="w"> </span>the<span class="w"> </span>rest.<span class="w"> </span>Default:<span class="w"> </span>False
 </code></pre></div>
 <h4 id="download-files">download-files<a class="headerlink" href="#download-files" title="Permanent link">&para;</a></h4>
 <p>Scarica i file del progetto QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli download-files <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID LOCAL_DIR
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>download-files<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID<span class="w"> </span>LOCAL_DIR
 
 Options:
-  --filter TEXT                   Do not download the whole project, but only
-                                  the files which match the glob.
-  --throw-on-error / --no-throw-on-error
-                                  If any project file downloads fails stop
-                                  downloading the rest. Default: False
-  --force-download/--no-force-download
-  ￼                               Download file even <span class="k">if</span> it already exists locally.
-                                  Default: False
+<span class="w">  </span>--filter<span class="w"> </span>TEXT<span class="w">                   </span>Do<span class="w"> </span>not<span class="w"> </span>download<span class="w"> </span>the<span class="w"> </span>whole<span class="w"> </span>project,<span class="w"> </span>but<span class="w"> </span>only
+<span class="w">                                  </span>the<span class="w"> </span>files<span class="w"> </span>which<span class="w"> </span>match<span class="w"> </span>the<span class="w"> </span>glob.
+<span class="w">  </span>--throw-on-error<span class="w"> </span>/<span class="w"> </span>--no-throw-on-error
+<span class="w">                                  </span>If<span class="w"> </span>any<span class="w"> </span>project<span class="w"> </span>file<span class="w"> </span>downloads<span class="w"> </span>fails<span class="w"> </span>stop
+<span class="w">                                  </span>downloading<span class="w"> </span>the<span class="w"> </span>rest.<span class="w"> </span>Default:<span class="w"> </span>False
+<span class="w">  </span>--force-download/--no-force-download
+<span class="w">  </span>￼<span class="w">                               </span>Download<span class="w"> </span>file<span class="w"> </span>even<span class="w"> </span><span class="k">if</span><span class="w"> </span>it<span class="w"> </span>already<span class="w"> </span>exists<span class="w"> </span>locally.
+<span class="w">                                  </span>Default:<span class="w"> </span>False
 </code></pre></div>
 <h4 id="delete-files">delete-files<a class="headerlink" href="#delete-files" title="Permanent link">&para;</a></h4>
 <p>Cancella file di un progetto QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli delete-files <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID PATHS...
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>delete-files<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID<span class="w"> </span>PATHS...
 
 Options:
-  --throw-on-error / --no-throw-on-error
-                                  If any project file delete operations fails
-                                  stop, stop deleting the rest. Default: False
+<span class="w">  </span>--throw-on-error<span class="w"> </span>/<span class="w"> </span>--no-throw-on-error
+<span class="w">                                  </span>If<span class="w"> </span>any<span class="w"> </span>project<span class="w"> </span>file<span class="w"> </span>delete<span class="w"> </span>operations<span class="w"> </span>fails
+<span class="w">                                  </span>stop,<span class="w"> </span>stop<span class="w"> </span>deleting<span class="w"> </span>the<span class="w"> </span>rest.<span class="w"> </span>Default:<span class="w"> </span>False
 </code></pre></div>
 <h4 id="job-list">job-list<a class="headerlink" href="#job-list" title="Permanent link">&para;</a></h4>
 <p>Elenca i lavori del progetto.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli list-jobs <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>list-jobs<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID
 
 Options:
-  --type JOBTYPES  Job type. One of package, delta_apply or
-                   process_projectfile.
+<span class="w">  </span>--type<span class="w"> </span>JOBTYPES<span class="w">  </span>Job<span class="w"> </span>type.<span class="w"> </span>One<span class="w"> </span>of<span class="w"> </span>package,<span class="w"> </span>delta_apply<span class="w"> </span>or
+<span class="w">                   </span>process_projectfile.
 </code></pre></div>
 <h4 id="job-trigger">job-trigger<a class="headerlink" href="#job-trigger" title="Permanent link">&para;</a></h4>
 <p>Avvia un lavoro.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli job-trigger <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID JOB_TYPE
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>job-trigger<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID<span class="w"> </span>JOB_TYPE
 
 Options:
-  --force / --no-force  Should force creating a new job. Default: False
+<span class="w">  </span>--force<span class="w"> </span>/<span class="w"> </span>--no-force<span class="w">  </span>Should<span class="w"> </span>force<span class="w"> </span>creating<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>job.<span class="w"> </span>Default:<span class="w"> </span>False
 </code></pre></div>
 <h4 id="job-status">job-status<a class="headerlink" href="#job-status" title="Permanent link">&para;</a></h4>
 <p>Ottieni lo stato del lavoro.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli job-status <span class="o">[</span>OPTIONS<span class="o">]</span> JOB_ID
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>job-status<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>JOB_ID
 </code></pre></div>
 <h4 id="package-latest">package-latest<a class="headerlink" href="#package-latest" title="Permanent link">&para;</a></h4>
 <p>Verifica lo stato del packaging del progetto.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli package-latest <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>package-latest<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID
 </code></pre></div>
 <h4 id="package-download">package-download<a class="headerlink" href="#package-download" title="Permanent link">&para;</a></h4>
 <p>Scarica il pacchetto con i file del progetto QFieldCloud.</p>
-<div class="highlight"><pre><span></span><code>qfieldcloud-cli package-download <span class="o">[</span>OPTIONS<span class="o">]</span> PROJECT_ID LOCAL_DIR
+<div class="highlight"><pre><span></span><code>qfieldcloud-cli<span class="w"> </span>package-download<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>PROJECT_ID<span class="w"> </span>LOCAL_DIR
 
 Options:
-  --filter TEXT                   Do not download the whole packaged project,
-                                  but only the files which match the glob.
-  --throw-on-error / --no-throw-on-error
-                                  If any packaged file downloads fails stop
-                                  downloading the rest. Default: False
-  --force-download/--no-force-download
-  ￼                               Download file even <span class="k">if</span> it already exists locally.
-                                  Default: False
+<span class="w">  </span>--filter<span class="w"> </span>TEXT<span class="w">                   </span>Do<span class="w"> </span>not<span class="w"> </span>download<span class="w"> </span>the<span class="w"> </span>whole<span class="w"> </span>packaged<span class="w"> </span>project,
+<span class="w">                                  </span>but<span class="w"> </span>only<span class="w"> </span>the<span class="w"> </span>files<span class="w"> </span>which<span class="w"> </span>match<span class="w"> </span>the<span class="w"> </span>glob.
+<span class="w">  </span>--throw-on-error<span class="w"> </span>/<span class="w"> </span>--no-throw-on-error
+<span class="w">                                  </span>If<span class="w"> </span>any<span class="w"> </span>packaged<span class="w"> </span>file<span class="w"> </span>downloads<span class="w"> </span>fails<span class="w"> </span>stop
+<span class="w">                                  </span>downloading<span class="w"> </span>the<span class="w"> </span>rest.<span class="w"> </span>Default:<span class="w"> </span>False
+<span class="w">  </span>--force-download/--no-force-download
+<span class="w">  </span>￼<span class="w">                               </span>Download<span class="w"> </span>file<span class="w"> </span>even<span class="w"> </span><span class="k">if</span><span class="w"> </span>it<span class="w"> </span>already<span class="w"> </span>exists<span class="w"> </span>locally.
+<span class="w">                                  </span>Default:<span class="w"> </span>False
 </code></pre></div>
 
   

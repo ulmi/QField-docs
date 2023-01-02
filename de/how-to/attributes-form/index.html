@@ -2780,10 +2780,10 @@ constraint is not satisfied.</p>
 <h3 id="ubliche-anwendungsfalle">Übliche Anwendungsfälle<a class="headerlink" href="#ubliche-anwendungsfalle" title="Permanent link">&para;</a></h3>
 <p>You cannot enter an elevation value higher than the highest mountain in
 this country.</p>
-<div class="highlight"><pre><span></span><code><span class="ss">&quot;elevation&quot;</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5000</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="ss">&quot;elevation&quot;</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5000</span>
 </code></pre></div>
 <p>Es ist nötig, eine Bezeichnung einzugeben.</p>
-<div class="highlight"><pre><span></span><code><span class="ss">&quot;identifier&quot;</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="ss">&quot;identifier&quot;</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span>
 </code></pre></div>
 <h2 id="define-default-values">Define Default Values<a class="headerlink" href="#define-default-values" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
@@ -2803,25 +2803,25 @@ position in object attributes, refer to the deticated
 - <code>@cloud_useremail</code> which returns the email address of the currently logged in QFieldCloud user.</p>
 <h3 id="ubliche-anwendungsfalle_1">Übliche Anwendungsfälle<a class="headerlink" href="#ubliche-anwendungsfalle_1" title="Permanent link">&para;</a></h3>
 <p>Positionsinformationen als Variable einbinden:</p>
-<div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">position_horizontal_accuracy</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">position_horizontal_accuracy</span>
 </code></pre></div>
 <p>Aktuelles Datum und Zeit einfüllen.</p>
-<div class="highlight"><pre><span></span><code><span class="n">now</span><span class="p">()</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">now</span><span class="p">()</span>
 </code></pre></div>
 <p>Die Länge der digitalisierten Linie einfügen:</p>
-<div class="highlight"><pre><span></span><code><span class="k">length</span><span class="p">(</span><span class="err">$</span><span class="n">geometry</span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">length</span><span class="p">(</span><span class="err">$</span><span class="n">geometry</span><span class="p">)</span>
 </code></pre></div>
 <p>Globale Variablen auf dem Gerät konfigurieren und verwenden.</p>
-<div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">operator_name</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="o">@</span><span class="n">operator_name</span>
 </code></pre></div>
 <p>If you want to assign a region code based on the location where a new
 feature is inserted, you can do so by using an aggregate expression:</p>
-<div class="highlight"><pre><span></span><code><span class="k">aggregate</span><span class="p">(</span><span class="w"> </span><span class="n">layer</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;regions&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">aggregate</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;max&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">expression</span><span class="p">:</span><span class="o">=</span><span class="ss">&quot;code&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">filter</span><span class="p">:</span><span class="o">=</span><span class="n">intersects</span><span class="p">(</span><span class="w"> </span><span class="err">$</span><span class="n">geometry</span><span class="p">,</span><span class="w"> </span><span class="n">geometry</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">parent</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">aggregate</span><span class="p">(</span><span class="w"> </span><span class="n">layer</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;regions&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">aggregate</span><span class="p">:</span><span class="o">=</span><span class="s1">&#39;max&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">expression</span><span class="p">:</span><span class="o">=</span><span class="ss">&quot;code&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">filter</span><span class="p">:</span><span class="o">=</span><span class="n">intersects</span><span class="p">(</span><span class="w"> </span><span class="err">$</span><span class="n">geometry</span><span class="p">,</span><span class="w"> </span><span class="n">geometry</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">parent</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span>
 </code></pre></div>
 <p>To transform the coordinates received from \@position_coordinate to the
 coordinate system of your project:</p>
-<div class="highlight"><pre><span></span><code><span class="n">x</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
-<span class="n">y</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">x</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span>
+<span class="n">y</span><span class="p">(</span><span class="k">transform</span><span class="p">(</span><span class="o">@</span><span class="n">position_coordinate</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">project_crs</span><span class="w"> </span><span class="p">))</span>
 </code></pre></div>
 <p>::: {#snapping_results}
 If you want to use the snapping results after drawing a line, you can
@@ -2829,16 +2829,16 @@ use the [\@snapping_results]{.title-ref} variable. The following code
 extracts the value of the attribute [id]{.title-ref} of the snapping
 match of the first point of a line.
 :::</p>
-<div class="highlight"><pre><span></span><code><span class="n">with_variable</span><span class="p">(</span><span class="w"></span>
-<span class="w">  </span><span class="s1">&#39;first_snapped_point&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="n">array_first</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">snapping_results</span><span class="w"> </span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">attribute</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">get_feature_by_id</span><span class="p">(</span><span class="w"></span>
-<span class="w">      </span><span class="o">@</span><span class="n">first_snapped_point</span><span class="p">[</span><span class="s1">&#39;layer&#39;</span><span class="p">],</span><span class="w"></span>
-<span class="w">      </span><span class="o">@</span><span class="n">first_snapped_point</span><span class="p">[</span><span class="s1">&#39;feature_id&#39;</span><span class="p">]</span><span class="w"></span>
-<span class="w">    </span><span class="p">),</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;id&#39;</span><span class="w"></span>
-<span class="w">  </span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">with_variable</span><span class="p">(</span>
+<span class="w">  </span><span class="s1">&#39;first_snapped_point&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">array_first</span><span class="p">(</span><span class="w"> </span><span class="o">@</span><span class="n">snapping_results</span><span class="w"> </span><span class="p">),</span>
+<span class="w">  </span><span class="n">attribute</span><span class="p">(</span>
+<span class="w">    </span><span class="n">get_feature_by_id</span><span class="p">(</span>
+<span class="w">      </span><span class="o">@</span><span class="n">first_snapped_point</span><span class="p">[</span><span class="s1">&#39;layer&#39;</span><span class="p">],</span>
+<span class="w">      </span><span class="o">@</span><span class="n">first_snapped_point</span><span class="p">[</span><span class="s1">&#39;feature_id&#39;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">),</span>
+<span class="w">    </span><span class="s1">&#39;id&#39;</span>
+<span class="w">  </span><span class="p">)</span>
 </code></pre></div>
 <p>)</p>
 <h2 id="configure-auto-complete-value">Configure Auto-complete Value<a class="headerlink" href="#configure-auto-complete-value" title="Permanent link">&para;</a></h2>
