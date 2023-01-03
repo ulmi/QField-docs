@@ -2477,10 +2477,10 @@
 
 
 <h1 id="posicionamiento-gnss">Posicionamiento (GNSS)<a class="headerlink" href="#posicionamiento-gnss" title="Permanent link">&para;</a></h1>
-<p>QField puede hacer uso del GNSS interno (Sistema Global de Navegación por Satélite
-como GPS, GLONASS, Galileo o Beidou). QField también puede conectarse
-a antenas externas mediante bluetooth e integrar directamente su flujo
-NMEA.</p>
+<p>QField can make use of the internal GNSS (Global Navigation Satellite
+System, like GPS, GLONASS, Galileo or Beidou). QField can also connect
+to external antennas through NMEA streams over Bluetooth, TCP, or UDP
+connection.</p>
 <p>Los dispositivos GNSS también son capaces de medir la altitud junto a la posición actual en 2D
 en la superficie terrestre.</p>
 <h2 id="visualizacion">Visualización<a class="headerlink" href="#visualizacion" title="Permanent link">&para;</a></h2>
@@ -2524,8 +2524,8 @@ en la carpeta de la aplicación QField <code>&lt;drive&gt;:/Android/data/ch.open
 </div>
 <p>Una vez que el archivo de desplazamiento de cuadrícula se coloca allí, está disponible en QField en
 los <em>Ajustes de posicionamiento</em> en <em>Desplazamiento vertical de la cuadrícula en uso</em>.</p>
-<p>Si utiliza la corrección de altitud y una antena externa conectada por bluetooth
-considere la posibilidad de desactivar la opción <em>Utilizar la altitud ortométrica del dispositivo</em>.</p>
+<p>If you are using altitude correction and an external positioning device
+is used, consider turning <em>Use orthometric altitude from device</em> off.</p>
 <p>The formats currently supported are:
  - GeoTIFF (.tif, .tiff)
  - NOAA Vertical Datum (.gtx)
@@ -2638,7 +2638,7 @@ centro significa que está utilizando el posicionamiento GNSS.</p>
 que mostrará las coordenadas actuales que se reproyectan en el
 SRC del proyecto junto con la información de precisión.</p>
 <p>
-<figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/user-guide_gps.png"><img alt="" src="../../assets/images/user-guide_gps.png" title="" width="600px" /></a><figcaption></figcaption>
+<figure><a data-caption="" data-fancybox="gallery" href="../assets/images/positioning-menu.png"><img alt="" src="../assets/images/positioning-menu.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
 <div class="admonition nota">
@@ -2648,12 +2648,61 @@ SRC de su proyecto, es probable que aún no tenga señal.</p>
 </div>
 <h2 id="uso-de-un-receptor-gnss-externo">Uso de un receptor GNSS externo<a class="headerlink" href="#uso-de-un-receptor-gnss-externo" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Trabajo de campo</p>
-<p>QField admite la conexión de antenas GNSS externas mediante bluetooth.</p>
-<p>En <em>Configuración &gt; Posicionamiento</em>, los dispositivos bluetooth emparejados pueden ser escaneados y
-elegidos como fuente de posición.</p>
-<p>Asegúrese de que ninguna otra aplicación, como los proveedores de localización simulada, esté utilizando la
-antena bluetooth.</p>
-<p><div class="video-container"><iframe src="https://player.vimeo.com/video/604667820" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<p>QField supports connecting to external GNSS positioning devices via Bluetooth, TCP,
+or UDP connections.</p>
+<p>In <em>Settings &gt; Positioning</em>, you can find a set of buttons to add, edit, or delete external
+devices as well as a dropdown list to switch between internal and saved external GNSS devices.</p>
+<p>
+<figure><a data-caption="" data-fancybox="gallery" href="../assets/images/saved-gnss-devices.png"><img alt="" src="../assets/images/saved-gnss-devices.png" title="" width="600px" /></a><figcaption></figcaption>
+</figure>
+</p>
+<p>The breakdown of connections support by platform is as follow:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bluetooth</th>
+<th>TCP</th>
+<th>UDP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anroid</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+</tr>
+<tr>
+<td>Windows</td>
+<td></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure no other app like mock location providers are using the same connection.</p>
+</div>
 <h2 id="ubicacion-simulada">Ubicación simulada<a class="headerlink" href="#ubicacion-simulada" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Trabajo de campo</p>
 <p>Es posible proporcionar una ubicación simulada a través de una aplicación android independiente a

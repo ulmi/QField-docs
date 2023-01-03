@@ -1329,6 +1329,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#define-qml-widgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define QML Widgets
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2570,6 +2579,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#define-qml-widgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define QML Widgets
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2851,6 +2869,24 @@ auto-complete in the value relation.</p>
 </p>
 <p>Here a video showing how it works on QField</p>
 <p><div class="video-container"><iframe src="https://player.vimeo.com/video/604661919" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<h2 id="define-qml-widgets">Define QML Widgets<a class="headerlink" href="#define-qml-widgets" title="Permanent link">&para;</a></h2>
+<p>Custom QML widgets can be useful to integrate advanced actions into forms.
+In this example we define add a button that open a third-party map and navigation app.
+This is useful to open e.g. turn-by-turn navigations on the device-native app for the user.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">import</span> <span class="nx">QtQuick</span> <span class="mf">2.0</span>
+<span class="kr">import</span> <span class="nx">QtQuick</span><span class="p">.</span><span class="nx">Controls</span> <span class="mf">2.0</span>
+
+<span class="nx">Button</span> <span class="p">{</span>
+    <span class="k">width:</span> <span class="mi">200</span>
+    <span class="k">height:</span> <span class="nx">width</span><span class="o">/</span><span class="mi">5</span>
+    <span class="k">text:</span> <span class="s2">&quot;Open in Maps&quot;</span>
+    <span class="k">onClicked:</span> <span class="p">{</span>
+        <span class="nx">Qt</span><span class="p">.</span><span class="nx">openUrlExternally</span><span class="p">(</span><span class="nx">expression</span><span class="p">.</span><span class="nx">evaluate</span><span class="p">(</span><span class="s2">&quot;&#39;geo:0,0?q=&#39; || $y || &#39;,&#39; || $x&quot;</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The <code>geo</code> URI above is adapted to work with Android. For Apple Maps the URI can be changed to <code>'geo:' || $y || ',' || $x</code>.</p>
+<p><img alt="" src="../../assets/images/qml_widget_button.png" /></p>
 
   
   
