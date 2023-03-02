@@ -2382,29 +2382,29 @@
 </tr>
 </tbody>
 </table>
-<p>如果在此列表中未找到您最喜欢的数据格式，请检查它是否有效，并 <a href="https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst">调整上面的列表</a> 以分享您的发现。如果不起作用，请 <a href="https://github.com/opengisch/OSGeo4A/issues">提交问题</a> 。我们很高兴帮助您实现梦想。</p>
+<p>如果在此列表中未找到您最喜欢的数据格式，请检查是否有效，并 <a href="https://github.com/opengisch/QField-docs/edit/master/en/project-management/dataformat.rst">调整上面的列表</a> 以分享您的发现。如果是不支持的数据格式，请 <a href="https://github.com/opengisch/OSGeo4A/issues">提交问题</a> 。我们很高兴帮助您实现梦想。</p>
 <h3 id="_2">栅格数据<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>栅格数据可能会很大，当处理未压缩的 tiff 文件时，通常是几个 Gb 的数据。尤其是在移动设备上，这是非常低效的。</p>
 <h3 id="cog-geotiff">使用 COG (云优化的GeoTIFF)<a class="headerlink" href="#cog-geotiff" title="Permanent link">&para;</a></h3>
-<p><a href="https://www.cogeo.org/">云优化的Geotiff (COG)</a> 格式将为离线底图提供最佳用户体验。结合JPEG压缩，将减小栅格大小。</p>
+<p><a href="https://www.cogeo.org/">云优化的Geotiff (COG)</a> 格式将为离线底图提供最佳用户体验。结合JPEG压缩方法，将减小栅格大小。</p>
 <p>以下命令使用JPEG压缩方法将名为 <code>raster.tif</code> 的文件转换为COG文件 <code>raster_cog.tif</code> 。</p>
 <div class="highlight"><pre><span></span><code>gdal_translate<span class="w"> </span>raster.tif<span class="w"> </span>raster_cog.tif<span class="w"> </span>-of<span class="w"> </span>COG<span class="w"> </span>-co<span class="w"> </span><span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">COMPRESS</span><span class="o">=</span>JPEG<span class="w"> </span>-co<span class="w"> </span><span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">BIGTIFF</span><span class="o">=</span>YES
 </code></pre></div>
 <h3 id="cog">COG的高级示例<a class="headerlink" href="#cog" title="Permanent link">&para;</a></h3>
-<p>如果有多个文件需要汇编，首先，您应使用QGIS或以下命令创建VRT文件，以索引目录中的所有TIF文件。请确保您将 <code>EPSG:2056</code> 调整到所需的CRS。</p>
+<p>如果有多个文件需要压缩，您应首先使用QGIS或以下命令创建VRT文件，索引目录中的所有TIF文件。请确保您将 <code>EPSG:2056</code> 调整到所需的CRS。</p>
 <div class="highlight"><pre><span></span><code>gdalbuildvrt<span class="w"> </span>raster_mosaic.vrt<span class="w"> </span>TIF_Directory/*.tif<span class="w"> </span>-addalpha<span class="w"> </span>-hidenodata<span class="w"> </span>-a_srs<span class="w"> </span>EPSG:2056
 </code></pre></div>
 <p>然后将VRT文件转换为COG。</p>
 <div class="highlight"><pre><span></span><code>gdal_translate<span class="w"> </span>raster_mosaic.vrt<span class="w"> </span>raster_cog.tif<span class="w"> </span>-of<span class="w"> </span>COG<span class="w"> </span>-co<span class="w"> </span><span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">COMPRESS</span><span class="o">=</span>JPEG<span class="w"> </span>-co<span class="w"> </span><span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">BIGTIFF</span><span class="o">=</span>YES
 </code></pre></div>
 <p>如果栅格数据质量太低，请调整压缩级别并设置 QUALITY=85 。</p>
-<p>可以设置一些额外参数：</p>
+<p>可以设置一些其他参数：</p>
 <ul>
-<li><code>a_srs</code> 当源栅格数据集未定义CRS时，也可以在 gdal_translate 中使用此命令。</li>
-<li><code>OVERVIEW_RESAMPLING</code> 在缩小时提供不同的渲染器。默认值为 NEAREST，但也可以尝试 BILINEAR 或 AVERAGE 。</li>
+<li><code>a_srs</code> 当源栅格数据集未定义CRS时，可以在 gdal_translate 中使用此命令。</li>
+<li><code>OVERVIEW_RESAMPLING</code> 在压缩时选择不同的渲染器。默认值为 NEAREST，但也可以尝试 BILINEAR 或 AVERAGE 。</li>
 <li><code>NUM_THREADS</code> 将帮助您在使用所有CPU资源或仅使用部分CPU资源之间取得平衡。设置 ALL_CPUS 或定义要使用的线程数。</li>
 </ul>
-<p>结合所有其他参数，命令行可能如下所示：</p>
+<p>综合所有上述参数，命令行或许如下所示：</p>
 <div class="highlight"><pre><span></span><code>gdal_translate<span class="w"> </span>raster.tif<span class="w"> </span>raster_cog.tif<span class="w"> </span>-a_srs<span class="w"> </span>EPSG:2056<span class="w"> </span>-of<span class="w"> </span>COG<span class="w"> </span>-co<span class="w"> </span><span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">OVERVIEW_RESAMPLING</span><span class="o">=</span>BILINEAR<span class="w"> </span>-co<span class="w"> </span><span class="nv">COMPRESS</span><span class="o">=</span>JPEG<span class="w"> </span>-co<span class="w"> </span><span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">NUM_THREADS</span><span class="o">=</span><span class="m">6</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">BIGTIFF</span><span class="o">=</span>YES
 </code></pre></div>
 
