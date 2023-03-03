@@ -2477,20 +2477,20 @@
 <p><img alt="" src="../../assets/images/vertex_log2.png" width="600px" /></p>
 <p>图层字段必须具备GNSS变量的默认值。</p>
 <h3 id="_4">精度要求<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>可以定义所需最小测量精度。品质将报告为三个等级,即差 (红色)、良 (黄色) 和优 (绿色)。这些颜色显示在GNSS按钮顶部的一个点。</p>
+<p>可以定义所需最小测量精度。品质将报告为三个等级，即差 (红色)、良 (黄色) 和优 (绿色)。这些颜色显示在GNSS按钮顶部的一个点。</p>
 <p>可以在定位设置中定义阈值。</p>
-<p>如果 <em>启用精度限制模式</em> 设置为激活状态,您将无法在光标捕捉到精度值为差 (红色) 的位置时,收集新的测量值。</p>
+<p>如果 <em>启用精度限制模式</em> 设置为激活状态，您将无法在光标捕捉到精度值为差 (红色) 的位置时，收集新的测量值。</p>
 <h3 id="_5">天线高度修正<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>使用中的天线杆高度可在设置中定义。任何测量的海拔高度都将通过该值进行校正。</p>
 <h3 id="_6">海拔校正/垂直网格偏移<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<p>海拔值可以用垂直网格偏移文件进行校正,以计算正交高度。</p>
+<p>海拔值可以用垂直网格偏移文件进行校正，以计算正交高度。</p>
 <p>垂直网格偏移文件必须将其放入QField应用程序文件夹 <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code> ,供QField使用。</p>
 <div class="admonition 注解">
 <p class="admonition-title">注解</p>
 <p>从 QField 2 开始 proj 文件需要存储在应用程序目录 <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code> 中,而不是设备主目录 <code>&lt;drive&gt;:/QField/proj</code> 。</p>
 </div>
-<p>一旦把网格偏移文件放到此处,将在QField中的 <em>使用中的垂直网格偏移</em> 下的 <em>定位设置</em> 可用。</p>
-<p>如果您正在使用海拔校正,并且使用了外部定位设备,请考虑关闭 <em>使用设备的垂直海拔</em> 。</p>
+<p>一旦把网格偏移文件放到此处，将在QField中的 <em>使用中的垂直网格偏移</em> 下的 <em>定位设置</em> 可用。</p>
+<p>如果您正在使用海拔校正，并且使用了外部定位设备，请考虑关闭 <em>使用设备的垂直海拔</em> 。</p>
 <p>当前支持的格式有:</p>
 <ul>
 <li>GeoTIFF (.tif, .tiff)</li>
@@ -2499,10 +2499,10 @@
 <li>Natural Resources Canada's Geoid (.byn)</li>
 </ul>
 <p>示例:
-对于从 ETRS89 (参考椭球GPS) 到NAP (荷兰) 的变换,用户可以下载文件 <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx from NSGI</a> 并将其放在目录中。</p>
+对于从 ETRS89 (参考椭球GPS) 到NAP (荷兰) 的变换，用户可以下载文件 <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx from NSGI</a> 并将其放在目录中。</p>
 <h3 id="_7">其他变量<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <p>您可以通过其他表达式变量访问定位信息。这些仅在启用定位时可用。</p>
-<p>这些变量通常用作字段的默认值,用于追踪各测量点的质量。</p>
+<p>这些变量通常用作字段的默认值，用于追踪各测量点的质量。</p>
 <ul>
 <li><code>@position_source_name</code> - The name of the device that gave location information as
     reported by the sensor. To differenciate between internal and
