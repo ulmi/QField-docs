@@ -2461,10 +2461,10 @@
 
 
 <h1 id="gnss">定位 (GNSS)<a class="headerlink" href="#gnss" title="Permanent link">&para;</a></h1>
-<p>QField可以使用内置的GNSS (全球导航卫星系统,如GPS、格洛纳斯、伽利略或北斗)。QField还可以通过 NMEA streams over Bluetooth、TCP 或 UDP connection 连接到外部天线。</p>
+<p>QField可以使用内置的GNSS (全球导航卫星系统，如GPS、格洛纳斯、伽利略或北斗)。QField还可以通过 NMEA streams over Bluetooth、TCP 或 UDP connection 连接到外部天线。</p>
 <p>GNSS设备还能够测量地球表面上当前2D位置附近的高程。</p>
 <h2 id="_1">可视化<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>激活定位后,您的位置将在地图上显示为蓝色。如果静止不动，将显示为蓝色圆点；如果正在移动，则显示为指示移动方向的箭头。</p>
+<p>激活定位后，您的位置将在地图上显示为蓝色。如果静止不动，将显示为蓝色圆点；如果正在移动，则显示为指示移动方向的箭头。</p>
 <p>如果设备具有内置指南针功能，蓝色信号射束表示设备的当前方向。</p>
 <p>当前位置周围的圆圈表示定位设备报告的精度。</p>
 <h2 id="_2">配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -2487,7 +2487,7 @@
 <p>垂直网格偏移文件必须将其放入QField应用程序文件夹 <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code> ,供QField使用。</p>
 <div class="admonition 注解">
 <p class="admonition-title">注解</p>
-<p>从 QField 2 开始 proj 文件需要存储在应用程序目录 <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code> 中,而不是设备主目录 <code>&lt;drive&gt;:/QField/proj</code> 。</p>
+<p>从 QField 2 开始 proj 文件需要存储在应用程序目录 <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code> 中，而不是设备主目录 <code>&lt;drive&gt;:/QField/proj</code> 。</p>
 </div>
 <p>一旦把网格偏移文件放到此处，将在QField中的 <em>使用中的垂直网格偏移</em> 下的 <em>定位设置</em> 可用。</p>
 <p>如果您正在使用海拔校正，并且使用了外部定位设备，请考虑关闭 <em>使用设备的垂直海拔</em> 。</p>
@@ -2656,7 +2656,9 @@
 </tr>
 </tbody>
 </table>
-<p>*(*) Windows的蓝牙支持通过操作系统连接到GNSS设备时自动创建的虚拟串行端口来实现。 *</p>
+<ul>
+<li>(*) Windows的蓝牙支持通过操作系统连接到GNSS设备时自动创建的虚拟串行端口来实现。 *</li>
+</ul>
 <p>目前支持的NMEA语句有GGA、RMC、GSA、GSV、VTG和HDT。</p>
 <div class="admonition 注解">
 <p class="admonition-title">注解</p>

@@ -2388,10 +2388,10 @@
 <p class="admonition-title">注解</p>
 <p>从 Android 11 开始，拒绝应用程序完全访问主存储和外部存储的内容。这对 QField 2 来说，意味着无法直接访问传输和 (或) 下载到存储文件夹中的工程和数据集。</p>
 </div>
-<p>您必须将工程文件夹或单个数据集导入应用程序专用存储位置： <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField</code> ，在该位置可以不受限制地进行读/写存取。该方案还支持从外部SD存储卡或使用远程文件提供程序 (例如 Google Drive) 导入。</p>
+<p>您必须将工程文件夹或单数据集导入应用程序专用存储位置： <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField</code> ，在该位置可以不受限制地进行读/写存取。该方案还支持从外部SD存储卡或使用远程文件提供程序 (例如 Google Drive) 导入。</p>
 <div class="admonition 警告">
 <p class="admonition-title">警告</p>
-<p>请注意，卸载QField时，应用程序文件夹将被删除，而更新时则保持不变。</p>
+<p>请注意，卸载QField时，应用程序文件夹将被删除，而更新则不会。</p>
 </div>
 <h2 id="_2">导入并打开本地工程<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> QField界面</p>
@@ -2400,7 +2400,7 @@
 <figure><a data-caption="QField文件选择器" data-fancybox="gallery" href="../../assets/images/howto_filebrowser.png"><img alt="QField文件选择器" src="../../assets/images/howto_filebrowser.png" title="QField文件选择器" width="600px" /></a><figcaption>QField文件选择器</figcaption>
 </figure>
 </p>
-<p>下拉菜单列出了导入工程和数据集的方式：<em>从文件夹导入工程</em>、<em>从ZIP导入工程 (归档文件)</em> 和 <em>导入 (单个) 数据集</em> 。</p>
+<p>下拉菜单列出了导入工程和数据集的方式：<em>从文件夹导入工程</em>、<em>从ZIP导入工程 (归档文件)</em> 和 <em>导入 (单) 数据集</em> 。</p>
 <h3 id="zip">从文件夹或ZIP归档文件导入工程<a class="headerlink" href="#zip" title="Permanent link">&para;</a></h3>
 <p>从文件夹或ZIP归档文件导入工程时，将要求您授予QField通过系统文件夹选择器读取设备存储中指定文件夹内容的权限。选择文件夹或归档文件后，QField会将内容 (包括其子文件夹) 复制到应用程序的 ‘导入工程’ 位置，然后就可以从那里打开工程。</p>
 <p>通过下拉菜单操作重新导入指定文件夹，将盖写已存在相同文件夹名称的现有工程。此操作允许您更新工程内容。</p>
@@ -2409,7 +2409,7 @@
 <p>请注意，要素的编辑、添加和删除将保存在导入工程的数据集中，而不是导入过程中选择的原始文件夹。</p>
 </div>
 <h3 id="_3">导入数据集<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>您还可以导入单个数据集。通过系统文件选择器选择一个或多个文件，并将其复制到 "已导入数据集" 文件夹中。导入时必须确保选中所有附属文件 (例如，shapefile 数据集需要选择 .shp、.shx、.dbf、.prj 和 .cpg 文件)。</p>
+<p>您还可以导入单数据集。通过系统文件选择器选择一个或多个文件，并将其复制到 "已导入数据集" 文件夹中。导入时必须确保选中所有附属文件 (例如，shapefile 数据集需要选择 .shp、.shx、.dbf、.prj 和 .cpg 文件)。</p>
 <h2 id="_4">收藏夹目录<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>在文件选择器的首屏中，有一栏显示了收藏夹目录。要将目录添加到收藏夹，请在目录名称上的文件选择器中长按。要从收藏夹中移除条目，请在收藏夹列表中的条目上长按。</p>
 <h2 id="_5">检索修改的工程和数据集<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
