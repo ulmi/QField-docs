@@ -525,7 +525,7 @@
         
   
   <span class="md-ellipsis">
-    Konzepte
+    Grundidee
     
   </span>
   
@@ -547,7 +547,7 @@
         
   
   <span class="md-ellipsis">
-    Storage Access
+    Lokale Projektverwaltung
     
   </span>
   
@@ -651,7 +651,7 @@
         
   
   <span class="md-ellipsis">
-    Get Started
+    Erste Schritte
     
   </span>
   
@@ -742,7 +742,7 @@
         
   
   <span class="md-ellipsis">
-    Get Started
+    Erste Schritte
     
   </span>
   
@@ -802,7 +802,7 @@
         
   
   <span class="md-ellipsis">
-    Sample projects
+    Beispielprojekte
     
   </span>
   
@@ -1705,7 +1705,7 @@
         
   
   <span class="md-ellipsis">
-    Projects
+    Projekte
     
   </span>
   
@@ -2346,56 +2346,43 @@
 <h2 id="ziel-und-voraussetzungen">Ziel und Voraussetzungen<a class="headerlink" href="#ziel-und-voraussetzungen" title="Permanent link">&para;</a></h2>
 <p>Das Wattenmeer in Dänemark, Deutschland und den Niederlanden ist für viele Brutvogelarten von herausragender Bedeutung. Die Schutzstation Wattenmeer nimmt jährlich am trilateralen Monitoring- und Bewertungsprogramm (TMAP) für das Wattenmeer teil und überwacht die Anzahl der Brutvögel in mehr als 100 Monitoringgebieten in Schleswig-Holstein/Deutschland. Für eine Reihe von Arten überwachen wir einen bedeutenden Anteil des gesamten deutschen Brutbestandes. </p>
 <p>
-<figure><a data-caption="Sketch of the project and the monitoring areas of Schutzstation Wattenmeer (yellow)." data-fancybox="gallery" href="../../assets/images/Wattenmeer1.jpg"><img alt="Sketch of the project and the monitoring areas of Schutzstation Wattenmeer (yellow)." src="../../assets/images/Wattenmeer1.jpg" title="Sketch of the project and the monitoring areas of Schutzstation Wattenmeer (yellow)." width="600px" /></a><figcaption>Sketch of the project and the monitoring areas of Schutzstation Wattenmeer (yellow).</figcaption>
+<figure><a data-caption="Projektüberblick und Lage der Monitoringflächen der Schutzstation Wattenmeer (gelb)." data-fancybox="gallery" href="../../assets/images/Wattenmeer1.jpg"><img alt="Projektüberblick und Lage der Monitoringflächen der Schutzstation Wattenmeer (gelb)." src="../../assets/images/Wattenmeer1.jpg" title="Projektüberblick und Lage der Monitoringflächen der Schutzstation Wattenmeer (gelb)." width="600px" /></a><figcaption>Projektüberblick und Lage der Monitoringflächen der Schutzstation Wattenmeer (gelb).</figcaption>
 </figure>
 </p>
 <p>Die meisten Feldarbeiten werden von jährlich wechselnden Freiwilligen durchgeführt, die in der Regel nicht über viel Erfahrung verfügen. Eine gute Betreuung während der Überwachungsphase im Frühjahr ist daher sehr wichtig. Gleichzeitig stellt die Menge der gesammelten Daten eine große bürokratische Herausforderung dar.</p>
 <p>Bis 2018 wurden Papierkarten verwendet, um die Daten im Feld zu erfassen. Die größten Nachteile des analogen Systems waren:</p>
 <ul>
-<li>orientation in the field was rather difficult without GPS
+<li>die Orientierung im Feld war ohne GPS-Ortung ziemlich schwierig
     positioning</li>
-<li>all results had to be counted and transferred to data tables and
+<li>alle Ergebnisse mussten manuell ausgewertetund in Datentabellen und GIS übertragen werden, Übertragungsfehler waren wahrscheinlich (jedes Jahr werden etwa 18.000 Beobachtungen gesammelt)
     GIS manually, transmission errors were likely (about 18,000
     observations are collected every year)</li>
-<li>data could only be reviewed after the monitoring period and
-    unlikely observations could not be checked directly</li>
+<li>die Daten konnten erst nach dem Erfassungszeitraum überprüft werden, und 
+    unwahrscheinliche Beobachtungen konnten nicht direkt kontrolliert werden</li>
 </ul>
-<p>For this reason, we have implemented a digital monitoring workflow using
-the power of QField, the advantages of a cloud storage system and the
-computational power of R. Most tasks are now fully automatized in R. Via
-the cloud data from all areas can be accessed and evaluated with daily
-topicality.</p>
+<p>Aus diesem Grund haben wir einen digitalen Monitoring-Workflow implementiert, der die Leistungsfähigkeit von QField, die Vorteile eines Cloud-Speichersystems und die Rechenleistung von R nutzt. Die meisten Aufgaben werden nun vollständig in R automatisiert. Über die Cloud können Daten aus allen Gebieten mit tagesgenauer Aktualität abgerufen und ausgewertet werden.</p>
 <p>
-<figure><a data-caption="Sketch of the data transmission system. Field observations are logged in QField on a tablet and uploaded into a cloud storage. Data from all areas are accessed and automatically treated by an R script." data-fancybox="gallery" href="../../assets/images/Wattenmeer2.jpg"><img alt="Sketch of the data transmission system. Field observations are logged in QField on a tablet and uploaded into a cloud storage. Data from all areas are accessed and automatically treated by an R script." src="../../assets/images/Wattenmeer2.jpg" title="Sketch of the data transmission system. Field observations are logged in QField on a tablet and uploaded into a cloud storage. Data from all areas are accessed and automatically treated by an R script." width="600px" /></a><figcaption>Sketch of the data transmission system. Field observations are logged in QField on a tablet and uploaded into a cloud storage. Data from all areas are accessed and automatically treated by an R script.</figcaption>
+<figure><a data-caption="Schema des Datenübertragungssystems. Feldbeobachtungen werden in QField auf einem Tablet protokolliert und in einen Cloud-Speicher hochgeladen. Daten aus allen Gebieten werden von einem R-Skript abgerufen und automatisch verarbeitet." data-fancybox="gallery" href="../../assets/images/Wattenmeer2.jpg"><img alt="Schema des Datenübertragungssystems. Feldbeobachtungen werden in QField auf einem Tablet protokolliert und in einen Cloud-Speicher hochgeladen. Daten aus allen Gebieten werden von einem R-Skript abgerufen und automatisch verarbeitet." src="../../assets/images/Wattenmeer2.jpg" title="Schema des Datenübertragungssystems. Feldbeobachtungen werden in QField auf einem Tablet protokolliert und in einen Cloud-Speicher hochgeladen. Daten aus allen Gebieten werden von einem R-Skript abgerufen und automatisch verarbeitet." width="600px" /></a><figcaption>Schema des Datenübertragungssystems. Feldbeobachtungen werden in QField auf einem Tablet protokolliert und in einen Cloud-Speicher hochgeladen. Daten aus allen Gebieten werden von einem R-Skript abgerufen und automatisch verarbeitet.</figcaption>
 </figure>
 </p>
-<p>In spring 2019 we tested our system with seven tablet devices spread
-over seven of in total 12 different monitoring stations.</p>
+<p>Im Frühjahr 2019 haben wir unser System mit sieben Tablets getestet, die auf sieben von insgesamt 12 verschiedenen Überwachungsstationen verteilt waren.</p>
 <h2 id="projektvorbereitung">Projektvorbereitung<a class="headerlink" href="#projektvorbereitung" title="Permanent link">&para;</a></h2>
-<p>On a desktop computer we set up a QGIS project containing a
-high-resolution aerial image as background layer for orientation in the
-field. For the monitoring data we created a custom Geopackage database
-with predefined dropdown columns and entry restrictions. Additionally,
-we added predefined walking paths to guide the volunteers and to further
-standardise our monitoring.</p>
+<p>Auf einem Desktop-Computer richteten wir ein QGIS-Projekt ein, das ein hochauflösendes Luftbild als Hintergrund zur Orientierung im Feld enthielt. Für die Erfassungsdaten erstellten wir eine benutzerdefinierte Geopackage-Datenbank mit vordefinierten Dropdown-Spalten und Eingabevorgaben. Außerdem fügten wir vordefinierte Strecken hinzu, um die Freiwilligen anzuleiten und unser Monitoring weiter zu standardisieren.</p>
 <p>
-<figure><a data-caption="Sketch of the QField Interface. For data entry we used a geopackage file with custom dropdown list and entry restrictions." data-fancybox="gallery" href="../../assets/images/Wattenmeer3.jpg"><img alt="Sketch of the QField Interface. For data entry we used a geopackage file with custom dropdown list and entry restrictions." src="../../assets/images/Wattenmeer3.jpg" title="Sketch of the QField Interface. For data entry we used a geopackage file with custom dropdown list and entry restrictions." width="600px" /></a><figcaption>Sketch of the QField Interface. For data entry we used a geopackage file with custom dropdown list and entry restrictions.</figcaption>
+<figure><a data-caption="Bild der QField-Schnittstelle. Für die Dateneingabe haben wir eine Geopaketdatei mit benutzerdefinierter Dropdown-Liste und Eingabevorgaben verwendet." data-fancybox="gallery" href="../../assets/images/Wattenmeer3.jpg"><img alt="Bild der QField-Schnittstelle. Für die Dateneingabe haben wir eine Geopaketdatei mit benutzerdefinierter Dropdown-Liste und Eingabevorgaben verwendet." src="../../assets/images/Wattenmeer3.jpg" title="Bild der QField-Schnittstelle. Für die Dateneingabe haben wir eine Geopaketdatei mit benutzerdefinierter Dropdown-Liste und Eingabevorgaben verwendet." width="600px" /></a><figcaption>Bild der QField-Schnittstelle. Für die Dateneingabe haben wir eine Geopaketdatei mit benutzerdefinierter Dropdown-Liste und Eingabevorgaben verwendet.</figcaption>
 </figure>
 </p>
 <p>
-<figure><a data-caption="Logged observations are clearly laid out in QField." data-fancybox="gallery" href="../../assets/images/Wattenmeer4.jpg"><img alt="Logged observations are clearly laid out in QField." src="../../assets/images/Wattenmeer4.jpg" title="Logged observations are clearly laid out in QField." width="600px" /></a><figcaption>Logged observations are clearly laid out in QField.</figcaption>
+<figure><a data-caption="Die protokollierten Beobachtungen werden in QField übersichtlich dargestellt." data-fancybox="gallery" href="../../assets/images/Wattenmeer4.jpg"><img alt="Die protokollierten Beobachtungen werden in QField übersichtlich dargestellt." src="../../assets/images/Wattenmeer4.jpg" title="Die protokollierten Beobachtungen werden in QField übersichtlich dargestellt." width="600px" /></a><figcaption>Die protokollierten Beobachtungen werden in QField übersichtlich dargestellt.</figcaption>
 </figure>
 </p>
-<p>We used an additional synchronisation App that automatically uploaded
-the field data from the tablet to a Google Drive cloud after fieldwork.
-For data download, automatized backup, data review and export we wrote a
-R script.</p>
+<p>Wir verwendeten eine zusätzliche Synchronisations-App, die die Felddaten nach der Feldarbeit automatisch vom Tablet in eine Google Drive-Cloud hochlud. Für das Herunterladen der Daten, das automatisierte Backup, die Überprüfung und den Export der Daten haben wir ein R-Skript geschrieben.</p>
 <p>
-<figure><a data-caption="After data was automatically synchronized with the cloud the results from all the different areas can be reviewed via a custom R script." data-fancybox="gallery" href="../../assets/images/Wattenmeer5.jpg"><img alt="After data was automatically synchronized with the cloud the results from all the different areas can be reviewed via a custom R script." src="../../assets/images/Wattenmeer5.jpg" title="After data was automatically synchronized with the cloud the results from all the different areas can be reviewed via a custom R script." width="600px" /></a><figcaption>After data was automatically synchronized with the cloud the results from all the different areas can be reviewed via a custom R script.</figcaption>
+<figure><a data-caption="Nach der automatischen Synchronisierung der Daten in der Cloud können die Ergebnisse aus den verschiedenen Bereichen über ein benutzerdefiniertes R-Skript überprüft werden." data-fancybox="gallery" href="../../assets/images/Wattenmeer5.jpg"><img alt="Nach der automatischen Synchronisierung der Daten in der Cloud können die Ergebnisse aus den verschiedenen Bereichen über ein benutzerdefiniertes R-Skript überprüft werden." src="../../assets/images/Wattenmeer5.jpg" title="Nach der automatischen Synchronisierung der Daten in der Cloud können die Ergebnisse aus den verschiedenen Bereichen über ein benutzerdefiniertes R-Skript überprüft werden." width="600px" /></a><figcaption>Nach der automatischen Synchronisierung der Daten in der Cloud können die Ergebnisse aus den verschiedenen Bereichen über ein benutzerdefiniertes R-Skript überprüft werden.</figcaption>
 </figure>
 </p>
 <p>
-<figure><a data-caption="Also visual review of the collected data is possible via R." data-fancybox="gallery" href="../../assets/images/Wattenmeer6.jpg"><img alt="Also visual review of the collected data is possible via R." src="../../assets/images/Wattenmeer6.jpg" title="Also visual review of the collected data is possible via R." width="600px" /></a><figcaption>Also visual review of the collected data is possible via R.</figcaption>
+<figure><a data-caption="Auch eine visuelle Überprüfung der gesammelten Daten ist über R möglich." data-fancybox="gallery" href="../../assets/images/Wattenmeer6.jpg"><img alt="Auch eine visuelle Überprüfung der gesammelten Daten ist über R möglich." src="../../assets/images/Wattenmeer6.jpg" title="Auch eine visuelle Überprüfung der gesammelten Daten ist über R möglich." width="600px" /></a><figcaption>Auch eine visuelle Überprüfung der gesammelten Daten ist über R möglich.</figcaption>
 </figure>
 </p>
 <p>Das grundsätzliche Konzept von QField als vereinfachte Feldanwendung von QGIS hat sich für unsere Arbeit mit Freiwilligen als sehr nützlich erwiesen. Während wir in QGIS ein Projekt mit einem hohen Maß an Anpassungsmöglichkeiten einrichten können, das alle unsere Bedürfnisse abdeckt, müssen die Feldarbeiter nur die Grundlagen verstehen. Ein großer Vorteil: Unerwünschte Änderungen sind in QField fast unmöglich.</p>
@@ -2406,7 +2393,7 @@ R script.</p>
 </figure>
 </p>
 <p>
-<figure><a data-caption="The field kit." data-fancybox="gallery" href="../../assets/images/Wattenmeer8.jpg"><img alt="The field kit." src="../../assets/images/Wattenmeer8.jpg" title="The field kit." width="600px" /></a><figcaption>The field kit.</figcaption>
+<figure><a data-caption="Der Arbeitsablauf." data-fancybox="gallery" href="../../assets/images/Wattenmeer8.jpg"><img alt="Der Arbeitsablauf." src="../../assets/images/Wattenmeer8.jpg" title="Der Arbeitsablauf." width="600px" /></a><figcaption>Der Arbeitsablauf.</figcaption>
 </figure>
 </p>
 <h2 id="auswertung-und-aussicht">Auswertung und Aussicht<a class="headerlink" href="#auswertung-und-aussicht" title="Permanent link">&para;</a></h2>

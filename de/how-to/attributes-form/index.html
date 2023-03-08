@@ -525,7 +525,7 @@
         
   
   <span class="md-ellipsis">
-    Konzepte
+    Grundidee
     
   </span>
   
@@ -547,7 +547,7 @@
         
   
   <span class="md-ellipsis">
-    Storage Access
+    Lokale Projektverwaltung
     
   </span>
   
@@ -651,7 +651,7 @@
         
   
   <span class="md-ellipsis">
-    Get Started
+    Erste Schritte
     
   </span>
   
@@ -742,7 +742,7 @@
         
   
   <span class="md-ellipsis">
-    Get Started
+    Erste Schritte
     
   </span>
   
@@ -802,7 +802,7 @@
         
   
   <span class="md-ellipsis">
-    Sample projects
+    Beispielprojekte
     
   </span>
   
@@ -1920,7 +1920,7 @@
         
   
   <span class="md-ellipsis">
-    Projects
+    Projekte
     
   </span>
   
@@ -2625,7 +2625,7 @@ The field widgets from QGIS are supported on a best effort basis and optimized f
 <td></td>
 </tr>
 <tr>
-<td>Attachment</td>
+<td>Anhang</td>
 <td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
 <td>This field is combined with camera integration. It is also able to open other files like pdf and doc (if you have an appropriate viewer) <a href="#attachment-photo-settings">Attachment (photo settings)</a></td>
 </tr>
@@ -2682,7 +2682,7 @@ QField form.</p>
 <h3 id="drag-and-drop-designer-formulare">Drag and Drop Designer Formulare<a class="headerlink" href="#drag-and-drop-designer-formulare" title="Permanent link">&para;</a></h3>
 <p>Gruppen und Reiter von Drag and Drop Designer Formularen werden unterstützt.</p>
 <h2 id="configure-a-relation-widget">Configure a Relation Widget<a class="headerlink" href="#configure-a-relation-widget" title="Permanent link">&para;</a></h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop Vorbereitung</p>
 <p>For more information refer to the relations chapter of the official
 <a href="https://docs.qgis.org/3.22/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations">QGIS Documentation</a>.</p>
 <p>
@@ -2716,23 +2716,20 @@ information (e.g. percentage) in the linking table.</p>
 <p>In case of the many-to-one cardinality on many-to-many relations the
 <em>Display Expression</em> needs to be set on the linking table.</p>
 <h2 id="configure-attachmentpictures-widget">Configure Attachment/Pictures Widget<a class="headerlink" href="#configure-attachmentpictures-widget" title="Permanent link">&para;</a></h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop Vorbereitung</p>
 <p>The widget type <em>Attachment</em> is used with fields that store the path
 to files.</p>
-<p>It can be used to:</p>
+<p>Es kann verwendet werden, um:</p>
 <ul>
-<li>show and take photos</li>
-<li>show links to external files like pdfs or documents</li>
+<li>Fotos zu zeigen und aufzunehmen</li>
+<li>Links zu externen Dateien wie pdfs oder anderen Dokumenten zu zeigen</li>
 </ul>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/attachement-setting.png"><img alt="" src="../../assets/images/attachement-setting.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>The path should be set to relative. The pictures, pdf and docs are
-stored then in a sub-directory of the project, where the link stored in
-the textfield is pointing to.</p>
-<p>In QField the picture is displayed. By clicking the camera symbol the
-camera is started to update the picture with a new photo.</p>
+<p>Der Pfad sollte auf relativ eingestellt werden. Die Bilder, pdf und Dokumente werden werden dann in einem Unterverzeichnis des Projekts gespeichert, auf das der im Textfeld hinterlegte Link verweist.</p>
+<p>In QField wird das Bild angezeigt. Durch Klicken auf das Kamerasymbol wird die Kamera gestartet, um das Bild mit einem neuen Foto zu aktualisieren.</p>
 <p>
 <figure><a data-caption="pictures" data-fancybox="gallery" href="../../assets/images/qfield_picture.png"><img alt="pictures" src="../../assets/images/qfield_picture.png" title="pictures" width="600px" /></a><figcaption>pictures</figcaption>
 </figure>
@@ -2744,7 +2741,7 @@ camera functionality and enable a hyperlink to open a document (pdf,
 doc, ...).</p>
 <p><img alt="" src="../../assets/images/hyperlink_option.png" /></p>
 <h2 id="configure-a-value-relation-widget">Configure a Value Relation Widget<a class="headerlink" href="#configure-a-value-relation-widget" title="Permanent link">&para;</a></h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop Vorbereitung</p>
 <p>The widget <em>Value Relation</em> offers values from a related table in a
 combobox. You can select <em>layer</em>, <em>key column</em> and <em>value column</em>. Several
 options are available to change the standard behaviors: <em>allow null value</em>, <em>order by value</em> and <em>allow multiple selections</em>. The widget will
@@ -2754,7 +2751,7 @@ display a drop-down or multiple-select list of the referenced features.</p>
 </figure>
 </p>
 <h2 id="configure-conditional-visibility">Configure Conditional Visibility<a class="headerlink" href="#configure-conditional-visibility" title="Permanent link">&para;</a></h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop Vorbereitung</p>
 <p>Groups can be hidden based on an expression. This is useful when certain
 attributes are only required under certain conditions. As an example
 imagine mapping trees. Some of them might have a disease and you have a
@@ -2769,7 +2766,7 @@ checkbox is checked, the list of diseases will be available to you.</p>
 <p>Let's see what we got on the field:</p>
 <p><div class="video-container"><iframe src="https://player.vimeo.com/video/499565113" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 <h2 id="define-constraints">Define Constraints<a class="headerlink" href="#define-constraints" title="Permanent link">&para;</a></h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop Vorbereitung</p>
 <p>Attribute fields can have constraints attached. Constraints are
 expressions that needs to evaluate to <code>True</code> (or <code>1</code>) in order to be
 able to save the form. Constraints are configured on a per-field basis
@@ -2788,7 +2785,7 @@ this country.</p>
 <div class="highlight"><pre><span></span><code><span class="ss">&quot;identifier&quot;</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span>
 </code></pre></div>
 <h2 id="define-default-values">Define Default Values<a class="headerlink" href="#define-default-values" title="Permanent link">&para;</a></h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop Vorbereitung</p>
 <p>Fields can have default values configured. Default values are inserted
 into the attribute form when digitizing a new feature. They are visible and can be modified as long as the field is editable. They
 can be based on the geometry or expression variables.</p>
@@ -2844,7 +2841,7 @@ match of the first point of a line.
 </code></pre></div>
 <p>)</p>
 <h2 id="configure-auto-complete-value">Configure Auto-complete Value<a class="headerlink" href="#configure-auto-complete-value" title="Permanent link">&para;</a></h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop Vorbereitung</p>
 <p>The "Use completer" checkbox must be checked to be able to use the
 auto-complete in the value relation.</p>
 <p>
