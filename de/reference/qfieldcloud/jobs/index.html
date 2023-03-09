@@ -846,7 +846,7 @@
         
   
   <span class="md-ellipsis">
-    Sponsor
+    Sponsoring
     
   </span>
   
@@ -890,7 +890,7 @@
         
   
   <span class="md-ellipsis">
-    Contribute
+    Mitmachen!
     
   </span>
   
@@ -912,7 +912,7 @@
         
   
   <span class="md-ellipsis">
-    Third-party tutorials
+    Weitere (externe) Tutorials
     
   </span>
   
@@ -1082,7 +1082,7 @@
         
   
   <span class="md-ellipsis">
-    Measuring tool
+    Messwerkzeug
     
   </span>
   
@@ -1170,7 +1170,7 @@
         
   
   <span class="md-ellipsis">
-    Search
+    Suche
     
   </span>
   
@@ -1258,7 +1258,7 @@
         
   
   <span class="md-ellipsis">
-    Positioning (GNSS)
+    Ortung (GNSS)
     
   </span>
   
@@ -1324,7 +1324,7 @@
         
   
   <span class="md-ellipsis">
-    Bookmarks
+    Lesezeichen
     
   </span>
   
@@ -1824,9 +1824,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#troubleshoot" class="md-nav__link">
+  <a href="#problemlosung" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshoot
+      Problemlösung
     </span>
   </a>
   
@@ -1857,9 +1857,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#troubleshoot_1" class="md-nav__link">
+  <a href="#problemlosung_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshoot
+      Problemlösung
     </span>
   </a>
   
@@ -1890,9 +1890,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#troubleshoot_2" class="md-nav__link">
+  <a href="#problemlosung_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshoot
+      Problemlösung
     </span>
   </a>
   
@@ -2421,9 +2421,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#troubleshoot" class="md-nav__link">
+  <a href="#problemlosung" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshoot
+      Problemlösung
     </span>
   </a>
   
@@ -2454,9 +2454,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#troubleshoot_1" class="md-nav__link">
+  <a href="#problemlosung_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshoot
+      Problemlösung
     </span>
   </a>
   
@@ -2487,9 +2487,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#troubleshoot_2" class="md-nav__link">
+  <a href="#problemlosung_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshoot
+      Problemlösung
     </span>
   </a>
   
@@ -2587,8 +2587,8 @@
 <p class="admonition-title">Note</p>
 <p>All jobs can be triggered using the QFieldCloud API.</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition warnung">
+<p class="admonition-title">Warnung</p>
 <ul>
 <li>Any of the triggering conditions described on this page might change without notice.</li>
 <li>All jobs must finish within 10 minutes or they will result in a timeout error and will be terminated.</li>
@@ -2604,7 +2604,7 @@
 <li>The uploaded file is within the <code>DCIM</code> directory. Those files are assumed to be irrelevant to project validity.</li>
 <li>There is already a <code>process_projectfile</code> job in <code>PENDING</code> status.</li>
 </ul>
-<h4 id="troubleshoot">Troubleshoot<a class="headerlink" href="#troubleshoot" title="Permanent link">&para;</a></h4>
+<h4 id="problemlosung">Problemlösung<a class="headerlink" href="#problemlosung" title="Permanent link">&para;</a></h4>
 <p>A <code>process_projectfile</code> job might result in <code>FAILED</code> status. Check the non-exhaustive list of causes below:</p>
 <ul>
 <li>The uploaded QGIS project file (<code>.qgs</code>/<code>.qgz</code>) is unreadable, incomplete, broken or wrong. Try to reupload the QGIS project file.</li>
@@ -2623,7 +2623,7 @@
 <li>There is already a <code>package</code> job in <code>PENDING</code> status.</li>
 <li>The project does not contain online vector layers (PostGIS, WFS etc), the latest <code>package</code> job result was <code>SUCCESS</code> and there were no file uploads, nor change uploads.</li>
 </ul>
-<h4 id="troubleshoot_1">Troubleshoot<a class="headerlink" href="#troubleshoot_1" title="Permanent link">&para;</a></h4>
+<h4 id="problemlosung_1">Problemlösung<a class="headerlink" href="#problemlosung_1" title="Permanent link">&para;</a></h4>
 <p>A <code>package</code> job might result in <code>FAILED</code> status. Check the non-exhaustive list of causes below:</p>
 <ul>
 <li>The project has never run a <code>process_projectfile</code> job that resulted in <code>SUCCESS</code> status.</li>
@@ -2637,7 +2637,7 @@
 <li>The project never run a <code>process_projectfile</code> job that resulted in <code>SUCCESS</code> status.</li>
 <li>There is already a <code>delta_apply</code> job in <code>PENDING</code> status.</li>
 </ul>
-<h4 id="troubleshoot_2">Troubleshoot<a class="headerlink" href="#troubleshoot_2" title="Permanent link">&para;</a></h4>
+<h4 id="problemlosung_2">Problemlösung<a class="headerlink" href="#problemlosung_2" title="Permanent link">&para;</a></h4>
 <p>A <code>delta_apply</code> job might result in <code>FAILED</code> status. Check the non-exhaustive list of causes below:</p>
 <ul>
 <li>At least one of the online databases (PostGIS/WFS) used in the QGIS project reset the connection.</li>

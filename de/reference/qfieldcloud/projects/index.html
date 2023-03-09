@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-a-project" class="md-skip">
+        <a href="#ein-projekt-erstellen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -846,7 +846,7 @@
         
   
   <span class="md-ellipsis">
-    Sponsor
+    Sponsoring
     
   </span>
   
@@ -890,7 +890,7 @@
         
   
   <span class="md-ellipsis">
-    Contribute
+    Mitmachen!
     
   </span>
   
@@ -912,7 +912,7 @@
         
   
   <span class="md-ellipsis">
-    Third-party tutorials
+    Weitere (externe) Tutorials
     
   </span>
   
@@ -1082,7 +1082,7 @@
         
   
   <span class="md-ellipsis">
-    Measuring tool
+    Messwerkzeug
     
   </span>
   
@@ -1170,7 +1170,7 @@
         
   
   <span class="md-ellipsis">
-    Search
+    Suche
     
   </span>
   
@@ -1258,7 +1258,7 @@
         
   
   <span class="md-ellipsis">
-    Positioning (GNSS)
+    Ortung (GNSS)
     
   </span>
   
@@ -1324,7 +1324,7 @@
         
   
   <span class="md-ellipsis">
-    Bookmarks
+    Lesezeichen
     
   </span>
   
@@ -1751,18 +1751,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-a-project" class="md-nav__link">
+  <a href="#ein-projekt-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating a project
+      Ein Projekt erstellen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
+  <a href="#dateien" class="md-nav__link">
     <span class="md-ellipsis">
-      Files
+      Dateien
     </span>
   </a>
   
@@ -1778,9 +1778,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#changes" class="md-nav__link">
+  <a href="#anderungen" class="md-nav__link">
     <span class="md-ellipsis">
-      Changes
+      Änderungen
     </span>
   </a>
   
@@ -1805,9 +1805,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
+  <a href="#einstellungen" class="md-nav__link">
     <span class="md-ellipsis">
-      Settings
+      Einstellungen
     </span>
   </a>
   
@@ -2290,18 +2290,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-a-project" class="md-nav__link">
+  <a href="#ein-projekt-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating a project
+      Ein Projekt erstellen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
+  <a href="#dateien" class="md-nav__link">
     <span class="md-ellipsis">
-      Files
+      Dateien
     </span>
   </a>
   
@@ -2317,9 +2317,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#changes" class="md-nav__link">
+  <a href="#anderungen" class="md-nav__link">
     <span class="md-ellipsis">
-      Changes
+      Änderungen
     </span>
   </a>
   
@@ -2344,9 +2344,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
+  <a href="#einstellungen" class="md-nav__link">
     <span class="md-ellipsis">
-      Settings
+      Einstellungen
     </span>
   </a>
   
@@ -2377,15 +2377,15 @@
 <p>Projects are the main data container within QFieldCloud. Each user can create one or more QFieldCloud projects. Each project contains a single <code>.qgs</code>/<code>.qgz</code> QGIS project file, the geospatial files - GeoPackages, Shapefiles, TIFs, and additional data such as photos, PDFs etc. All project data files must be within a single QFieldCloud project.</p>
 <p>Each QFieldCloud project has a name and an owner. The owner of a project is a QFieldCloud user or an organization. The owner name and project name must be a unique combination within QFieldCloud, which means a user cannot have two projects with the same name.</p>
 <p>Projects can be marked as public or private. Private projects are accessible only by users that are added as project collaborators. The public projects are visible to anyone on QFieldCloud and they can download the project on their QField device.</p>
-<h2 id="creating-a-project">Creating a project<a class="headerlink" href="#creating-a-project" title="Permanent link">&para;</a></h2>
+<h2 id="ein-projekt-erstellen">Ein Projekt erstellen<a class="headerlink" href="#ein-projekt-erstellen" title="Permanent link">&para;</a></h2>
 <p>A project can be created in two different ways: either using the QFieldCloud web interface or using QFieldSync in QGIS.</p>
-<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<h2 id="dateien">Dateien<a class="headerlink" href="#dateien" title="Permanent link">&para;</a></h2>
 <p>Files are the skeleton on which QFieldCloud project works. To make a QFieldCloud project alive you need to upload at least a single QGIS project file in the <code>.qgs</code> or <code>.qgz</code> file format. All geospatial files need to be uploaded with the same relative paths as on your computer. If external SVG or raster symbology is used, you need to upload these files too.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>QFieldCloud does not support projects stored in a GeoPackage (<code>.gpkg</code>) files.</p>
 </div>
-<p>A typical file structure of a QGIS file might look something like this:
+<p>Eine typische Dateistruktur einer QGIS-Datei könnte etwa so aussehen:
 <div class="highlight"><pre><span></span><code>project
 ├── data
 │   ├── basemap.tif
@@ -2402,7 +2402,7 @@
 </code></pre></div></p>
 <h2 id="collaborators">Collaborators<a class="headerlink" href="#collaborators" title="Permanent link">&para;</a></h2>
 <p>A project collaborator is another QFieldCloud user invited to contribute to a project. One project may have multiple collaborators. Collaborators with role <strong>owner</strong> or <strong>admin</strong> can add more users as collaborators. If the project is owned by an organization, you can also add <strong>teams</strong> as collaborators. Read more about <a href="../permissions/">collaborator roles</a>.</p>
-<h2 id="changes">Changes<a class="headerlink" href="#changes" title="Permanent link">&para;</a></h2>
+<h2 id="anderungen">Änderungen<a class="headerlink" href="#anderungen" title="Permanent link">&para;</a></h2>
 <p>Changes made on vector layers and pushed to QFieldCloud from a QField device will appear here. Each change stores the changed attributes and geometries.</p>
 <p>Changes have one of the three methods:</p>
 <ul>
@@ -2420,7 +2420,7 @@
 <p>Changes to vector layers done in QGIS will not appear here.</p>
 </div>
 <h2 id="jobs">Jobs<a class="headerlink" href="#jobs" title="Permanent link">&para;</a></h2>
-<p>Read more about <a href="../jobs/">project jobs</a>.</p>
+<p>Lies mehr über <a href="../jobs/">Projekt Jobs</a>.</p>
 <h2 id="secrets">Secrets<a class="headerlink" href="#secrets" title="Permanent link">&para;</a></h2>
 <p>Secrets are settings that are securely stored in encrypted way. Project jobs will automatically have access to their secrets. Once added, a secret can only be removed, but cannot be edited.</p>
 <p>There are two types of secrets:</p>
@@ -2428,12 +2428,12 @@
 <li><strong>Environment variables</strong> - Environment variables will be available to QGIS while your project jobs are running.</li>
 <li><strong>pgservice connection</strong> - A PostgreSQL/PostGIS connection as defined in the <code>.pg_service.conf</code> configuration file. If you use multiple service definitions, you should add multiple secrets for each of them.</li>
 </ul>
-<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<h2 id="einstellungen">Einstellungen<a class="headerlink" href="#einstellungen" title="Permanent link">&para;</a></h2>
 <p>Project settings are available only for project owners and collaborators with elevated permissions. From here a user can access some sensitive project settings or unrecoverable actions.</p>
 <ul>
 <li>Change the project visibility to public.</li>
-<li>Change the project owner.</li>
-<li>Permanently delete a project.</li>
+<li>Wechsel den Projektbesitzer.</li>
+<li>Ein Projekt dauerhaft löschen.</li>
 <li>etc</li>
 </ul>
 <div class="admonition warning">
