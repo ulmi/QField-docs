@@ -1325,9 +1325,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#log-dei-vertici" class="md-nav__link">
+  <a href="#measure-m-value" class="md-nav__link">
     <span class="md-ellipsis">
-      Log dei vertici
+      Measure (M) value
     </span>
   </a>
   
@@ -1355,15 +1355,6 @@
   <a href="#correzione-altitudine-spostamento-verticale-della-griglia" class="md-nav__link">
     <span class="md-ellipsis">
       Correzione altitudine / spostamento verticale della griglia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#variabili-aggiuntive" class="md-nav__link">
-    <span class="md-ellipsis">
-      Variabili aggiuntive
     </span>
   </a>
   
@@ -1407,6 +1398,39 @@
       Funzionalità posizionamento medio
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positioning-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positioning variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertex-logger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertex logger
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2355,9 +2379,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#log-dei-vertici" class="md-nav__link">
+  <a href="#measure-m-value" class="md-nav__link">
     <span class="md-ellipsis">
-      Log dei vertici
+      Measure (M) value
     </span>
   </a>
   
@@ -2385,15 +2409,6 @@
   <a href="#correzione-altitudine-spostamento-verticale-della-griglia" class="md-nav__link">
     <span class="md-ellipsis">
       Correzione altitudine / spostamento verticale della griglia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#variabili-aggiuntive" class="md-nav__link">
-    <span class="md-ellipsis">
-      Variabili aggiuntive
     </span>
   </a>
   
@@ -2440,6 +2455,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#project-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positioning-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positioning variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertex-logger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertex logger
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2473,20 +2521,23 @@ La tua posizione è visibile come un punto blu se sei fermo oppure come una frec
 <p>Un cerchio attorno alla tua posizione attuale indica la precisione come riportata dal
 dispositivo di posizionamento.</p>
 <h2 id="configurazione">Configurazione<a class="headerlink" href="#configurazione" title="Permanent link">&para;</a></h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
-<h3 id="log-dei-vertici">Log dei vertici<a class="headerlink" href="#log-dei-vertici" title="Permanent link">&para;</a></h3>
-<p>È possibile configurare un layer con i log dei vertici raccolti. Questo permette di tener traccia dei metadati di ogni vertice, come ad esempio gli attributi di qualità GNSS e altro. Per configurare questo, un layer di tipo punto va aggiunto al progetto e gli attributi configurati per registrare queste informazioni.</p>
-<p><img alt="" src="../../assets/images/vertex_log1.png" width="600px" /></p>
-<p>Poi devi assegnare il ruolo <em>digitizing logger</em> a un layer di tipo punto.</p>
-<p>Vai nel menu <em>QFieldSync &gt; Proprietà del progetto</em></p>
-<p><img alt="" src="../../assets/images/vertex_log2.png" width="600px" /></p>
-<p>I campi del layer devono avere un valore di default impostato con le variabili GNSS.</p>
+<p>The following settings are available in QField settings' positioning tab.</p>
+<h3 id="measure-m-value">Measure (M) value<a class="headerlink" href="#measure-m-value" title="Permanent link">&para;</a></h3>
+<p>When digitizing a geometry onto a vector layer that contains an M dimension,
+QField will add a measurement value to individual vertices whenever the
+coordinate cursor is locked to the current position.</p>
+<p>By default, the value will represent the captured position's timestamp (milliseconds
+since epoch). You can change this value using the combo box in the settings'
+positioning tab.</p>
+<p>The available values to chose from are timestamp, ground speed, bearing, horizontal
+accuracy and vertical accuracy as well as PDOP, HDOP and VDOP.</p>
 <h3 id="requisiti-di-accuratezza">Requisiti di accuratezza<a class="headerlink" href="#requisiti-di-accuratezza" title="Permanent link">&para;</a></h3>
 <p>Può essere definita un'accuratezza minima desiderata per le misurazioni. La qualità
 sarà riportata in tre classi, scarsa (rosso), ok (giallo) e eccellente (verde). Questi colori appariranno come un punto sopra il pulsante GNSS.</p>
-<p>Le soglie possono essere definite nelle impostazioni di posizionamento.</p>
-<p>Se l'impostazione <em>Attiva requisiti di accuratezza</em> è attivata, non sarai in grado di raccogliere nuove misurazioni con il cursore
-agganciato alla posizione con un valore di accuratezza scarso (rosso).</p>
+<p>The thresholds can be defined in the settings' positioning tab.</p>
+<p>If the <em>Enable accuracy requirement</em> setting is activated, you will not
+be able to collect new measurements with the coordinate cursor locked to
+the current position with an accuracy value which is bad (red).</p>
 <h3 id="compensazione-altezza-antenna">Compensazione altezza antenna<a class="headerlink" href="#compensazione-altezza-antenna" title="Permanent link">&para;</a></h3>
 <p>L'altezza del palo dell'antenna in uso può essere definita nelle impostazioni.
 Qualsiasi altitudine misurata sarà corretta da questo valore.</p>
@@ -2495,10 +2546,6 @@ Qualsiasi altitudine misurata sarà corretta da questo valore.</p>
 calculate orthometric height.</p>
 <p>I file di spostamento verticale della griglia devono essere resi disponibili a Qfield inserendoli
 nella cartella dell'app QField <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code>.</p>
-<div class="admonition nota">
-<p class="admonition-title">Nota</p>
-<p>A partire da QField 2 i file Proj devono essere salvati nella directory dell'app<code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code> invece che nella directory principale del dispositivo<code>&lt;drive&gt;:/QField/proj</code>.</p>
-</div>
 <p>Una volta che il file di spostamento griglia è posto lì, è disponibile in Qfield nelle
 <em>Impostazioni di posizionamento</em> in <em>Spostamento verticale della griglia in uso</em>.</p>
 <p>If you are using altitude correction and an external positioning device
@@ -2510,96 +2557,9 @@ is used, consider turning <em>Use orthometric altitude from device</em> off.</p>
 <li>NTv2 Datum Grid Shift (.gsb)</li>
 <li>Natural Resources Canada's Geoid (.byn)</li>
 </ul>
-<p>Per esempio:
-Per la trasformazione da ETRS89 (elissoide di referenza GPS) a NAP (Olanda), gli utenti possono scaricare il file <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx da NSGI</a> e metterlo nella directory.</p>
-<h3 id="variabili-aggiuntive">Variabili aggiuntive<a class="headerlink" href="#variabili-aggiuntive" title="Permanent link">&para;</a></h3>
-<p>Puoi accedere alle informazioni di posizionamento attraverso variabili
-di espressione aggiuntive. Queste saranno disponibili solo quando il posizionamento è
-abilitato.</p>
-<p>Queste variabili sono comunemente usate come valori predefiniti dei campi per tenere
-traccia della qualità dei singoli punti misurati.</p>
-<ul>
-<li><code>@position_source_name</code> - il nome del dispositivo che ha dato informazioni sulla posizione come
-    riportato dal sensore. Per differenziare tra sensore interno e
-    sensore esterno. Se la posizione è impostata manualmente, e la
-    posizione non è agganciato al cursore, il nome della sorgente è
-    "manuale". <strong>Nel caso in cui il cursore non sia agganciato alla posizione, tutte le altre variabili saranno nulle. Se hai comunque bisogno di queste informazioni, utilizza invece le
-    le variabili <code>gnss_</code></strong>.</li>
-<li><code>@position_quality_description</code> - Una stringa leggibile e tradotta per la qualità come
-        riportato dal sensore. Ad esempio, "RTK fisso".  È disponibile solamente
-        quando il mirino è agganciato al sensore. - IE</li>
-<li><code>@position_coordinate</code> - Un punto con la coordinata in WGS84. Lon, Lat, Altitude come
-        trasmessa dal sensore. È disponibile solamente quando il mirino
-        è agganciato al sensore. - <code>x(@position_coordinate)</code> - IE</li>
-<li><code>@position_horizontal_accuracy</code> - L'accuratezza verticale delle coordinate (in metri) come
-        riportato dal sensore. È disponibile solamente quando il mirino
-        è agganciato al sensore. - IE</li>
-<li><code>@position_timestamp</code> - Il timestamp della posizione in UTC come riportato dal sensore.
-        È disponibile solamente quando il mirino è agganciato al
-        sensore. - IE</li>
-<li><code>@position_direction</code> - La direzione del movimento in gradi dal vero nord, come riportato
-        dal sensore. È disponibile solamente quando il mirino è
-        agganciato al sensore. - IE</li>
-<li><code>@position_ground_speed</code> - Velocità al suolo (in m/s) come riportato dal sensore. È disponibile solamente
-        quando il mirino è agganciato al sensore. - IE</li>
-<li><code>@position_magnetic_variation</code> - L'angolo tra la componente orizzontale del campo magnetico
-        e il nord vero, in gradi come riportato dal sensore. Noto anche
-        come declinazione magnetica. Un valore positivo indica una direzione
-        in senso orario dal vero nord e in valore negatiovo indica una
-        direzione in senso antiorario. È disponibile solamente quando il
-        mirino viene agganciato al sensore. - IE</li>
-<li><code>@position_vertical_accuracy</code> - L'accuratezza verticale delle coordinate (in metri) come riportato
-        dal sensore. È disponibile solamente quando il mirino è
-        agganciato al sensore. - IE</li>
-<li><code>@position_3d_accuracy</code> - La precisione tridimensionale della coordinata (in metri), 3D-RMS
-        come riportato dal sensore. È disponibile solamente quando il 
-        mirino è agganciato al sensore. - IE</li>
-<li><code>@position_vertical_speed</code> - La velocità verticale (in m/s) come riportato dal sensore. È
-        disponibile solamente quando il mirino è agganciato al sensore. - IE</li>
-<li><code>@position_averaged_count</code> - Questa variabile contiene il numero di posizioni raccolte da
-        da cui è stata calcolata una posizione media durante la digitalizzazione in questa modalità. Per posizioni
-        non medie, il valore sarà impostato su <code>0</code> (zero). - IE</li>
-<li><code>@position_pdop</code> - Diluizione di precisione della posizione come riportato dal sensore. È
-        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
-<li><code>@position_hdop</code> - Diluizione orizzontale della precisione come riportato dal sensore. È
-        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
-<li><code>@position_vdop</code> - Diluizione verticale della precisione come riportato dal sensore. È
-        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
-<li><code>@position_number_of_used_satellites</code> - Numero di satelliti come riportato dal sensore. È disponibile solamente
-        quando il mirino è agganciato al sensore. - IE</li>
-<li><code>@position_used_satellites</code> - Una lista dei satelliti in uso (pri) come riportato dal sensore. È
-       disponibile solamente quando il mirino è agganciato al sensore. - <code>array_length(@position_used_satellites)</code> - E</li>
-<li><code>@position_fix_status_description</code> - Il Fix Status del GPS "NoData", "NoFix", "Fix2D" o "Fix3D"
-        come riportato dela sensore. È disponibile solamente quando il
-        mirino è agganciato al sensore. - E</li>
-<li><code>@position_fix_mode</code> - Modalità di fissaggio (dove "M" = Manuale, obbligato ad operare in 2D o 3D o
-        "A" = Automatico, 3D/2D) come riportato dal sensore. È disponibile
-        solamente quando il mirino è agganciato al sensore. - E</li>
-</ul>
-<div class="admonition informazione">
-<p class="admonition-title">Informazione</p>
-<p>I: sorgente di posizione Interna E: sorgente di posizione Esterna (NMEA)</p>
-</div>
-<p>Tutte le variabili <code>@position_*</code> hanno una variabile <code>@gnss_*</code> corrispondente.
-Le variabili gnss riportano sempre i valori del sensore gnss, anche quando il
-il mirino non è agganciato.</p>
-<dl>
-<dt>Esempi:</dt>
-<dd>
-<ul>
-<li>quando il mirino è agganciato al sensore - <code>@gnss_horizontal_accuracy</code> &gt; L'
-        L'accuratezza orizzontale delle coordinate (in metri) come
-        riportato dal sensore. - <code>@position_horizontal_accuracy</code> &gt; L'
-        accuratezza orizzontale delle coordinate (in metri) come
-        riportato dal sensore. - <code>@position_source_name</code> --&gt; nome del sensore.</li>
-<li>quando il mirino è mosso manualmente - <code>@gnss_horizontal_accuracy</code> &gt; L'
-        accuratezza orizziontale delle coordinate (in metri) come
-        riportato dal sensore. - <code>@position_horizontal_accuracy</code> &gt; Il valore
-        è <code>NULL</code>. - <code>@position_source_name</code> &gt; Il valore è
-        <code>manuale</code>.</li>
-</ul>
-</dd>
-</dl>
+<p>For example:
+For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
+the file <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx from NSGI</a> and put it in the directory.</p>
 <h2 id="uso">Uso<a class="headerlink" href="#uso" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Lavoro sul campo</p>
 <p>Premendo brevemente il <em>pulsante GNSS</em>, il GNSS e il centra della posizione corrente verranno attivati non appena  le
@@ -2706,13 +2666,111 @@ Se è attivo un requisito minimo di conteggio delle posizioni medie, sarà prese
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/positioning-averaged.webp"><img alt="" src="../../assets/images/positioning-averaged.webp" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>Le impostazioni per attivare una soglia minima di conteggio delle posizioni medie sono disponibili nel pannello di <em>posizionamento</em> delle impostazioni QField.
-Quando è attivo, non è necessario tenere premuto il pulsante aggiungi vertice; un breve tocco sul pulsante inizierà la raccolta delle posizioni e aggiungerà automaticamente la posizione media quando viene soddisfatto il requisito di conteggio minimo.</p>
+<p>The setting to activate an average position minimum count threshold can be found in QField settings's <em>positioning</em> panel.
+When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/positioning_averaged_set.jpg"><img alt="" src="../../assets/images/positioning_averaged_set.jpg" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
 <p>Quando si utilizzano le <a href="../gnss/#additional-variables">variabili <code>@gnss_*</code> o <code>@position_</code></a> in posizioni medie, la variabile rappresenta anche la media di tutti i campioni raccolti.</p>
+<h2 id="project-configuration">Project configuration<a class="headerlink" href="#project-configuration" title="Permanent link">&para;</a></h2>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Desktop preparation</p>
+<h3 id="positioning-variables">Positioning variables<a class="headerlink" href="#positioning-variables" title="Permanent link">&para;</a></h3>
+<p>You can get access to positioning information through additional
+expression variables accessible in the attribute form. These will
+only be available when positioning is enabled.</p>
+<p>These variables are commonly used as part of<a href="https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values">default values expressions</a>
+for fields to keep track of the quality of individual measured points.</p>
+<ul>
+<li><code>@position_source_name</code> - il nome del dispositivo che ha dato informazioni sulla posizione come
+    riportato dal sensore. Per differenziare tra sensore interno e
+    sensore esterno. Se la posizione è impostata manualmente, e la
+    posizione non è agganciato al cursore, il nome della sorgente è
+    "manuale". <strong>Nel caso in cui il cursore non sia agganciato alla posizione, tutte le altre variabili saranno nulle. Se hai comunque bisogno di queste informazioni, utilizza invece le
+    le variabili <code>gnss_</code></strong>.</li>
+<li><code>@position_quality_description</code> - Una stringa leggibile e tradotta per la qualità come
+        riportato dal sensore. Ad esempio, "RTK fisso".  È disponibile solamente
+        quando il mirino è agganciato al sensore. - IE</li>
+<li><code>@position_coordinate</code> - Un punto con la coordinata in WGS84. Lon, Lat, Altitude come
+        trasmessa dal sensore. È disponibile solamente quando il mirino
+        è agganciato al sensore. - <code>x(@position_coordinate)</code> - IE</li>
+<li><code>@position_horizontal_accuracy</code> - L'accuratezza verticale delle coordinate (in metri) come
+        riportato dal sensore. È disponibile solamente quando il mirino
+        è agganciato al sensore. - IE</li>
+<li><code>@position_timestamp</code> - Il timestamp della posizione in UTC come riportato dal sensore.
+        È disponibile solamente quando il mirino è agganciato al
+        sensore. - IE</li>
+<li><code>@position_direction</code> - La direzione del movimento in gradi dal vero nord, come riportato
+        dal sensore. È disponibile solamente quando il mirino è
+        agganciato al sensore. - IE</li>
+<li><code>@position_ground_speed</code> - Velocità al suolo (in m/s) come riportato dal sensore. È disponibile solamente
+        quando il mirino è agganciato al sensore. - IE</li>
+<li><code>@position_magnetic_variation</code> - L'angolo tra la componente orizzontale del campo magnetico
+        e il nord vero, in gradi come riportato dal sensore. Noto anche
+        come declinazione magnetica. Un valore positivo indica una direzione
+        in senso orario dal vero nord e in valore negatiovo indica una
+        direzione in senso antiorario. È disponibile solamente quando il
+        mirino viene agganciato al sensore. - IE</li>
+<li><code>@position_vertical_accuracy</code> - L'accuratezza verticale delle coordinate (in metri) come riportato
+        dal sensore. È disponibile solamente quando il mirino è
+        agganciato al sensore. - IE</li>
+<li><code>@position_3d_accuracy</code> - La precisione tridimensionale della coordinata (in metri), 3D-RMS
+        come riportato dal sensore. È disponibile solamente quando il 
+        mirino è agganciato al sensore. - IE</li>
+<li><code>@position_vertical_speed</code> - La velocità verticale (in m/s) come riportato dal sensore. È
+        disponibile solamente quando il mirino è agganciato al sensore. - IE</li>
+<li><code>@position_averaged_count</code> - Questa variabile contiene il numero di posizioni raccolte da
+        da cui è stata calcolata una posizione media durante la digitalizzazione in questa modalità. Per posizioni
+        non medie, il valore sarà impostato su <code>0</code> (zero). - IE</li>
+<li><code>@position_pdop</code> - Diluizione di precisione della posizione come riportato dal sensore. È
+        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
+<li><code>@position_hdop</code> - Diluizione orizzontale della precisione come riportato dal sensore. È
+        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
+<li><code>@position_vdop</code> - Diluizione verticale della precisione come riportato dal sensore. È
+        disponibile solamente quando il mirino è agganciato al sensore. - E</li>
+<li><code>@position_number_of_used_satellites</code> - Numero di satelliti come riportato dal sensore. È disponibile solamente
+        quando il mirino è agganciato al sensore. - IE</li>
+<li><code>@position_used_satellites</code> - Una lista dei satelliti in uso (pri) come riportato dal sensore. È
+       disponibile solamente quando il mirino è agganciato al sensore. - <code>array_length(@position_used_satellites)</code> - E</li>
+<li><code>@position_fix_status_description</code> - Il Fix Status del GPS "NoData", "NoFix", "Fix2D" o "Fix3D"
+        come riportato dela sensore. È disponibile solamente quando il
+        mirino è agganciato al sensore. - E</li>
+<li><code>@position_fix_mode</code> - Modalità di fissaggio (dove "M" = Manuale, obbligato ad operare in 2D o 3D o
+        "A" = Automatico, 3D/2D) come riportato dal sensore. È disponibile
+        solamente quando il mirino è agganciato al sensore. - E</li>
+</ul>
+<div class="admonition informazione">
+<p class="admonition-title">Informazione</p>
+<p>I: sorgente di posizione Interna E: sorgente di posizione Esterna (NMEA)</p>
+</div>
+<p>Tutte le variabili <code>@position_*</code> hanno una variabile <code>@gnss_*</code> corrispondente.
+Le variabili gnss riportano sempre i valori del sensore gnss, anche quando il
+il mirino non è agganciato.</p>
+<dl>
+<dt>Esempi:</dt>
+<dd>
+<ul>
+<li>quando il mirino è agganciato al sensore - <code>@gnss_horizontal_accuracy</code> &gt; L'
+        L'accuratezza orizzontale delle coordinate (in metri) come
+        riportato dal sensore. - <code>@position_horizontal_accuracy</code> &gt; L'
+        accuratezza orizzontale delle coordinate (in metri) come
+        riportato dal sensore. - <code>@position_source_name</code> --&gt; nome del sensore.</li>
+<li>quando il mirino è mosso manualmente - <code>@gnss_horizontal_accuracy</code> &gt; L'
+        accuratezza orizziontale delle coordinate (in metri) come
+        riportato dal sensore. - <code>@position_horizontal_accuracy</code> &gt; Il valore
+        è <code>NULL</code>. - <code>@position_source_name</code> &gt; Il valore è
+        <code>manuale</code>.</li>
+</ul>
+</dd>
+</dl>
+<h3 id="vertex-logger">Vertex logger<a class="headerlink" href="#vertex-logger" title="Permanent link">&para;</a></h3>
+<p>È possibile configurare un layer con i log dei vertici raccolti. Questo permette di tener traccia dei metadati di ogni vertice, come ad esempio gli attributi di qualità GNSS e altro. Per configurare questo, un layer di tipo punto va aggiunto al progetto e gli attributi configurati per registrare queste informazioni.</p>
+<p><img alt="" src="../../assets/images/vertex_log1.png" width="600px" /></p>
+<p>Then you should assign the role <em>digitizing logger</em> to a point layer.</p>
+<p>Vai nel menu <em>QFieldSync &gt; Proprietà del progetto</em></p>
+<p><img alt="" src="../../assets/images/vertex_log2.png" width="600px" /></p>
+<p>To be most effective, the layer attributes should have default values that
+relies on the positioning variables enumerated above.</p>
 
   
   
