@@ -1325,9 +1325,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#measure-m-value" class="md-nav__link">
+  <a href="#m" class="md-nav__link">
     <span class="md-ellipsis">
-      Measure (M) value
+      测量 (M) 值
     </span>
   </a>
   
@@ -1402,28 +1402,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-configuration" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      Project configuration
+      工程配置
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Project configuration">
+    <nav class="md-nav" aria-label="工程配置">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#positioning-variables" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      Positioning variables
+      定位变量
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#vertex-logger" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      Vertex logger
+      顶点记录器
     </span>
   </a>
   
@@ -2379,9 +2379,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#measure-m-value" class="md-nav__link">
+  <a href="#m" class="md-nav__link">
     <span class="md-ellipsis">
-      Measure (M) value
+      测量 (M) 值
     </span>
   </a>
   
@@ -2456,28 +2456,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-configuration" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      Project configuration
+      工程配置
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Project configuration">
+    <nav class="md-nav" aria-label="工程配置">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#positioning-variables" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      Positioning variables
+      定位变量
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#vertex-logger" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      Vertex logger
+      顶点记录器
     </span>
   </a>
   
@@ -2516,22 +2516,15 @@
 <p>如果设备具有内置指南针功能，蓝色信号射束表示设备的当前方向。</p>
 <p>当前位置周围的圆圈表示定位设备报告的精度。</p>
 <h2 id="_2">配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>The following settings are available in QField settings' positioning tab.</p>
-<h3 id="measure-m-value">Measure (M) value<a class="headerlink" href="#measure-m-value" title="Permanent link">&para;</a></h3>
-<p>When digitizing a geometry onto a vector layer that contains an M dimension,
-QField will add a measurement value to individual vertices whenever the
-coordinate cursor is locked to the current position.</p>
-<p>By default, the value will represent the captured position's timestamp (milliseconds
-since epoch). You can change this value using the combo box in the settings'
-positioning tab.</p>
-<p>The available values to chose from are timestamp, ground speed, bearing, horizontal
-accuracy and vertical accuracy as well as PDOP, HDOP and VDOP.</p>
+<p>QField设置的定位选项卡中提供了以下设置。</p>
+<h3 id="m">测量 (M) 值<a class="headerlink" href="#m" title="Permanent link">&para;</a></h3>
+<p>将几何图形数字化到包含M维度的矢量图层时，每当坐标光标锁定到当前位置时，QField就会向各个顶点添加测量值。</p>
+<p>默认情况下，该值将表示捕获位置的时间戳 (从Unix时间戳开始的毫秒数)。您可以使用设置的定位选项卡中的组合框更改此值。</p>
+<p>可选择的可用值包括时间戳、对地速度、方位角、水平精度和垂直精度以及PDOP、HDOP和VDOP。</p>
 <h3 id="_3">精度要求<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>可以定义所需最小测量精度。品质将报告为三个等级，即差 (红色)、良 (黄色) 和优 (绿色)。这些颜色显示在GNSS按钮顶部的一个点。</p>
-<p>The thresholds can be defined in the settings' positioning tab.</p>
-<p>If the <em>Enable accuracy requirement</em> setting is activated, you will not
-be able to collect new measurements with the coordinate cursor locked to
-the current position with an accuracy value which is bad (red).</p>
+<p>可以在设置的定位选项卡中定义阈值。</p>
+<p>如果 <em>启用精度限制模式</em> 设置为激活状态，您将无法在坐标光标锁定到当前位置且精度值较差 (红色) 的情况下采集新的测量值。</p>
 <h3 id="_4">天线高度修正<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>使用中的天线杆高度可在设置中定义。任何测量的海拔高度都将通过该值进行校正。</p>
 <h3 id="_5">海拔校正/垂直网格偏移<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
@@ -2546,9 +2539,7 @@ the current position with an accuracy value which is bad (red).</p>
 <li>NTv2 Datum Grid Shift (.gsb)</li>
 <li>Natural Resources Canada's Geoid (.byn)</li>
 </ul>
-<p>For example:
-For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
-the file <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx from NSGI</a> and put it in the directory.</p>
+<p>例如：对于从 ETRS89 (参考椭球GPS) 到 NAP (荷兰) 的转换，用户可以 <a href="https://www.nsgi.nl/rdnaptrans">从NSGI下载nlgeo2018.gtx</a> 文件，并将其存放在目录中。</p>
 <h2 id="_6">用法<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> QField界面</p>
 <p>短按 <em>GNSS按钮</em> 打开GNSS，并在 <em>定位信息</em> 可用后将当前位置在屏幕居中显示。</p>
@@ -2647,21 +2638,17 @@ the file <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx from NSGI</a> an
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/positioning-averaged.webp"><img alt="" src="../../assets/images/positioning-averaged.webp" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>The setting to activate an average position minimum count threshold can be found in QField settings's <em>positioning</em> panel.
-When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.</p>
+<p>可在QField设置的 <em>定位</em> 面板中找到激活平均位置最小计数阈值的设置。激活时，不需要按住添加顶点按钮，短按按钮开始收集位置，并在满足最小计数要求时自动添加平均位置。</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/positioning_averaged_set.jpg"><img alt="" src="../../assets/images/positioning_averaged_set.jpg" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
 <p>在平均位置上使用 <a href="../gnss/#additional-variables"><code>@gnss_*</code> or <code>@position_</code> variables</a> 时，该变量还将表示所有收集样本的平均值。</p>
-<h2 id="project-configuration">Project configuration<a class="headerlink" href="#project-configuration" title="Permanent link">&para;</a></h2>
+<h2 id="_9">工程配置<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> 桌面端筹备工作</p>
-<h3 id="positioning-variables">Positioning variables<a class="headerlink" href="#positioning-variables" title="Permanent link">&para;</a></h3>
-<p>You can get access to positioning information through additional
-expression variables accessible in the attribute form. These will
-only be available when positioning is enabled.</p>
-<p>These variables are commonly used as part of<a href="https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values">default values expressions</a>
-for fields to keep track of the quality of individual measured points.</p>
+<h3 id="_10">定位变量<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>您可以通过属性表单可访问的其他表达式变量访问定位信息。这些变量仅在启用定位时可用。</p>
+<p>这些变量通常用作字段 <a href="https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values">默认值表达式</a> 的一部分，以追踪单个测量点的特性。</p>
 <ul>
 <li><code>@position_source_name</code> - The name of the device that gave location information as
     reported by the sensor. To differenciate between internal and
@@ -2742,14 +2729,13 @@ for fields to keep track of the quality of individual measured points.</p>
 </ul>
 </dd>
 </dl>
-<h3 id="vertex-logger">Vertex logger<a class="headerlink" href="#vertex-logger" title="Permanent link">&para;</a></h3>
+<h3 id="_11">顶点记录器<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <p>可以设置收集顶点的日志图层。这允许跟踪每个顶点的元数据，如GNSS品质属性等。要设置此项，可以将点图层添加到工程中，并配置用于存储此信息的属性。</p>
 <p><img alt="" src="../../assets/images/vertex_log1.png" width="600px" /></p>
-<p>Then you should assign the role <em>digitizing logger</em> to a point layer.</p>
+<p>然后，您应该分配角色 <em>数字化记录器</em> 给点图层。</p>
 <p>转到 <em>QField同步 &gt; 工程属性</em></p>
 <p><img alt="" src="../../assets/images/vertex_log2.png" width="600px" /></p>
-<p>To be most effective, the layer attributes should have default values that
-relies on the positioning variables enumerated above.</p>
+<p>为了获取最大效果，图层属性应该具有依赖于上面列举的定位变量的默认值。</p>
 
   
   
