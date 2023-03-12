@@ -2304,12 +2304,12 @@
 </p>
 <h2 id="qgis_1">从QGIS导出认证<a class="headerlink" href="#qgis_1" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> 桌面端筹备工作</p>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>导出认证配置至少需要 QGIS 3.20。只能使用 QGIS 3.20 来准备认证配置，并使用QGIS的早期版本配置QGIS工程。</p>
 </div>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>导出配置的配置ID与QGIS工程中存储的配置相匹配是非常重要的。</p>
 </div>
 <p>此时，请核实您是否能够从QGIS正确连接到服务。必须首先从QGIS导出此认证配置。</p>
@@ -2320,8 +2320,8 @@
 </p>
 <p>当提示输入密码时，将其留空。您会被警告可能泄露了敏感信息。对于OAuth2配置来说，这样做是安全的。</p>
 <p>将认证配置导出到XML文件后，会将该文件复制到运行QField的设备上。文件必须复制到设备 <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/auth/</code> QField目录。 <code>/QField/auth/</code> 路径是在首次启动QField时创建的。</p>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>由于 QField 2 开始认证文件需要存储在应用程序目录 <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/auth</code> 中，而不是设备主目录 <code>&lt;drive&gt;:/QField/auth</code> 。</p>
 </div>
 <p>复制认证配置XML文件后，可以将包含OAuth2保护图层的工程文件复制到设备上，并在QField中打开该工程。此时QField弹出的浏览器面板提示您输入用户名、密码和两步核实认证代码。</p>

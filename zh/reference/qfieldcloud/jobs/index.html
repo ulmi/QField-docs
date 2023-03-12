@@ -2583,8 +2583,8 @@
 <p>每项作业由一步或多步构成，每步负责工程中的一个独立任务。QField云支持三个预定义的作业工作流: <code>process_projectfile</code> 、 <code>package</code> 和 <code>delta_apply</code> 。</p>
 <p>运行时，作业写入日志消息，这些消息可在工程的作业页面上找到，用于已达到最终状态 <code>FINISHED</code> 或 <code>FAILED</code> 的作业。</p>
 <p>作业可以访问 <a href="../projects/#secrets">工程机密消息</a> 。</p>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>可以使用QField云API触发所有作业。</p>
 </div>
 <div class="admonition 警告">
@@ -2610,8 +2610,8 @@
 <li>上传的QGIS工程文件 (<code>.qgs</code>/<code>.qgz</code>) 是不可读、不完整、损坏或错误等，请尝试重新上传QGIS工程文件。</li>
 <li>QGIS打开工程文件后崩溃。尝试通过从工程中一次移除一个图层并重新上传QGIS工程文件来识别导致崩溃的图层。</li>
 </ul>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>即使 <code>process_projectfile</code> 作业导致 <code>SUCCESS</code> 状态，也不意味着工程配置正确。 <code>SUCCESS</code> 状态仅表示工程已成功打开，并且已提取所有所需信息。</p>
 </div>
 <h3 id="package">打包 (<code>package</code>) 作业<a class="headerlink" href="#package" title="Permanent link">&para;</a></h3>

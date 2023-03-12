@@ -2451,8 +2451,8 @@
 <h1 id="qfield">QField存储访问<a class="headerlink" href="#qfield" title="Permanent link">&para;</a></h1>
 <p>以下是有关如何访问和操作QField中的工程以及单个数据集的特定系统的说明。</p>
 <h2 id="_1">安卓系统<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>QField现有用户请注意：出于安全原因，谷歌自2021年11月起实施了一套新的存储访问规则，禁止大多数应用程序直接访问设备内部和外部存储中大多数位置的文件。为了在这个新的限制内工作，QField必须将工程和数据集导入其Google指定的存储位置，QField在该存储位置内具有不受限制的读/写访问权限。以下说明指导用户迁移到新规范。</p>
 </div>
 <h3 id="_2">打开工程和数据集<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
@@ -2470,8 +2470,8 @@
 <h4 id="_3">导入工程文件夹<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <p>通过“从文件夹导入工程”操作导入工程时，将要求用户授予QField访问权限，以便通过系统文件夹选择器读取设备存储中给定文件夹的内容。选择文件夹后，QField将文件夹内容（包括其子文件夹）复制到其“已导入工程”位置。以后，用户可以从那里打开工程并与之交互。</p>
 <p>通过下拉菜单操作重新导入给定文件夹将覆盖已存在相同文件夹名称的现有工程，此操作允许用户能够更新工程内容。</p>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>要素的编辑、添加和删除等操作将保存到已导入工程的数据集中，而不是保存在导入过程中选择的原始文件夹。有关如何发送/导出已编辑的工程和数据集，请参阅以下章节。</p>
 </div>
 <h4 id="_4">导入压缩的工程<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
@@ -2479,8 +2479,8 @@
 <p>通过向用户发送单个文件，可以极大地简化工程的远程部署。</p>
 <p>导入单数据集</p>
 <p>“导入数据集”操作允许用户通过安卓系统文件选择器选择一个或多个数据集。选择数据集后，QField将这些数据集复制到“已导入数据集”文件夹中，用户可以在其打开或修改相关内容。</p>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>用户必须确保在导入数据集时选择所有附属文件 (例如，shapefile需要用户选择 .shp、.shx、.dbf、.prj 和 .cpg 文件)。</p>
 </div>
 <h3 id="_5">导出修改后的工程和数据集<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
@@ -2499,8 +2499,8 @@
 <h4 id="_6">导出工程文件夹或单数据集<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <p>当选择 "导出到文件夹" 时，将要求用户选择一个位置 (使用Android系统的文件夹选择器操作)，所选工程文件夹或单数据集的内容将被复制到该位置。</p>
 <p>此操作可用于将修改后的工程或数据集的内容复制到设备上的一个文件夹中，并由如Syncthing等第三方同步应用程序进行访问，或直接将内容复制到支持Android系统分区存储提供商的云帐户中 (在撰写本文时，只有NextCloud应用程序支持此类操作)。</p>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>导出到的文件夹将覆盖先前存在的内容。</p>
 </div>
 <h4 id="_7">发送经过压缩的工程文件夹<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>

@@ -2424,12 +2424,12 @@
 </ol>
 </li>
 </ol>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>当使用 <code>直接数据库访问</code> 时，QField云将直接编辑PostGIS数据库的数据。这只适用于外业可靠的互联网连接，但其优点是所有用户都可以直接看到所有数据，并允许使用任何PostGIS特定设置 (触发器、生成的字段等)。</p>
 </div>
-<div class="admonition 注解">
-<p class="admonition-title">注解</p>
+<div class="admonition 笔记">
+<p class="admonition-title">笔记</p>
 <p>当使用 <code>离线编辑</code> 时，QField将在地理包中处理数据库的本地副本，该副本将由QField云同步到原始数据库。如果外业连接不可靠，这是最佳选择。只有用户同步到QField云后，才能看到更改。创建本地副本后，QField将无法使用高级PostGIS功能。与常规地理包一样，如果定义关系，建议使用UUID而不是整数主键，以避免多个用户同时创建数据时发生冲突。</p>
 </div>
 <p>您可以在 <a href="../../../reference/qfieldcloud/concepts/">QField云技术参考</a> 中找到更多信息。</p>
