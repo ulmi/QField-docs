@@ -2526,34 +2526,34 @@ dispositivo de posicionamiento.</p>
 <h2 id="configuracion">Configuración<a class="headerlink" href="#configuracion" title="Permanent link">&para;</a></h2>
 <p>Los siguientes ajustes están disponibles en la pestaña de posicionamiento de los ajustes de QField.</p>
 <h3 id="valor-de-medida-m">Valor de medida (M)<a class="headerlink" href="#valor-de-medida-m" title="Permanent link">&para;</a></h3>
-<p>When digitizing a geometry onto a vector layer that contains an M dimension,
-QField will add a measurement value to individual vertices whenever the
-coordinate cursor is locked to the current position.</p>
-<p>By default, the value will represent the captured position's timestamp (milliseconds
-since epoch). You can change this value using the combo box in the settings'
-positioning tab.</p>
-<p>The available values to chose from are timestamp, ground speed, bearing, horizontal
-accuracy and vertical accuracy as well as PDOP, HDOP and VDOP.</p>
+<p>Al digitalizar una geometría en una capa vectorial que contiene una dimensión M,
+QField añadirá un valor de medición a los vértices individuales siempre que el
+el cursor de coordenadas se bloquea en la posición actual.</p>
+<p>De forma predeterminada, el valor representará la marca de tiempo de la posición capturada (milisegundos
+desde epoch). Puede cambiar este valor utilizando el cuadro combinado en la configuración de
+la pestaña de posicionamiento.</p>
+<p>Los valores disponibles para elegir son la marca de tiempo, la velocidad de avance, el rumbo, la exactitud
+horizontal y precisión vertical, así como PDOP, HDOP y VDOP.</p>
 <h3 id="requisitos-de-exactitud">Requisitos de exactitud<a class="headerlink" href="#requisitos-de-exactitud" title="Permanent link">&para;</a></h3>
 <p>Se puede definir una exactitud mínima deseada para las mediciones. La calidad
 será informada en tres clases, mala (roja), aceptable (amarillo) y excelente
 (verde). Estos colores se mostrarán como un punto en la parte superior del botón GNSS.</p>
 <p>Los umbrales pueden definirse en la pestaña de posicionamiento de los ajustes.</p>
-<p>If the <em>Enable accuracy requirement</em> setting is activated, you will not
-be able to collect new measurements with the coordinate cursor locked to
-the current position with an accuracy value which is bad (red).</p>
+<p>Si el ajuste <em>Habilitar requisito de precisión</em> está activado, no se
+puede recoger nuevas mediciones con el cursor de coordenadas bloqueado en
+la posición actual con un valor de precisión que es malo (rojo).</p>
 <h3 id="compensacion-de-la-altura-de-la-antena">Compensación de la altura de la antena<a class="headerlink" href="#compensacion-de-la-altura-de-la-antena" title="Permanent link">&para;</a></h3>
 <p>La altura del poste de la antena en uso puede definirse en los ajustes.
 Cualquier altitud medida será corregida por este valor.</p>
 <h3 id="altitude-correction-vertical-grid-shift">Altitude correction / vertical grid shift<a class="headerlink" href="#altitude-correction-vertical-grid-shift" title="Permanent link">&para;</a></h3>
-<p>Altitude values can be corrected with vertical grid shift files to
-calculate orthometric height.</p>
+<p>Los valores de altitud pueden corregirse con archivos de desplazamiento de cuadrícula vertical para
+calcular la altura ortométrica.</p>
 <p>Los archivos de desplazamiento de la cuadrícula vertical tienen que estar disponibles para QField poniendo
 en la carpeta de la aplicación QField <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/proj</code>.</p>
 <p>Una vez que el archivo de desplazamiento de cuadrícula se coloca allí, está disponible en QField en
 los <em>Ajustes de posicionamiento</em> en <em>Desplazamiento vertical de la cuadrícula en uso</em>.</p>
-<p>If you are using altitude correction and an external positioning device
-is used, consider turning <em>Use orthometric altitude from device</em> off.</p>
+<p>Si utiliza la corrección de altitud y un dispositivo de posicionamiento externo
+es usado, considere desactivar <em>Usar altitud ortométrica del dispositivo</em>.</p>
 <p>Los formatos admitidos actualmente son:</p>
 <ul>
 <li>GeoTIFF (.tif, .tiff)</li>
@@ -2561,9 +2561,9 @@ is used, consider turning <em>Use orthometric altitude from device</em> off.</p>
 <li>NTv2 Datum Grid Shift (.gsb)</li>
 <li>Natural Resources Canada's Geoid (.byn)</li>
 </ul>
-<p>For example:
-For the transformation from ETRS89 (reference ellipsoid GPS) to NAP (Dutch) users can download
-the file <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx from NSGI</a> and put it in the directory.</p>
+<p>Por ejemplo:
+Para la transformación de ETRS89 (elipsoide de referencia GPS) a NAP (holandés) los usuarios pueden descargar
+el archivo <a href="https://www.nsgi.nl/rdnaptrans">nlgeo2018.gtx de NSGI</a> y colóquelo en el directorio.</p>
 <h2 id="uso">Uso<a class="headerlink" href="#uso" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Trabajo de campo</p>
 <p>Una breve pulsación del <em>botón GNSS</em> encenderá el GNSS y se centrará en la
@@ -2589,10 +2589,10 @@ SRC de su proyecto, es probable que aún no tenga señal.</p>
 </div>
 <h2 id="uso-de-un-receptor-gnss-externo">Uso de un receptor GNSS externo<a class="headerlink" href="#uso-de-un-receptor-gnss-externo" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Trabajo de campo</p>
-<p>QField supports connecting to external GNSS positioning devices via NMEA streams through Bluetooth, TCP,
-or UDP connections.</p>
-<p>In <em>Settings &gt; Positioning</em>, you can find a set of buttons to add, edit, or delete external
-devices as well as a dropdown list to switch between internal and saved external GNSS devices.</p>
+<p>QField admite la conexión a dispositivos de posicionamiento GNSS externos mediante flujos NMEA a través de Bluetooth, TCP,
+o conexiones UDP.</p>
+<p>En <em>Configuración &gt; Posicionamiento</em>, puede encontrar un conjunto de botones para añadir, editar o eliminar dispositivos
+externos así como una lista desplegable para cambiar entre dispositivos GNSS internos y externos guardados.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/saved-gnss-devices.png"><img alt="" src="../../assets/images/saved-gnss-devices.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
@@ -2644,12 +2644,12 @@ devices as well as a dropdown list to switch between internal and saved external
 </tr>
 </tbody>
 </table>
-<p><em>(*) Bluetooth support on Windows occurs through the virtual serial port automatically
-created by the operating system when it connects to the GNSS device.</em></p>
+<p><em>(*) La compatibilidad con Bluetooth en Windows se produce a través del puerto serie virtual de forma automática
+creado por el sistema operativo cuando se conecta al dispositivo GNSS.</em></p>
 <p>Las sentencias NMEA actualmente admitidas son GGA, RMC, GSA, GSV, VTG y HDT.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Make sure no other app like mock location providers are using the same connection.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Asegúrese de que ninguna otra aplicación, como los proveedores de localización simulada, utiliza la misma conexión.</p>
 </div>
 <h2 id="ubicacion-simulada">Ubicación simulada<a class="headerlink" href="#ubicacion-simulada" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Trabajo de campo</p>
@@ -2670,8 +2670,8 @@ Si está activo un requisito de recuento mínimo de posiciones promediadas, tamb
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/positioning-averaged.webp"><img alt="" src="../../assets/images/positioning-averaged.webp" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>The setting to activate an average position minimum count threshold can be found in QField settings's <em>positioning</em> panel.
-When active, holding the add vertex button is not required, a short tap on the button will begin the collection of positions and automatically add the averaged position when the minimum count requirement is met.</p>
+<p>La configuración para activar un umbral de recuento mínimo de posición media se encuentra en el panel de <em>posicionamiento</em> de la configuración de QField.
+Cuando está activo, no es necesario mantener pulsado el botón de añadir vértice, un breve toque en el botón iniciará la recopilación de posiciones y añadirá automáticamente la posición promediada cuando se cumpla el requisito de recuento mínimo.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/positioning_averaged_set.jpg"><img alt="" src="../../assets/images/positioning_averaged_set.jpg" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
@@ -2680,11 +2680,11 @@ When active, holding the add vertex button is not required, a short tap on the b
 <h2 id="configuracion-del-proyecto">Configuración del proyecto<a class="headerlink" href="#configuracion-del-proyecto" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparación del escritorio</p>
 <h3 id="variables-de-posicionamiento">Variables de posicionamiento<a class="headerlink" href="#variables-de-posicionamiento" title="Permanent link">&para;</a></h3>
-<p>You can get access to positioning information through additional
-expression variables accessible in the attribute form. These will
-only be available when positioning is enabled.</p>
-<p>These variables are commonly used as part of<a href="https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values">default values expressions</a>
-for fields to keep track of the quality of individual measured points.</p>
+<p>Puede acceder a la información de posicionamiento a través de
+variables de expresión accesibles en el formulario de atributos. Estas variables
+sólo estarán disponibles cuando el posicionamiento esté activado.</p>
+<p>Estas variables suelen utilizarse como parte de <a href="https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_properties.html#default-values">expresiones de valores predeterminados</a>
+de los campos para realizar un seguimiento de la calidad de los puntos medidos individuales.</p>
 <ul>
 <li><code>@position_source_name</code> - El nombre del dispositivo que dio la información de localización según
     lo informa el sensor. Para diferenciar entre el sensor interno y el
@@ -2778,8 +2778,8 @@ proyecto y configurar los atributos para almacenar esta información.</p>
 <p>Entonces debería asignar el rol <em>registrador digitalizador</em> a una capa puntual.</p>
 <p>Vaya a <em>QFieldSync &gt; Propiedades del proyecto</em>.</p>
 <p><img alt="" src="../../assets/images/vertex_log2.png" width="600px" /></p>
-<p>To be most effective, the layer attributes should have default values that
-relies on the positioning variables enumerated above.</p>
+<p>Para ser más eficaces, los atributos de capa deben tener valores por defecto que
+se basen en las variables de posicionamiento enumeradas anteriormente.</p>
 
   
   
