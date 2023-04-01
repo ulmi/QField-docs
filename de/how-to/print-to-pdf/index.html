@@ -1403,9 +1403,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#atlas-print" class="md-nav__link">
+  <a href="#feature-driven-atlas-print" class="md-nav__link">
     <span class="md-ellipsis">
-      Atlas Print
+      Feature-Driven Atlas Print
     </span>
   </a>
   
@@ -2258,9 +2258,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#atlas-print" class="md-nav__link">
+  <a href="#feature-driven-atlas-print" class="md-nav__link">
     <span class="md-ellipsis">
-      Atlas Print
+      Feature-Driven Atlas Print
     </span>
   </a>
   
@@ -2287,31 +2287,36 @@
 
 
 <h1 id="als-pdf-datei-drucken">Als PDF-Datei drucken<a class="headerlink" href="#als-pdf-datei-drucken" title="Permanent link">&para;</a></h1>
-<p>Es ist möglich, Karten und andere Elemente in ein PDF-Dokument zu exportieren, indem QGIS-Drucklayouts verwendet werden.</p>
+<p>It's possible to export laid out maps as PDF document through project print layouts
+configured within QGIS.</p>
 <h2 id="verwendung">Verwendung<a class="headerlink" href="#verwendung" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Feldarbeit</p>
-<p>Wenn für ein Projekt mindestens ein Drucklayout definiert wurde, ist der Punkt Drucken über das Menü verfügbar.</p>
+<p>Printing to PDF is available through QField's main menu in the side dashboard.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/print_menu.png"><img alt="" src="../../assets/images/print_menu.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>Nach der Auswahl des Drucklayouts wird das PDF-Dokument erstellt und Projektordner gespeichert.</p>
-<p>Mit dem PDF-Reader kann das Dokument direkt geöffnet werden.</p>
+<p>If the opened project has a single print layout defined, selecting the 'Print to PDF'
+menu will immediately launch an export of the layout to PDF. If more than one print
+layout is present, a submenu will appear listing all the available layouts to choose from.</p>
+<p>Once the print layout has been exported, QField will allow users to open and view the
+created PDF document.</p>
 <p>
-<figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/print_open.jpg"><img alt="" src="../../assets/images/print_open.jpg" title="" width="600px" /></a><figcaption></figcaption>
+<figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/print_document.png"><img alt="" src="../../assets/images/print_document.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>Fertig.</p>
+<h2 id="feature-driven-atlas-print">Feature-Driven Atlas Print<a class="headerlink" href="#feature-driven-atlas-print" title="Permanent link">&para;</a></h2>
+<p>You can also print an atlas-driven layout by selecting features from vector layers acting
+as coverage layers. To do so, identify features on the map by tapping on the canvas and
+hold-press on a feature in the list to toggle the (mutli-)feature selection mode. Once the
+desired features are selected, click on the <em>Menu ( ⁝ )</em> button and select <em>Print Atlas
+Feature(s) to PDF</em>.</p>
 <p>
-<figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/print_document.jpg"><img alt="" src="../../assets/images/print_document.jpg" title="" width="600px" /></a><figcaption></figcaption>
+<figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/print_atlas_menu.png"><img alt="" src="../../assets/images/print_atlas_menu.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>Das Video zeigt, wie der gesamte Arbeitsablauf aussieht:</p>
-<p><div class="video-container"><iframe src="https://player.vimeo.com/video/499566180" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
-<h2 id="atlas-print">Atlas Print<a class="headerlink" href="#atlas-print" title="Permanent link">&para;</a></h2>
-<p>You can also print an atlas by selecting the features. Choose features on the map, select them in the list and print them: <em>Menu ( ⁝ ) Button &gt; Print Atlas Feature(s) to PDF</em>.</p>
-<p><div class="video-container"><iframe src="https://player.vimeo.com/video/604740848" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
-<p>Or you can print one single feature directly in the form with <em>Menu ( ⁝ ) Button &gt; Print Atlas Feature to PDF</em>.</p>
+<p>It is possible to print a single atlas feature through the feature form by clicking on the
+<em>Menu ( ⁝ )</em> button and selecting the <em>Print Atlas Feature to PDF</em>.</p>
 
   
   
