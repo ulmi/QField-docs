@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
          <loc>https://docs.qfield.org/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/"/>
@@ -14,7 +14,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/concepts/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/concepts/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/concepts/"/>
@@ -26,7 +26,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/contribute/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/contribute/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/contribute/"/>
@@ -38,7 +38,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/faq/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/faq/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/faq/"/>
@@ -50,7 +50,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/"/>
@@ -62,7 +62,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/license/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/license/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/license/"/>
@@ -74,7 +74,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/sample-projects/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/sample-projects/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/sample-projects/"/>
@@ -86,7 +86,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/sponsor/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/sponsor/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/sponsor/"/>
@@ -98,7 +98,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/storage/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/storage/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/storage/"/>
@@ -110,7 +110,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/support/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/support/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/support/"/>
@@ -122,7 +122,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/third-part-tutorials/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/third-part-tutorials/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/third-part-tutorials/"/>
@@ -134,7 +134,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/tutorials/advanced-setup-qfc/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/tutorials/advanced-setup-qfc/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/tutorials/advanced-setup-qfc/"/>
@@ -146,7 +146,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/tutorials/get-started-qfc/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/tutorials/get-started-qfc/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/tutorials/get-started-qfc/"/>
@@ -158,7 +158,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/get-started/tutorials/get-started-qfs/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/get-started/tutorials/get-started-qfs/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/get-started/tutorials/get-started-qfs/"/>
@@ -170,7 +170,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/attributes-form/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/attributes-form/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/attributes-form/"/>
@@ -182,7 +182,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/authentication/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/authentication/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/authentication/"/>
@@ -194,7 +194,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/bookmarks/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/bookmarks/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/bookmarks/"/>
@@ -206,7 +206,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/digitize/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/digitize/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/digitize/"/>
@@ -218,7 +218,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/gnss/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/gnss/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/gnss/"/>
@@ -230,7 +230,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/hiding-legend-nodes/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/hiding-legend-nodes/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/hiding-legend-nodes/"/>
@@ -242,7 +242,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/"/>
@@ -254,7 +254,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/live-default-value/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/live-default-value/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/live-default-value/"/>
@@ -266,7 +266,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/map-interaction/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/map-interaction/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/map-interaction/"/>
@@ -278,7 +278,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/map-styling/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/map-styling/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/map-styling/"/>
@@ -290,7 +290,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/map-themes/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/map-themes/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/map-themes/"/>
@@ -302,7 +302,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/measuring-tool/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/measuring-tool/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/measuring-tool/"/>
@@ -314,7 +314,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/movable-project/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/movable-project/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/movable-project/"/>
@@ -326,7 +326,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/navigation/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/navigation/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/navigation/"/>
@@ -338,7 +338,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/outside-layers/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/outside-layers/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/outside-layers/"/>
@@ -350,7 +350,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/pg-service/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/pg-service/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/pg-service/"/>
@@ -362,7 +362,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/pictures/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/pictures/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/pictures/"/>
@@ -374,7 +374,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/print-to-pdf/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/print-to-pdf/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/print-to-pdf/"/>
@@ -386,7 +386,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/projects/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/projects/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/projects/"/>
@@ -398,7 +398,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/search/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/search/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/search/"/>
@@ -410,7 +410,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/standalone-datasets/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/standalone-datasets/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/standalone-datasets/"/>
@@ -422,7 +422,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/temporal-filtering/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/temporal-filtering/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/temporal-filtering/"/>
@@ -434,7 +434,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/tracking/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/tracking/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/tracking/"/>
@@ -446,7 +446,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/how-to/variables/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/how-to/variables/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/how-to/variables/"/>
@@ -458,7 +458,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/data-format/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/data-format/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/data-format/"/>
@@ -470,7 +470,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/"/>
@@ -482,7 +482,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/api/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/api/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/api/"/>
@@ -494,7 +494,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/concepts/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/concepts/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/concepts/"/>
@@ -506,7 +506,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/jobs/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/jobs/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/jobs/"/>
@@ -518,7 +518,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/permissions/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/permissions/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/permissions/"/>
@@ -530,7 +530,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/projects/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/projects/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/projects/"/>
@@ -542,7 +542,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/sdk/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/sdk/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/sdk/"/>
@@ -554,7 +554,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/secrets/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/secrets/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/secrets/"/>
@@ -566,7 +566,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/specs/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/specs/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/specs/"/>
@@ -578,7 +578,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/reference/qfieldcloud/system/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/reference/qfieldcloud/system/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/reference/qfieldcloud/system/"/>
@@ -590,7 +590,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/ecological-surveying/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/ecological-surveying/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/ecological-surveying/"/>
@@ -602,7 +602,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/geologic-mapping/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/geologic-mapping/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/geologic-mapping/"/>
@@ -614,7 +614,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/heritage-impact-assessment/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/heritage-impact-assessment/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/heritage-impact-assessment/"/>
@@ -626,7 +626,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/"/>
@@ -638,7 +638,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/lulc-mapping-fiji/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/lulc-mapping-fiji/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/lulc-mapping-fiji/"/>
@@ -650,7 +650,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/mapping-breeding-birds-in-the-Wadden-Sea/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/mapping-breeding-birds-in-the-Wadden-Sea/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/mapping-breeding-birds-in-the-Wadden-Sea/"/>
@@ -662,7 +662,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/mosquito-malario-ground-truth-data-collection/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/mosquito-malario-ground-truth-data-collection/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/mosquito-malario-ground-truth-data-collection/"/>
@@ -674,7 +674,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/river-state-survey/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/river-state-survey/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/river-state-survey/"/>
@@ -686,7 +686,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/rwanda-rural-water/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/rwanda-rural-water/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/rwanda-rural-water/"/>
@@ -698,7 +698,7 @@
     </url>
     <url>
          <loc>https://docs.qfield.org/success-stories/vanilla-survey/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-01</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="https://docs.qfield.org/en/success-stories/vanilla-survey/"/>
          <xhtml:link rel="alternate" hreflang="de" href="https://docs.qfield.org/de/success-stories/vanilla-survey/"/>
