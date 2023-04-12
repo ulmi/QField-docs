@@ -2318,11 +2318,11 @@
 </table>
 <h2 id="postgresql-configuration">PostgreSQL configuration<a class="headerlink" href="#postgresql-configuration" title="Permanent link">&para;</a></h2>
 <p>If your project contains PostgreSQL (PostGIS) layers, you need to configure your PostgreSQL server so it allows connection from <code>app.qfield.cloud</code> IP address.</p>
-<p>Otherwise, you will get an error like this:</p>
+<p>Caso contrário, irá obter um erro como este:</p>
 <div class="highlight"><pre><span></span><code>FATAL: no pg_hba.conf entry for host &quot;185.203.114.168&quot;, user &quot;qfc&quot;, database &quot;mydb_test&quot;, SSL off
 WARNING:QGIS_MSGLOG:1 unavailable layer(s) found:
 </code></pre></div>
-<p>To do so, you need to edit the <code>pg_hba.conf</code> file where your PostgreSQL server is hosted. For more information, refer to recommendations on <a href="https://stackoverflow.com/search?q=FATAL+no+pg_hba.conf+entry+for+host">StackOverflow questions</a>.</p>
+<p>Para que isso aconteça, precisa de editar o ficheiro <code>pg_hba.conf</code> onde está alojado o seu servidor PostgreSQL. Para obter mais informações, consulte as recomendações sobre <a href="https://stackoverflow.com/search?q=FATAL+no+pg_hba.conf+entry+for+host">Perguntas do StackOverflow</a>.</p>
 
   
   
