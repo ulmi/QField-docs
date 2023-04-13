@@ -2700,28 +2700,27 @@ diretamente no
 <p>O widget de relação mostra todos os elementos filhos de referência numa lista. É possível adicionar, apagar e abri-las.</p>
 <p>A identificação visual das entradas da lista é feita com uma <em>Expressão de visualização</em> na camada filha.</p>
 <h3 id="gestao-de-chaves">Gestão de chaves<a class="headerlink" href="#gestao-de-chaves" title="Permanent link">&para;</a></h3>
-<p>Since the parents primary keys are used as foreign keys on the
-referencing child features, these primary keys must be save to use even
-after the synchronization back to the original data. Therefore we
-recommend to use stable values such as UUIDs for primary keys.</p>
-<p>It is possible to already add children from a parent that is about to be
-added. This possibility will be blocked if there is no valid primary key
-on the parent or the constraints are violated. In case the adding of the
-parent feature is canceled after some children have been added already,
-the children are deleted as well.</p>
+<p>Como as chaves primárias dos pais são utilizadas como chaves
+estrangeiras nos elementos filhos de referência, essas chaves primárias
+devem ser guardadas para uso após a sincronização com os dados
+originais. Portanto, recomendamos o uso de valores estáveis, como UUIDs, para chaves primárias.</p>
+<p>É possível adicionar ligações filhas de uma referência pai que está prestes
+a ser adicionado. Essa possibilidade será bloqueada se não existir chave primária
+válida no pai ou as restrições forem violadas. Caso a adição do elemento pai seja
+cancelada depois de alguns elementos filhos já tiverem sido adicionados,
+os filhos também serão excluídos.</p>
 <h3 id="relacoes-muitos-para-muitos">Relações Muitos-Para-Muitos<a class="headerlink" href="#relacoes-muitos-para-muitos" title="Permanent link">&para;</a></h3>
-<p>On many-to-many relationships, according to the cardinality setting in
-the <em>QGIS Vector Layer Properties</em>, on adding, deleting or opening an
-entry in the list effects directly the child layer (on direct
-cardinality) or the linking table (on many-to-one cardinality).</p>
-<p>The second case is usually used when there are additional relation
-information (e.g. percentage) in the linking table.</p>
+<p>Nas relações de muitos para muitos, de acordo com a configuração
+de cardinalidade nas <em>Propriedades da camada vetorial QGIS</em>, a adição,
+exclusão ou abertura de uma entrada na lista afeta diretamente a camada filha (na cardinalidade
+direta) ou a tabela de ligação (em muitas para uma cardinalidade).</p>
+<p>O segundo caso é geralmente utilizado quando há informações adicionais de relação (por exemplo, percentagem) na tabela de ligação.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/relation_widget_cardinality.png"><img alt="" src="../../assets/images/relation_widget_cardinality.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>In case of the many-to-one cardinality on many-to-many relations the
-<em>Display Expression</em> needs to be set on the linking table.</p>
+<p>No caso da cardinalidade muitos-para-um nas relações muitos-para-muitos,
+a <em>Expressão de Exibição</em> precisa ser definida na tabela de ligação.</p>
 <h2 id="configurar-widget-de-anexosfotos">Configurar Widget de Anexos/Fotos<a class="headerlink" href="#configurar-widget-de-anexosfotos" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparação no Desktop</p>
 <p>O tipo de widget <em>Anexo</em> é usado com campos que armazenam o caminho
@@ -2735,11 +2734,10 @@ para os ficheiros.</p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/attachement-setting.png"><img alt="" src="../../assets/images/attachement-setting.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>The path should be set to relative. The pictures, pdf and docs are
-stored then in a sub-directory of the project, where the link stored in
-the textfield is pointing to.</p>
-<p>In QField the picture is displayed. By clicking the camera symbol the
-camera is started to update the picture with a new photo.</p>
+<p>O caminho deve ser definido como relativo. Significa que as fotos, pdfs e documentos são armazenados num subdiretoria do projeto, para
+onde o link armazenado no campo de texto está a encaminhar.</p>
+<p>No QField, a imagem é exibida. Ao clicar no símbolo da câmara, a é iniciada a
+câmara para atualizar a imagem com uma nova foto.</p>
 <p>
 <figure><a data-caption="fotografias" data-fancybox="gallery" href="../../assets/images/qfield_picture.png"><img alt="fotografias" src="../../assets/images/qfield_picture.png" title="fotografias" width="600px" /></a><figcaption>fotografias</figcaption>
 </figure>
@@ -2751,10 +2749,9 @@ doc, ...).</p>
 <p><img alt="" src="../../assets/images/hyperlink_option.png" /></p>
 <h2 id="configurar-widget-de-relacao_1">Configurar Widget de Relação<a class="headerlink" href="#configurar-widget-de-relacao_1" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparação no Desktop</p>
-<p>The widget <em>Value Relation</em> offers values from a related table in a
-combobox. You can select <em>layer</em>, <em>key column</em> and <em>value column</em>. Several
-options are available to change the standard behaviors: <em>allow null value</em>, <em>order by value</em> and <em>allow multiple selections</em>. The widget will
-display a drop-down or multiple-select list of the referenced features.</p>
+<p>O widget <em>Relação de Valor</em> oferece valores de uma tabela relacionada de uma lista de opções. Podes selecionar a <em>camada</em>, <em>chave da coluna</em>
+e <em>valor da coluna</em>. Várias opções estão disponíveis para mudar os comportamentos padrão: <em>permitir valores nulos</em>, <em>ordenar por valor</em>,
+e <em>permitir múltipla escolha</em>. O widget irá exibir uma lista simples ou uma lista de múltipla seleção com os elementos referenciados.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/value_relation_widget.gif"><img alt="" src="../../assets/images/value_relation_widget.gif" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
