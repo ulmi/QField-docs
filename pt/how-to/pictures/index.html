@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#utilizar-fotos" class="md-skip">
+        <a href="#use-attachment" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -1312,9 +1312,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#caminho-configuravel-para-as-imagens" class="md-nav__link">
+  <a href="#configurable-attachment-path" class="md-nav__link">
     <span class="md-ellipsis">
-      Caminho configurável para as imagens
+      Configurable attachment path
     </span>
   </a>
   
@@ -2464,9 +2464,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#caminho-configuravel-para-as-imagens" class="md-nav__link">
+  <a href="#configurable-attachment-path" class="md-nav__link">
     <span class="md-ellipsis">
-      Caminho configurável para as imagens
+      Configurable attachment path
     </span>
   </a>
   
@@ -2492,16 +2492,24 @@
   </a>
 
 
-<h1 id="utilizar-fotos">Utilizar fotos<a class="headerlink" href="#utilizar-fotos" title="Permanent link">&para;</a></h1>
-<p>No QField, um campo com oo widget <em>Anexo</em> pode ser utilizado para:
--   Mostrar e tirar fotos
--   mostrar ligações para ficheiros externos como pdfs ou documentos</p>
+<h1 id="use-attachment">Use attachment<a class="headerlink" href="#use-attachment" title="Permanent link">&para;</a></h1>
+<p>In QField, a field with <em>Attachment</em> widget can be used to:</p>
+<ul>
+<li>Mostrar e tirar fotos</li>
+<li>show and record videos</li>
+<li>listen and record sound clips</li>
+<li>show links to external files like PDFs or documents</li>
+</ul>
+<p>
+<figure><a data-caption="Attachments" data-fancybox="gallery" href="../../assets/images/attachments.png"><img alt="Attachments" src="../../assets/images/attachments.png" title="Attachments" width="600px" /></a><figcaption>Attachments</figcaption>
+</figure>
+</p>
 <p>Para configurar o widget, consulte a <a href="../attributes-form/#configure-attachmentpictures-widget">documentação do formulário de atributos</a></p>
 <h2 id="adicione-uma-serie-de-fotos-a-um-elemento">Adicione uma série de fotos a um elemento<a class="headerlink" href="#adicione-uma-serie-de-fotos-a-um-elemento" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparação no Desktop</p>
-<p>Podes adicionar uma ou mais fotos a um elemento. Aqui tens um exemplo de como o fazer.</p>
+<p>One or more pictures can be added to the feature. Here is an example of how to proceed.</p>
 <h3 id="tabelas">Tabelas<a class="headerlink" href="#tabelas" title="Permanent link">&para;</a></h3>
-<p>Vamos precisar de duas tabelas. Uma tabela onde os elementos estão armazenados e outra com uma lista de fotos.</p>
+<p>It is necessary to set up two tables. One table where the features are stored and one with a list of pictures.</p>
 <h4 id="apiario">Apiário<a class="headerlink" href="#apiario" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
@@ -2585,38 +2593,31 @@
 </p>
 <h2 id="etiqueta-de-geolocalizacao">Etiqueta de Geolocalização<a class="headerlink" href="#etiqueta-de-geolocalizacao" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Trabalho de campo</p>
-<p>Alguns dispositivos móveis irão necessitar da aplicação Open Camera instalada para que possa ativar as etiquetas de geolocalização.</p>
-<p>Para ativar a opção de adicionar etiqueta de geolocalização siga os seguintes passo:</p>
+<p>Some mobile devices will require for native camera mode to be turned off to enable geotagging.</p>
+<p>To enable geotagging in case your native OS camera does not support this functionality, follow these steps:</p>
 <ol>
 <li>No QField, vai a <em>configurações</em> e garante que <em>Usar câmera nativa</em> está
-    ativo</li>
-<li>Instala a <a href="https://play.google.com/store/apps/details?id=net.sourceforge.opencamera&amp;hl=en&amp;gl=US">app Open Camera</a>
+    deactivated
     no teu dispositivo móvel</li>
-<li>Dentro das configurações da aplicaçã Open Camera, garante que a opção de etiqueta de geolocalização está ativa.</li>
-<li>Dentro das configurações do dispositivo móvel, defina como aplicação de câmera padrão para o Open Camera</li>
-<li>Completo| O Open Camera agora será utilizado para tirar fotos com o QField</li>
+<li>Completed! QField's own QML-based camera will now be utilized while taking pictures</li>
 </ol>
 <h2 id="tamanho-maximo-da-foto">Tamanho máximo da foto<a class="headerlink" href="#tamanho-maximo-da-foto" title="Permanent link">&para;</a></h2>
-<p>A altura e largura máximas podem ser configuradas no <em>Plugin QFieldSync &gt; Configurar Projeto Atual</em></p>
-<p><img alt="imagem" src="https://user-images.githubusercontent.com/4992805/189456560-3e251c44-c85c-40bd-a3cc-039c49090e03.png" /></p>
-<p>As configurações avançadas permitem redimensionar as fotos para uma largura/altura máxima.</p>
-<h2 id="caminho-configuravel-para-as-imagens">Caminho configurável para as imagens<a class="headerlink" href="#caminho-configuravel-para-as-imagens" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparação no Desktop</p>
-<p>QFieldSync possibilita a configuração do caminho para os anexos
-das fotos.</p>
+<p>The advanced settings allow rescaling the photos to a maximum width/height in <em>QFieldSync plugin &gt; Project configuration</em></p>
+<p><img alt="imagem" src="https://user-images.githubusercontent.com/4992805/189456560-3e251c44-c85c-40bd-a3cc-039c49090e03.png" /></p>
+<h2 id="configurable-attachment-path">Configurable attachment path<a class="headerlink" href="#configurable-attachment-path" title="Permanent link">&para;</a></h2>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparação no Desktop</p>
+<p>QFieldSync provides the possibility to configure the path of picture attachments.</p>
 <ol>
-<li>Vai a <em>QFieldSync plugin &gt; Configuração de projeto</em></li>
-<li>Selecione a tabela "Convenção para as Fotos"</li>
+<li>Go to <em>QFieldSync plugin &gt; Layers Properties</em></li>
 <li>Escolha a camada, o campo e configure a expressão</li>
 </ol>
-<p>Usa expressões para configurar o caminho dos anexos. Por padrão,
-as fotos são armazenados na pasta "DCIM" com o carimbo da data/hora
-como nome.</p>
+<p>Use expressions to specify the path of the attachments. By default, pictures are saved into the "DCIM" folder, audio are saved into the "audio" folder and videos are saved into "video" with a timestamp as name.</p>
 <p>
 <figure><a data-caption="caminho da imagem" data-fancybox="gallery" href="../../assets/images/picture_path.png"><img alt="caminho da imagem" src="../../assets/images/picture_path.png" title="caminho da imagem" width="600px" /></a><figcaption>caminho da imagem</figcaption>
 </figure>
 </p>
-<p>Também é possível sincronizar diretorias adicionais com imagens ou outros anexos. Caminhos adicionais podem ser configurados em <em>Diretorias de anexos</em>. Todos os caminhos são relativos à diretoria do projeto.</p>
+<p>Additional directories can be synchronized with pictures or other attachments. Extra paths can be configured in <em>Attachment directories</em>. All paths are relative to the project directory.</p>
 <p>
 <figure><a data-caption="diretórios de anexos" data-fancybox="gallery" href="../../assets/images/attachments_directories.png"><img alt="diretórios de anexos" src="../../assets/images/attachments_directories.png" title="diretórios de anexos" width="600px" /></a><figcaption>diretórios de anexos</figcaption>
 </figure>
