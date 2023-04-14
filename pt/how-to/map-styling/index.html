@@ -1390,7 +1390,7 @@
         
   
   <span class="md-ellipsis">
-    Tracking
+    Tracking GPS
     
   </span>
   
@@ -2331,46 +2331,41 @@
 
 
 <h1 id="estilos-do-mapa">Estilos do mapa<a class="headerlink" href="#estilos-do-mapa" title="Permanent link">&para;</a></h1>
-<p>All style settings from QGIS are directly supported by QField. This
-includes all renderer types like graduated, categorized, rule based,
-2.5D as well as data defined symbology.</p>
+<p>Todas as definições de simbologia do QGIS são suportadas diretamente pelo QField. Isto
+incluí todos os tipos de renderização como graduado, categorizado, baseado em regras,
+2.5D como também a a simbologia definida por dados.</p>
 <h2 id="exibir-expressao">Exibir Expressão<a class="headerlink" href="#exibir-expressao" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparação no Desktop</p>
-<p>In QField, objects are identified with a name. The expression to
-generate this name can be defined by opening the attribute table in QGIS
-and switching to the form view. Choose the appropriate field or an
-expression in the list there. Starting from QGIS 3, this can be done
-directly from the
-<em>Vector Layer Properties &gt; Display</em>{.interpreted-text
-role="menuselection"} page.</p>
+<p>No QField, os objectos são identificados com um nome. A expressão para
+gerar esse nome pode ser definida abrindo a tabela de atributos no QGIS e alterando
+para a visualização de formulário. Escolhe o campo apropriado ou uma
+expressão da lista. A partir do QGIS 3, isso pode ser feito diretamente da
+página
+<em>Propriedades da Camada do Vector &gt; Mostrar</em>{.interpreted-text
+role="menuselection"}.</p>
 <p>A expressão de visualização também é usada para pesquisa nas camadas.</p>
 <p>
-<figure><a data-caption="The display expression will be used to represent features with an
-identification string throughout QField." data-fancybox="gallery" href="../../assets/images/define_display_expression.png"><img alt="The display expression will be used to represent features with an
-identification string throughout QField." src="../../assets/images/define_display_expression.png" title="The display expression will be used to represent features with an
-identification string throughout QField." width="600px" /></a><figcaption>The display expression will be used to represent features with an
-identification string throughout QField.</figcaption>
+<figure><a data-caption="A expressão de exibição será utilizada para representar elemento com uma
+identificação de texto no QField." data-fancybox="gallery" href="../../assets/images/define_display_expression.png"><img alt="A expressão de exibição será utilizada para representar elemento com uma
+identificação de texto no QField." src="../../assets/images/define_display_expression.png" title="A expressão de exibição será utilizada para representar elemento com uma
+identificação de texto no QField." width="600px" /></a><figcaption>A expressão de exibição será utilizada para representar elemento com uma
+identificação de texto no QField.</figcaption>
 </figure>
 </p>
 <h2 id="camadas-apenas-de-leitura-nao-editaveis-e-pesquisaveis">Camadas apenas de leitura, não editáveis e pesquisáveis<a class="headerlink" href="#camadas-apenas-de-leitura-nao-editaveis-e-pesquisaveis" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparação no Desktop</p>
-<p>Some layers in a project are just there for pure visual purpose. Such
-layers should not show up when a user taps somewhere to identify
-objects.</p>
-<p>Some other layers serve as source of information and shouldn't be
-modified by the user. It is possible to protect layers from editing
-attributes or adding and deleting features.</p>
+<p>Algumas camadas no projeto são apenas tem um propósito visual. Essas
+camadas não aparecerão quando se procura identificar objectos.</p>
+<p>Outras camadas podem servir como fontes de informação e não devem
+ser modificadas pelo utilizador. É possível proteger as camadas do projeto
+da edição de atributos ou adição e exclusão de elementos.</p>
 <p>Também é possível configurar que camadas são de pesquisa.</p>
-<p>To configure identify, readonly and searchable behavior, go to the
-<em>Project &gt; Project Properties &gt; Identify Layers</em>
-page and activate the checkboxes to match your
-desired behavior.</p>
+<p>Para configurar o comportamento de identificar, ler e pesquisar, vá para
+a página <em>Projeto &gt; Propriedades &gt; Origem de dados</em>
+e ativa as caixas de opções para corresponder ao
+comportamento desejado.</p>
 <p>
-<figure><a data-caption="Configuration of layers that will not be identifiable, not modifiable
-and/or not searchable." data-fancybox="gallery" href="../../assets/images/project_configuration_readonly.png"><img alt="Configuration of layers that will not be identifiable, not modifiable
-and/or not searchable." src="../../assets/images/project_configuration_readonly.png" title="Configuration of layers that will not be identifiable, not modifiable
-and/or not searchable." width="600px" /></a><figcaption>Configuration of layers that will not be identifiable, not modifiable
-and/or not searchable.</figcaption>
+<figure><a data-caption="Configuração das camadas que não serão identificáveis, não modificáveis e/ou não pesquisáveis." data-fancybox="gallery" href="../../assets/images/project_configuration_readonly.png"><img alt="Configuração das camadas que não serão identificáveis, não modificáveis e/ou não pesquisáveis." src="../../assets/images/project_configuration_readonly.png" title="Configuração das camadas que não serão identificáveis, não modificáveis e/ou não pesquisáveis." width="600px" /></a><figcaption>Configuração das camadas que não serão identificáveis, não modificáveis e/ou não pesquisáveis.</figcaption>
 </figure>
 </p>
 <h2 id="usar-tipos-de-fontes-adicionais">Usar tipos de fontes adicionais<a class="headerlink" href="#usar-tipos-de-fontes-adicionais" title="Permanent link">&para;</a></h2>
@@ -2378,14 +2373,14 @@ and/or not searchable.</figcaption>
 <p>No QField, pode usar todos os tipos de fonte que queira.</p>
 <p>Existem duas possibilidades diferentes para registar os tipos de fontes adicionais:</p>
 <ol>
-<li>By adding fonts (.ttf or .otf) on the device in the folder <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/fonts</code> those will be made accessible to all projects and individual datasets.</li>
+<li>Ao adicionar fontes (.ttf or .otf) na pasta do dispositivo <code>&lt;drive&gt;/Android/data/ch.opengis.qfield/files/QField/fonts</code> estes estarão disponíveis em todos os projetos e conjuntos de dados individuais.</li>
 <li>Adicionando tipos de letra  (.ttf or .otf) na mesma pasta que um determinado projeto
     ficheiro  (.qgs ou .qgz); estes serão acessíveis apenas desta forma
     ficheiro de projeto.</li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Since QField 2 the font files needs to be stored in the app directory <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/fonts</code> instead of the devices main directory <code>&lt;drive&gt;:/QField/fonts</code>.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Desde o QField 2 os ficheiros das fontes necessitam de ser armazenados na diretoria da aplicação <code>&lt;drive&gt;:/Android/data/ch.opengis.qfield/files/QField/fonts</code> em vez da diretoria principal dos dispositivos <code>&lt;drive&gt;:/QField/fonts</code>.</p>
 </div>
 <h2 id="simbolos-svg-personalizados">Símbolos SVG personalizados<a class="headerlink" href="#simbolos-svg-personalizados" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span> Preparação no Desktop</p>
@@ -2393,8 +2388,8 @@ and/or not searchable.</figcaption>
 <ol>
 <li>Escolhe a camada que irá suportar a simbologia SVG e abre sua
     caixa de diálogo das propriedades.</li>
-<li>Open the section Symbology in <em>Properties &gt; Symbology</em></li>
-<li>In the <em>Symbol Layer Panel</em> choose <em>Simple marker</em>.
+<li>Abre a secção de Simbologia em <em>Propriedades &gt; Simbologia</em></li>
+<li>No <em>Painel de Símbolo da Camada</em> escolhe <em>Marcador simples</em>.
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/symbol_layer_panel.png"><img alt="" src="../../assets/images/symbol_layer_panel.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </li>
@@ -2403,8 +2398,8 @@ and/or not searchable.</figcaption>
 </figure>
 </li>
 <li>Desloque para baixo no painel inferior.</li>
-<li>Click on the right side of the file selection button to open the
-    drop down menu.
+<li>Clica no lado direito do botão de seleção de ficheiro para abrir 
+    um menu.
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/drop_down_svg_menu.png"><img alt="" src="../../assets/images/drop_down_svg_menu.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </li>

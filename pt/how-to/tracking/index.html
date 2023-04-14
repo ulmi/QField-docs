@@ -37,7 +37,7 @@
     
     
       
-        <title>Tracking - QField Ecosystem Documentation</title>
+        <title>Tracking GPS - QField Ecosystem Documentation</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tracking" class="md-skip">
+        <a href="#tracking-gps" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tracking
+              Tracking GPS
             
           </span>
         </div>
@@ -1321,7 +1321,7 @@
           
   
   <span class="md-ellipsis">
-    Tracking
+    Tracking GPS
     
   </span>
   
@@ -1334,7 +1334,7 @@
         
   
   <span class="md-ellipsis">
-    Tracking
+    Tracking GPS
     
   </span>
   
@@ -1358,27 +1358,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#activate-tracking" class="md-nav__link">
+  <a href="#ativar-o-tracking-gps" class="md-nav__link">
     <span class="md-ellipsis">
-      Activate tracking
+      Ativar o tracking GPS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tracking-underway" class="md-nav__link">
+  <a href="#tracking-gps-em-curso" class="md-nav__link">
     <span class="md-ellipsis">
-      Tracking underway
+      Tracking GPS em curso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#terminate-tracking" class="md-nav__link">
+  <a href="#terminar-tracking-gps" class="md-nav__link">
     <span class="md-ellipsis">
-      Terminate tracking
+      Terminar tracking GPS
     </span>
   </a>
   
@@ -2266,27 +2266,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#activate-tracking" class="md-nav__link">
+  <a href="#ativar-o-tracking-gps" class="md-nav__link">
     <span class="md-ellipsis">
-      Activate tracking
+      Ativar o tracking GPS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tracking-underway" class="md-nav__link">
+  <a href="#tracking-gps-em-curso" class="md-nav__link">
     <span class="md-ellipsis">
-      Tracking underway
+      Tracking GPS em curso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#terminate-tracking" class="md-nav__link">
+  <a href="#terminar-tracking-gps" class="md-nav__link">
     <span class="md-ellipsis">
-      Terminate tracking
+      Terminar tracking GPS
     </span>
   </a>
   
@@ -2312,41 +2312,42 @@
   </a>
 
 
-<h1 id="tracking">Tracking<a class="headerlink" href="#tracking" title="Permanent link">&para;</a></h1>
-<p>QField allows you to create points, lines, and polygons from tracking your position.</p>
-<h2 id="activate-tracking">Activate tracking<a class="headerlink" href="#activate-tracking" title="Permanent link">&para;</a></h2>
+<h1 id="tracking-gps">Tracking GPS<a class="headerlink" href="#tracking-gps" title="Permanent link">&para;</a></h1>
+<p>O QField permite-te criar pontos, linhas, e polígonos a partir do tracking GPS da tua localização.</p>
+<h2 id="ativar-o-tracking-gps">Ativar o tracking GPS<a class="headerlink" href="#ativar-o-tracking-gps" title="Permanent link">&para;</a></h2>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span> Trabalho de campo</p>
-<p>To activate tracking, you must first make sure the positioning is active. Then,
-open the side dashboard, long-press on a legend layer within which you want to
-save your tracks to, and select the <em>Setup tracking</em> button to configure
-the tracking session.</p>
+<p>Para ativar o tracking GPS, certifica-te primeiro que a localização está ativa. Depois,
+abre o painel laterial, toca e mantém pressionado a camada da legenda em que queres
+guardar as tuas tracks, e seleciona  o botão <em>Configuração do tracking GPS</em> para
+configurar o tracking da tua sessão.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/tracking-layer-properties.png"><img alt="" src="../../assets/images/tracking-layer-properties.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>Two constraints are available to limit the number of vertices recorded
-during tracking:
+<p>Duas restrições estão disponíveis para limitar o número de vértices
+gravados durante o tracking GPS:
 - Intervalo mínimo de tempo
 - Distância mínima</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/tracking-settings.png"><img alt="" src="../../assets/images/tracking-settings.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
 </p>
-<p>Once you have finished configuring your tracking session, hit the <em>Start tracking</em>
-button to begin recording. At this stage, a feature form will appear, which allows
-you to define the attributes of the feature(s) that will be created while QField
-tracks your position.</p>
-<p>For line and polygon layers, a single feature - its geometry formed of vertices
-from the recorded positions - will be create per tracking session.  For point
-layers, a feature will be created for each recorded position, with attribute
-values entered in the form remembered across features.</p>
+<p>Uma vez terminada a configuração da sessão de tracking GPS, toca no botão
+<em>Iniciar tracking GPS</em>  para começar a gravação. Neste momento, um formulário
+de atributos de um elemento irá surgir, para definires os atributos do(s) elemento(s) que
+serão criado enquanto o QField grava a tua posição.</p>
+<p>Para camadas de linhas e polígonos, um elemento - é a geometria formada por
+pelos vértices da posição gravada - que será criada por cada sessão de tracking
+do GPS. Para camadas de pontos, um elemento será criado por cada posição gravada,
+com os valores dos atributos inseridos no formulário inicial a serem introduzidos em
+todos os elementos.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>QField will skip the feature form step if the layer is configured to hide all attributes or if form has been set to hide on feature addition in the attribute form settings. This can streamline the process of starting tracking sessions.</p>
 </div>
-<h2 id="tracking-underway">Tracking underway<a class="headerlink" href="#tracking-underway" title="Permanent link">&para;</a></h2>
-<p>Once a tracking session has been setup, a badge will appear in the side dashboard
-legend next to the layer(s) against which tracking is being recorded.</p>
+<h2 id="tracking-gps-em-curso">Tracking GPS em curso<a class="headerlink" href="#tracking-gps-em-curso" title="Permanent link">&para;</a></h2>
+<p>Quando a sessão do tracking GPS está configurada, um símbolo é exibido no painel
+lateral ao lado do título da(s) camada(s), nas quais o tracking está a ser gravado.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/tracking-badge.png"><img alt="" src="../../assets/images/tracking-badge.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
@@ -2358,16 +2359,16 @@ allowing you to glance at what has been recorded.</p>
 the time passed since the first vertex recorded in each vertex's M value.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can simultanously record multiple trackings sessions across several layers.</p>
+<p>Podes simultaneamente gravar múltiplas sessões de tracking GPS em várias camadas.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While the tracking session is active the layer is still editable, but the tracked feature can't be edited or deleted until the tracking session is stopped over the legend again.</p>
+<p>Quando a sessão de tracking GPS está ativa a camada ainda é editável, mas o elemento do track não pode ser editado ou apagado até que a sessão do tracking GPS é desligada na legenda novamente.</p>
 </div>
-<h2 id="terminate-tracking">Terminate tracking<a class="headerlink" href="#terminate-tracking" title="Permanent link">&para;</a></h2>
-<p>To terminate tracking, simply open the side dashboard. From there, long-press
-on a legend layer linked to an active tracking session and select the
-<em>Stop tracking</em> button.</p>
+<h2 id="terminar-tracking-gps">Terminar tracking GPS<a class="headerlink" href="#terminar-tracking-gps" title="Permanent link">&para;</a></h2>
+<p>Para terminar o tracking GPS, abre o painel lateral. A partir daí, mantém toca e mantém
+pressionado na camada da legenda onde o sessão de tracking GPS está ativa e
+toca no botão <em>Parar o tracking GPS</em>.</p>
 <p>
 <figure><a data-caption="" data-fancybox="gallery" href="../../assets/images/tracking-stop.png"><img alt="" src="../../assets/images/tracking-stop.png" title="" width="600px" /></a><figcaption></figcaption>
 </figure>
