@@ -54,11 +54,11 @@ configurations to file* action.
 !![widgets](../assets/images/oauth2_export_config.png)
 
 When prompted for a password, leave it blank. You will be warned
-that she might be leaking sensitive information. In the case of
+that you might be leaking sensitive information. In the case of
 OAuth2 configurations, it is safe to do so.
 
 Once you have exported the authentication configuration to an XML
-file, she copies that file onto the device(s) running QField. The
+file, copy that file onto the device(s) running QField. The
 file has to be copied to the devices `<drive>:/Android/data/ch.opengis.qfield/files/QField/auth/` QField directory. The `/QField/auth/` path is created when first
 launching QField.
 
