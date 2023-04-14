@@ -2411,8 +2411,8 @@ Combinato con la compressione JPEG riduce la dimensione dei raster.</p>
 <p>Alcuni parametri extra disponibili:</p>
 <ul>
 <li><code>a_srs</code> può venir usato anche nel comando gdal_translate quando il CRS non è definito nel dataset raster.</li>
-<li><code>OVERVIEW_RESAMPLING</code> offre un rendering diverso quando si esegue lo zoom out. Il valore predefinito è NEAREST ma puoi provare anche BILINEAR o AVERAGE.</li>
-<li>Il <code>NUM_THREADS</code> ti aiuterà a bilanciare l'utilizzo di tutte le risorse della CPU o solo di una parte. Imposta ALL_CPUS o definisci il numero di thread che vuoi utilizzare.</li>
+<li><code>OVERVIEW_RESAMPLING</code> offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.</li>
+<li><code>NUM_THREADS</code> will help you to balance between use all your CPU resources or only part. Set ALL_CPUS or define the number of thread you want to use.</li>
 </ul>
 <p>Combinando tutti i parametri extra, la riga di comando può apparire come questa :</p>
 <div class="highlight"><pre><span></span><code>gdal_translate<span class="w"> </span>raster.tif<span class="w"> </span>raster_cog.tif<span class="w"> </span>-a_srs<span class="w"> </span>EPSG:2056<span class="w"> </span>-of<span class="w"> </span>COG<span class="w"> </span>-co<span class="w"> </span><span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">OVERVIEW_RESAMPLING</span><span class="o">=</span>BILINEAR<span class="w"> </span>-co<span class="w"> </span><span class="nv">COMPRESS</span><span class="o">=</span>JPEG<span class="w"> </span>-co<span class="w"> </span><span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">NUM_THREADS</span><span class="o">=</span><span class="m">6</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">BIGTIFF</span><span class="o">=</span>YES

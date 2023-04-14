@@ -308,7 +308,7 @@
   
     
   
-  Get started
+  Primeiros passos
 
         </a>
       </li>
@@ -331,7 +331,7 @@
   
     
   
-  How-to guides
+  Guias de instruções
 
         </a>
       </li>
@@ -356,7 +356,7 @@
   
     
   
-  Technical reference
+  Referência técnica
 
         </a>
       </li>
@@ -379,7 +379,7 @@
   
     
   
-  Success stories
+  Histórias de sucesso
 
         </a>
       </li>
@@ -500,7 +500,7 @@
               
   
   <span class="md-ellipsis">
-    Get started
+    Primeiros passos
     
   </span>
   
@@ -514,10 +514,10 @@
             
           </div>
         
-        <nav class="md-nav" aria-label="Get started" data-md-level="1">
+        <nav class="md-nav" aria-label="Primeiros passos" data-md-level="1">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Get started
+            Primeiros passos
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1013,7 +1013,7 @@
               
   
   <span class="md-ellipsis">
-    How-to guides
+    Guias de instruções
     
   </span>
   
@@ -1027,10 +1027,10 @@
             
           </div>
         
-        <nav class="md-nav" aria-label="How-to guides" data-md-level="1">
+        <nav class="md-nav" aria-label="Guias de instruções" data-md-level="1">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            How-to guides
+            Guias de instruções
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1583,7 +1583,7 @@
               
   
   <span class="md-ellipsis">
-    Technical reference
+    Referência técnica
     
   </span>
   
@@ -1597,10 +1597,10 @@
             
           </div>
         
-        <nav class="md-nav" aria-label="Technical reference" data-md-level="1">
+        <nav class="md-nav" aria-label="Referência técnica" data-md-level="1">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Technical reference
+            Referência técnica
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2011,7 +2011,7 @@
               
   
   <span class="md-ellipsis">
-    Success stories
+    Histórias de sucesso
     
   </span>
   
@@ -2025,10 +2025,10 @@
             
           </div>
         
-        <nav class="md-nav" aria-label="Success stories" data-md-level="1">
+        <nav class="md-nav" aria-label="Histórias de sucesso" data-md-level="1">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Success stories
+            Histórias de sucesso
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2416,8 +2416,8 @@ Quando combinado com a compressão JPEG compression, reduz o tamanho do raster.<
 <p>Alguns parâmetros extra podem ser definidos :</p>
 <ul>
 <li><code>a_srs</code> pode também ser utilizado no comando do gdal_translate quando o SRS do raster não se encontrar definido.</li>
-<li><code>OVERVIEW_RESAMPLING</code> oferece uma renderização diferente com o zoom out. O valor padrão é NEAREST, mas também podes experimentar BILINEAR ou AVERAGE.</li>
-<li><code>NUM_THREADS</code> irá ajudá-lo a equilibrar os seus recursos de CPU ou apenas parte deles. Defina ALL_CPUS ou defina o número de núcleos que deseja utilizar.</li>
+<li><code>OVERVIEW_RESAMPLING</code> offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.</li>
+<li><code>NUM_THREADS</code> will help you to balance between use all your CPU resources or only part. Set ALL_CPUS or define the number of thread you want to use.</li>
 </ul>
 <p>Combinando todos os parâmetros extra, na linha de comandos, pode ser algo como isto :</p>
 <div class="highlight"><pre><span></span><code>gdal_translate<span class="w"> </span>raster.tif<span class="w"> </span>raster_cog.tif<span class="w"> </span>-a_srs<span class="w"> </span>EPSG:2056<span class="w"> </span>-of<span class="w"> </span>COG<span class="w"> </span>-co<span class="w"> </span><span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">OVERVIEW_RESAMPLING</span><span class="o">=</span>BILINEAR<span class="w"> </span>-co<span class="w"> </span><span class="nv">COMPRESS</span><span class="o">=</span>JPEG<span class="w"> </span>-co<span class="w"> </span><span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">NUM_THREADS</span><span class="o">=</span><span class="m">6</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">BIGTIFF</span><span class="o">=</span>YES

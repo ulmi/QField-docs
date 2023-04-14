@@ -2409,8 +2409,8 @@
 <p>可以设置一些其他参数：</p>
 <ul>
 <li><code>a_srs</code> 当源栅格数据集未定义CRS时，可以在 gdal_translate 中使用此命令。</li>
-<li><code>OVERVIEW_RESAMPLING</code> 在压缩时选择不同的渲染器。默认值为 NEAREST，但也可以尝试 BILINEAR 或 AVERAGE 。</li>
-<li><code>NUM_THREADS</code> 将帮助您在使用所有CPU资源或仅使用部分CPU资源之间取得平衡。设置 ALL_CPUS 或定义要使用的线程数。</li>
+<li><code>OVERVIEW_RESAMPLING</code> offer different renderer when zooming out. The default value is NEAREST but you can try also BILINEAR or AVERAGE.</li>
+<li><code>NUM_THREADS</code> will help you to balance between use all your CPU resources or only part. Set ALL_CPUS or define the number of thread you want to use.</li>
 </ul>
 <p>综合所有上述参数，命令行或许如下所示：</p>
 <div class="highlight"><pre><span></span><code>gdal_translate<span class="w"> </span>raster.tif<span class="w"> </span>raster_cog.tif<span class="w"> </span>-a_srs<span class="w"> </span>EPSG:2056<span class="w"> </span>-of<span class="w"> </span>COG<span class="w"> </span>-co<span class="w"> </span><span class="nv">BLOCKSIZE</span><span class="o">=</span><span class="m">512</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">OVERVIEW_RESAMPLING</span><span class="o">=</span>BILINEAR<span class="w"> </span>-co<span class="w"> </span><span class="nv">COMPRESS</span><span class="o">=</span>JPEG<span class="w"> </span>-co<span class="w"> </span><span class="nv">QUALITY</span><span class="o">=</span><span class="m">75</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">NUM_THREADS</span><span class="o">=</span><span class="m">6</span><span class="w"> </span>-co<span class="w"> </span><span class="nv">BIGTIFF</span><span class="o">=</span>YES
